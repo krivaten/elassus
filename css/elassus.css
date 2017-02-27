@@ -1889,7 +1889,7 @@ clr {
   height: 16rem; }
 
 .h\(0p\) {
-  height: 0%; }
+  height: 0; }
 
 .h\(25p\) {
   height: 25%; }
@@ -1931,7 +1931,7 @@ clr {
   .h\(5\)-s {
     height: 16rem; }
   .h\(0p\)-s {
-    height: 0%; }
+    height: 0; }
   .h\(25p\)-s {
     height: 25%; }
   .h\(50p\)-s {
@@ -1965,7 +1965,7 @@ clr {
   .h\(5\)-m {
     height: 16rem; }
   .h\(0p\)-m {
-    height: 0%; }
+    height: 0; }
   .h\(25p\)-m {
     height: 25%; }
   .h\(50p\)-m {
@@ -1999,7 +1999,7 @@ clr {
   .h\(5\)-l {
     height: 16rem; }
   .h\(0p\)-l {
-    height: 0%; }
+    height: 0; }
   .h\(25p\)-l {
     height: 25%; }
   .h\(50p\)-l {
@@ -2081,7 +2081,7 @@ clr {
   max-width: 16rem; }
 
 .mw\(0p\) {
-  max-width: 0%; }
+  max-width: 0; }
 
 .mw\(25p\) {
   max-width: 25%; }
@@ -2109,7 +2109,7 @@ clr {
   .mw\(5\)-s {
     max-width: 16rem; }
   .mw\(0p\)-s {
-    max-width: 0%; }
+    max-width: 0; }
   .mw\(25p\)-s {
     max-width: 25%; }
   .mw\(50p\)-s {
@@ -2133,7 +2133,7 @@ clr {
   .mw\(5\)-m {
     max-width: 16rem; }
   .mw\(0p\)-m {
-    max-width: 0%; }
+    max-width: 0; }
   .mw\(25p\)-m {
     max-width: 25%; }
   .mw\(50p\)-m {
@@ -2157,7 +2157,7 @@ clr {
   .mw\(5\)-l {
     max-width: 16rem; }
   .mw\(0p\)-l {
-    max-width: 0%; }
+    max-width: 0; }
   .mw\(25p\)-l {
     max-width: 25%; }
   .mw\(50p\)-l {
@@ -3975,244 +3975,244 @@ clr {
     text-align: center; } }
 
 .tc\(primary\) {
-  text-color: #990000; }
+  color: #990000; }
 
 .tc\(secondary\) {
-  text-color: #333; }
+  color: #333; }
 
 .tc\(success\) {
-  text-color: green; }
+  color: green; }
 
 .tc\(info\) {
-  text-color: blue; }
+  color: blue; }
 
 .tc\(warning\) {
-  text-color: orange; }
+  color: orange; }
 
 .tc\(danger\) {
-  text-color: red; }
+  color: red; }
 
 .tc\(black\) {
-  text-color: #000; }
+  color: #000; }
 
 .tc\(black-75\) {
-  text-color: rgba(0, 0, 0, 0.75); }
+  color: rgba(0, 0, 0, 0.75); }
 
 .tc\(black-50\) {
-  text-color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5); }
 
 .tc\(black-25\) {
-  text-color: rgba(0, 0, 0, 0.25); }
+  color: rgba(0, 0, 0, 0.25); }
 
 .tc\(white\) {
-  text-color: #fff; }
+  color: #fff; }
 
 .tc\(white-75\) {
-  text-color: rgba(255, 255, 255, 0.75); }
+  color: rgba(255, 255, 255, 0.75); }
 
 .tc\(white-50\) {
-  text-color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5); }
 
 .tc\(white-25\) {
-  text-color: rgba(255, 255, 255, 0.25); }
+  color: rgba(255, 255, 255, 0.25); }
 
 .tc\(transparent\) {
-  text-color: transparent; }
+  color: transparent; }
 
 .tc\(dark-gray\) {
-  text-color: #333; }
+  color: #333; }
 
 .tc\(mid-gray\) {
-  text-color: #555; }
+  color: #555; }
 
 .tc\(gray\) {
-  text-color: #777; }
+  color: #777; }
 
 .tc\(light-gray\) {
-  text-color: #eee; }
+  color: #eee; }
 
 .tc\(near-white\) {
-  text-color: #f4f4f4; }
+  color: #f4f4f4; }
 
 .tc\(primary\)\:f:focus {
-  text-color: #990000; }
+  color: #990000; }
 
 .tc\(secondary\)\:f:focus {
-  text-color: #333; }
+  color: #333; }
 
 .tc\(success\)\:f:focus {
-  text-color: green; }
+  color: green; }
 
 .tc\(info\)\:f:focus {
-  text-color: blue; }
+  color: blue; }
 
 .tc\(warning\)\:f:focus {
-  text-color: orange; }
+  color: orange; }
 
 .tc\(danger\)\:f:focus {
-  text-color: red; }
+  color: red; }
 
 .tc\(black\)\:f:focus {
-  text-color: #000; }
+  color: #000; }
 
 .tc\(black-75\)\:f:focus {
-  text-color: rgba(0, 0, 0, 0.75); }
+  color: rgba(0, 0, 0, 0.75); }
 
 .tc\(black-50\)\:f:focus {
-  text-color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5); }
 
 .tc\(black-25\)\:f:focus {
-  text-color: rgba(0, 0, 0, 0.25); }
+  color: rgba(0, 0, 0, 0.25); }
 
 .tc\(white\)\:f:focus {
-  text-color: #fff; }
+  color: #fff; }
 
 .tc\(white-75\)\:f:focus {
-  text-color: rgba(255, 255, 255, 0.75); }
+  color: rgba(255, 255, 255, 0.75); }
 
 .tc\(white-50\)\:f:focus {
-  text-color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5); }
 
 .tc\(white-25\)\:f:focus {
-  text-color: rgba(255, 255, 255, 0.25); }
+  color: rgba(255, 255, 255, 0.25); }
 
 .tc\(transparent\)\:f:focus {
-  text-color: transparent; }
+  color: transparent; }
 
 .tc\(dark-gray\)\:f:focus {
-  text-color: #333; }
+  color: #333; }
 
 .tc\(mid-gray\)\:f:focus {
-  text-color: #555; }
+  color: #555; }
 
 .tc\(gray\)\:f:focus {
-  text-color: #777; }
+  color: #777; }
 
 .tc\(light-gray\)\:f:focus {
-  text-color: #eee; }
+  color: #eee; }
 
 .tc\(near-white\)\:f:focus {
-  text-color: #f4f4f4; }
+  color: #f4f4f4; }
 
 .tc\(primary\)\:h:hover {
-  text-color: #990000; }
+  color: #990000; }
 
 .tc\(secondary\)\:h:hover {
-  text-color: #333; }
+  color: #333; }
 
 .tc\(success\)\:h:hover {
-  text-color: green; }
+  color: green; }
 
 .tc\(info\)\:h:hover {
-  text-color: blue; }
+  color: blue; }
 
 .tc\(warning\)\:h:hover {
-  text-color: orange; }
+  color: orange; }
 
 .tc\(danger\)\:h:hover {
-  text-color: red; }
+  color: red; }
 
 .tc\(black\)\:h:hover {
-  text-color: #000; }
+  color: #000; }
 
 .tc\(black-75\)\:h:hover {
-  text-color: rgba(0, 0, 0, 0.75); }
+  color: rgba(0, 0, 0, 0.75); }
 
 .tc\(black-50\)\:h:hover {
-  text-color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5); }
 
 .tc\(black-25\)\:h:hover {
-  text-color: rgba(0, 0, 0, 0.25); }
+  color: rgba(0, 0, 0, 0.25); }
 
 .tc\(white\)\:h:hover {
-  text-color: #fff; }
+  color: #fff; }
 
 .tc\(white-75\)\:h:hover {
-  text-color: rgba(255, 255, 255, 0.75); }
+  color: rgba(255, 255, 255, 0.75); }
 
 .tc\(white-50\)\:h:hover {
-  text-color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5); }
 
 .tc\(white-25\)\:h:hover {
-  text-color: rgba(255, 255, 255, 0.25); }
+  color: rgba(255, 255, 255, 0.25); }
 
 .tc\(transparent\)\:h:hover {
-  text-color: transparent; }
+  color: transparent; }
 
 .tc\(dark-gray\)\:h:hover {
-  text-color: #333; }
+  color: #333; }
 
 .tc\(mid-gray\)\:h:hover {
-  text-color: #555; }
+  color: #555; }
 
 .tc\(gray\)\:h:hover {
-  text-color: #777; }
+  color: #777; }
 
 .tc\(light-gray\)\:h:hover {
-  text-color: #eee; }
+  color: #eee; }
 
 .tc\(near-white\)\:h:hover {
-  text-color: #f4f4f4; }
+  color: #f4f4f4; }
 
 .tc\(primary\)\:a:active {
-  text-color: #990000; }
+  color: #990000; }
 
 .tc\(secondary\)\:a:active {
-  text-color: #333; }
+  color: #333; }
 
 .tc\(success\)\:a:active {
-  text-color: green; }
+  color: green; }
 
 .tc\(info\)\:a:active {
-  text-color: blue; }
+  color: blue; }
 
 .tc\(warning\)\:a:active {
-  text-color: orange; }
+  color: orange; }
 
 .tc\(danger\)\:a:active {
-  text-color: red; }
+  color: red; }
 
 .tc\(black\)\:a:active {
-  text-color: #000; }
+  color: #000; }
 
 .tc\(black-75\)\:a:active {
-  text-color: rgba(0, 0, 0, 0.75); }
+  color: rgba(0, 0, 0, 0.75); }
 
 .tc\(black-50\)\:a:active {
-  text-color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5); }
 
 .tc\(black-25\)\:a:active {
-  text-color: rgba(0, 0, 0, 0.25); }
+  color: rgba(0, 0, 0, 0.25); }
 
 .tc\(white\)\:a:active {
-  text-color: #fff; }
+  color: #fff; }
 
 .tc\(white-75\)\:a:active {
-  text-color: rgba(255, 255, 255, 0.75); }
+  color: rgba(255, 255, 255, 0.75); }
 
 .tc\(white-50\)\:a:active {
-  text-color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5); }
 
 .tc\(white-25\)\:a:active {
-  text-color: rgba(255, 255, 255, 0.25); }
+  color: rgba(255, 255, 255, 0.25); }
 
 .tc\(transparent\)\:a:active {
-  text-color: transparent; }
+  color: transparent; }
 
 .tc\(dark-gray\)\:a:active {
-  text-color: #333; }
+  color: #333; }
 
 .tc\(mid-gray\)\:a:active {
-  text-color: #555; }
+  color: #555; }
 
 .tc\(gray\)\:a:active {
-  text-color: #777; }
+  color: #777; }
 
 .tc\(light-gray\)\:a:active {
-  text-color: #eee; }
+  color: #eee; }
 
 .tc\(near-white\)\:a:active {
-  text-color: #f4f4f4; }
+  color: #f4f4f4; }
 
 .td\(lt\) {
   text-decoration: line-through; }
@@ -4338,7 +4338,7 @@ clr {
   width: 16rem; }
 
 .w\(0p\) {
-  width: 0%; }
+  width: 0; }
 
 .w\(1col\) {
   width: 8.33333%; }
@@ -4390,7 +4390,7 @@ clr {
   .w\(5\)-s {
     width: 16rem; }
   .w\(0p\)-s {
-    width: 0%; }
+    width: 0; }
   .w\(1col\)-s {
     width: 8.33333%; }
   .w\(2col\)-s {
@@ -4430,7 +4430,7 @@ clr {
   .w\(5\)-m {
     width: 16rem; }
   .w\(0p\)-m {
-    width: 0%; }
+    width: 0; }
   .w\(1col\)-m {
     width: 8.33333%; }
   .w\(2col\)-m {
@@ -4470,7 +4470,7 @@ clr {
   .w\(5\)-l {
     width: 16rem; }
   .w\(0p\)-l {
-    width: 0%; }
+    width: 0; }
   .w\(1col\)-l {
     width: 8.33333%; }
   .w\(2col\)-l {
