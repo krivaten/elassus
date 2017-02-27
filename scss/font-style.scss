@@ -1,0 +1,19 @@
+//
+// FONT STYLE
+//
+
+$font-style-breakpoints: null !default;
+$font-style-pseudo-classes: $pseudo-focusable !default;
+$font-style-values: (
+    #{$a-normal}: normal,
+    #{$a-italic}: italic
+) !default;
+$font-style-classes: (#{$c-font-style}: font-style) !default;
+$font-style-module: (
+    breakpoints: $font-style-breakpoints,
+    pseudo-classes: $font-style-pseudo-classes,
+    values: $font-style-values,
+    classes: $font-style-classes
+) !default;
+
+@include build-module($font-style-module);

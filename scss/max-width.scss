@@ -1,0 +1,28 @@
+//
+// MAX WIDTH
+//
+
+$max-width-breakpoints: $breakpoints !default;
+$max-width-pseudo-classes: null !default;
+$max-width-values: (
+    #{$a-none}: none,
+    1#{$a-rem}: 1rem,
+    2#{$a-rem}: 2rem,
+    3#{$a-rem}: 4rem,
+    4#{$a-rem}: 8rem,
+    5#{$a-rem}: 16rem,
+    0#{$a-percent}: 0%,
+    25#{$a-percent}: 25%,
+    50#{$a-percent}: 50%,
+    75#{$a-percent}: 75%,
+    100#{$a-percent}: 100%,
+) !default;
+$max-width-classes: (#{$c-max-width}: max-width) !default;
+$max-width-module: (
+    breakpoints: $max-width-breakpoints,
+    pseudo-classes: $max-width-pseudo-classes,
+    values: $max-width-values,
+    classes: $max-width-classes
+) !default;
+
+@include build-module($max-width-module);

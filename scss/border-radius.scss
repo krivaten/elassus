@@ -1,0 +1,24 @@
+//
+// BORDER RADIUS
+//
+
+$border-radius-breakpoints: null !default;
+$border-radius-pseudo-classes: null !default;
+$border-radius-values: (
+    0: 0rem,
+    1: .125rem,
+    2: .25rem,
+    3: .5rem,
+    4: 1rem,
+    #{$a-fill}: 100%,
+    #{$a-pill}: 9999px
+) !default;
+$border-radius-classes: (#{$c-border-radius}: border-radius) !default;
+$border-radius-module: (
+    breakpoints: $border-radius-breakpoints,
+    pseudo-classes: $border-radius-pseudo-classes,
+    values: $border-radius-values,
+    classes: $border-radius-classes
+) !default;
+
+@include build-module($border-radius-module);

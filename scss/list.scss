@@ -1,0 +1,18 @@
+//
+// LIST
+//
+
+$list-style-breakpoints: null !default;
+$list-style-pseudo-classes: null !default;
+$list-style-values: (
+    #{$a-none}: none
+) !default;
+$list-style-classes: (#{$c-list-style}: list-style-type) !default;
+$list-style-module: (
+    breakpoints: $list-style-breakpoints,
+    pseudo-classes: $list-style-pseudo-classes,
+    values: $list-style-values,
+    classes: $list-style-classes
+) !default;
+
+@include build-module($list-style-module);

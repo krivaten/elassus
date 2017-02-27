@@ -1,0 +1,40 @@
+//
+// BORDERS
+//
+
+$border-breakpoints: $breakpoints !default;
+$border-pseudo-classes: null !default;
+$border-values: (
+    0: 0,
+    1: 1px
+) !default;
+$border-classes: (
+    #{$c-border}: (
+        border-style: solid,
+        border-width: null
+    ),
+    #{$c-border-top}: (
+        border-top-style: solid,
+        border-top-width: null
+    ),
+    #{$c-border-bottom}: (
+        border-bottom-style: solid,
+        border-bottom-width: null
+    ),
+    #{$c-border-left}: (
+        border-left-style: solid,
+        border-left-width: null
+    ),
+    #{$c-border-right}: (
+        border-right-style: solid,
+        border-right-width: null
+    )
+) !default;
+$border-module: (
+    breakpoints: $border-breakpoints,
+    pseudo-classes: $border-pseudo-classes,
+    values: $border-values,
+    classes: $border-classes
+) !default;
+
+@include build-module($border-module);

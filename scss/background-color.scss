@@ -1,0 +1,16 @@
+//
+// BACKGROUND COLOR
+//
+
+$background-color-breakpoints: null !default;
+$background-color-pseudo-classes: $pseudo-focusable !default;
+$background-color-values: $colors !default;
+$background-color-classes: (#{$c-background-color}: background-color) !default;
+$background-color-module: (
+    breakpoints: $background-color-breakpoints,
+    pseudo-classes: $background-color-pseudo-classes,
+    values: $background-color-values,
+    classes: $background-color-classes
+) !default;
+
+@include build-module($background-color-module);

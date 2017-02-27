@@ -1,0 +1,16 @@
+//
+// Z-INDEX
+//
+
+$z-index-breakpoints: null !default;
+$z-index-pseudo-classes: null !default;
+$z-index-values: 0 1 2 3 4 5 999 9999 !default;
+$z-index-classes: (#{$c-z-index}: z-index) !default;
+$z-index-module: (
+    breakpoints: $z-index-breakpoints,
+    pseudo-classes: $z-index-pseudo-classes,
+    values: $z-index-values,
+    classes: $z-index-classes
+) !default;
+
+@include build-module($z-index-module);

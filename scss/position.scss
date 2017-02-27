@@ -1,0 +1,22 @@
+//
+// POSITION
+//
+
+$position-breakpoints: $breakpoints !default;
+$position-pseudo-classes: null !default;
+$position-values: (
+    #{$a-static}: static,
+    #{$a-relative}: relative,
+    #{$a-absolute}: absolute,
+    #{$a-fixed}: fixed,
+    #{$a-sticky}: sticky
+) !default;
+$position-classes: (#{$c-position}: position) !default;
+$position-module: (
+    breakpoints: $position-breakpoints,
+    pseudo-classes: $position-pseudo-classes,
+    values: $position-values,
+    classes: $position-classes
+) !default;
+
+@include build-module($position-module);

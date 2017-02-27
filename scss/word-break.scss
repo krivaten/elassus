@@ -1,0 +1,20 @@
+//
+// WORD BREAK
+//
+
+$word-break-breakpoints: null !default;
+$word-break-pseudo-classes: null !default;
+$word-break-values: (
+  #{$a-normal}: normal,
+  #{$a-break}: break-all,
+  #{$a-keep}: keep-all
+) !default;
+$word-break-classes: (#{$c-word-break}: word-break) !default;
+$word-break-module: (
+    breakpoints: $word-break-breakpoints,
+    pseudo-classes: $word-break-pseudo-classes,
+    values: $word-break-values,
+    classes: $word-break-classes
+) !default;
+
+@include build-module($word-break-module);

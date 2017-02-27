@@ -1,0 +1,126 @@
+//
+// FLEXBOX
+//
+
+$flex-breakpoints: $breakpoints !default;
+$flex-pseudo-classes: null !default;
+$flex-values: (
+    #{$a-none}: none,
+    #{$a-auto}: 1 1 auto
+) !default;
+$flex-classes: (#{$c-flex}: flex) !default;
+$flex-module: (
+    breakpoints: $flex-breakpoints,
+    pseudo-classes: $flex-pseudo-classes,
+    values: $flex-values,
+    classes: $flex-classes
+) !default;
+
+@include build-module($flex-module);
+
+$flex-direction-breakpoints: $breakpoints !default;
+$flex-direction-pseudo-classes: null !default;
+$flex-direction-values: (
+    #{$a-column}: column,
+    #{$a-row}: row,
+    #{$a-wrap}: wrap
+) !default;
+$flex-direction-classes: (#{$c-flex-direction}: flex-direction) !default;
+$flex-direction-module: (
+    breakpoints: $flex-direction-breakpoints,
+    pseudo-classes: $flex-direction-pseudo-classes,
+    values: $flex-direction-values,
+    classes: $flex-direction-classes
+) !default;
+
+@include build-module($flex-direction-module);
+
+$align-items-breakpoints: $breakpoints !default;
+$align-items-pseudo-classes: null !default;
+$align-items-values: (
+    #{$a-start}: flex-start,
+    #{$a-end}: flex-end,
+    #{$a-center}: center,
+    #{$a-baseline}: baseline,
+    #{$a-stretch}: stretch,
+) !default;
+$align-items-classes: (#{$c-align-items}: align-items) !default;
+$align-items-module: (
+    breakpoints: $align-items-breakpoints,
+    pseudo-classes: $align-items-pseudo-classes,
+    values: $align-items-values,
+    classes: $align-items-classes
+) !default;
+
+@include build-module($align-items-module);
+
+$align-self-breakpoints: $breakpoints !default;
+$align-self-pseudo-classes: null !default;
+$align-self-values: (
+    #{$a-start}: flex-start,
+    #{$a-end}: flex-end,
+    #{$a-center}: center,
+    #{$a-baseline}: baseline,
+    #{$a-stretch}: stretch
+) !default;
+$align-self-classes: (#{$c-align-self}: align-self) !default;
+$align-self-module: (
+    breakpoints: $align-self-breakpoints,
+    pseudo-classes: $align-self-pseudo-classes,
+    values: $align-self-values,
+    classes: $align-self-classes
+) !default;
+
+@include build-module($align-self-module);
+
+$justify-content-breakpoints: $breakpoints !default;
+$justify-content-pseudo-classes: null !default;
+$justify-content-values: (
+    #{$a-start}: flex-start,
+    #{$a-end}: flex-end,
+    #{$a-center}: center,
+    #{$a-between}: space-between,
+    #{$a-around}: space-around
+) !default;
+$justify-content-classes: (#{$c-justify-content}: justify-content) !default;
+$justify-content-module: (
+    breakpoints: $justify-content-breakpoints,
+    pseudo-classes: $justify-content-pseudo-classes,
+    values: $justify-content-values,
+    classes: $justify-content-classes
+) !default;
+
+@include build-module($justify-content-module);
+
+$align-content-breakpoints: $breakpoints !default;
+$align-content-pseudo-classes: null !default;
+$align-content-values: (
+    #{$a-start}: flex-start,
+    #{$a-end}: flex-end,
+    #{$a-center}: center,
+    #{$a-between}: space-between,
+    #{$a-around}: space-around,
+    #{$a-stretch}: stretch
+) !default;
+$align-content-classes: (#{$c-align-content}: align-content) !default;
+$align-content-module: (
+    breakpoints: $align-content-breakpoints,
+    pseudo-classes: $align-content-pseudo-classes,
+    values: $align-content-values,
+    classes: $align-content-classes
+) !default;
+
+@include build-module($align-content-module);
+
+$order-breakpoints: $breakpoints !default;
+$order-pseudo-classes: null !default;
+$order-values: 0 1 2 3 4 5 6 7 8 9999 !default;
+$order-classes: (#{$c-order}: order) !default;
+$order-module: (
+    breakpoints: $order-breakpoints,
+    pseudo-classes: $order-pseudo-classes,
+    values: $order-values,
+    classes: $order-classes
+) !default;
+
+@include build-module($order-module);

@@ -1,0 +1,25 @@
+//
+// OVERFLOW
+//
+
+$overflow-breakpoints: $breakpoints !default;
+$overflow-pseudo-classes: null !default;
+$overflow-values: (
+    #{$a-visible}: visible,
+    #{$a-hidden}: hidden,
+    #{$a-scroll}: scroll,
+    #{$a-auto}: auto
+) !default;
+$overflow-classes: (
+    #{$c-overflow}: overflow,
+    #{$c-overflow-vertical}: overflow-x,
+    #{$c-overflow-horizontal}: overflow-y
+) !default;
+$overflow-module: (
+    breakpoints: $overflow-breakpoints,
+    pseudo-classes: $overflow-pseudo-classes,
+    values: $overflow-values,
+    classes: $overflow-classes
+) !default;
+
+@include build-module($overflow-module);

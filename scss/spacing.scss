@@ -1,0 +1,84 @@
+//
+// PADDING
+//
+
+$padding-breakpoints: $breakpoints !default;
+$padding-pseudo-classes: null !default;
+$padding-values: (
+    0: 0,
+    1: .25rem,
+    2: .5rem,
+    3: 1rem,
+    4: 2rem,
+    5: 4rem,
+    6: 8rem,
+    7: 8rem
+) !default;
+$padding-classes: (
+    #{$c-padding-top}: padding-top,
+    #{$c-padding-bottom}: padding-bottom,
+    #{$c-padding-left}: padding-left,
+    #{$c-padding-right}: padding-right,
+    #{$c-padding-vertical}: (
+        padding-top,
+        padding-bottom
+    ),
+    #{$c-padding-horizontal}: (
+        padding-left,
+        padding-right
+    )
+) !default;
+$padding-module: (
+    breakpoints: $padding-breakpoints,
+    pseudo-classes: $padding-pseudo-classes,
+    values: $padding-values,
+    classes: $padding-classes
+) !default;
+
+@include build-module($padding-module);
+
+//
+// MARGIN
+//
+
+$margin-breakpoints: $breakpoints !default;
+$margin-pseudo-classes: null !default;
+$margin-values: (
+    0: 0,
+    1: .25rem,
+    2: .5rem,
+    3: 1rem,
+    4: 2rem,
+    5: 4rem,
+    6: 8rem,
+    7: 8rem,
+    -1: -.25rem,
+    -2: -.5rem,
+    -3: -1rem,
+    -4: -2rem,
+    -5: -4rem,
+    -6: -8rem,
+    -7: -8rem
+) !default;
+$margin-classes: (
+    #{$c-margin-top}: margin-top,
+    #{$c-margin-bottom}: margin-bottom,
+    #{$c-margin-left}: margin-left,
+    #{$c-margin-right}: margin-right,
+    #{$c-margin-vertical}: (
+        margin-top,
+        margin-bottom
+    ),
+    #{$c-margin-horizontal}: (
+        margin-left,
+        margin-right
+    )
+) !default;
+$margin-module: (
+    breakpoints: $margin-breakpoints,
+    pseudo-classes: $margin-pseudo-classes,
+    values: $margin-values,
+    classes: $margin-classes
+) !default;
+
+@include build-module($margin-module);

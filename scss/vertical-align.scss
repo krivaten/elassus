@@ -1,0 +1,21 @@
+//
+// VERTICAL ALIGN
+//
+
+$vertical-align-breakpoints: null !default;
+$vertical-align-pseudo-classes: null !default;
+$vertical-align-values: (
+    #{$a-baseline}: baseline,
+    #{$a-middle}: middle,
+    #{$a-top}: top,
+    #{$a-bottom}: bottom
+) !default;
+$vertical-align-classes: (#{$c-vertical-align}: vertical-align) !default;
+$vertical-align-module: (
+    breakpoints: $vertical-align-breakpoints,
+    pseudo-classes: $vertical-align-pseudo-classes,
+    values: $vertical-align-values,
+    classes: $vertical-align-classes
+) !default;
+
+@include build-module($vertical-align-module);

@@ -1,0 +1,19 @@
+//
+// BACKGROUND SIZE
+//
+
+$background-size-breakpoints: $breakpoints !default;
+$background-size-pseudo-classes: null !default;
+$background-size-values: (
+    #{$a-cover}: cover,
+    #{$a-contain}: contain
+) !default;
+$background-size-classes: (#{$c-background-size}: background-size) !default;
+$background-size-module: (
+    breakpoints: $background-size-breakpoints,
+    pseudo-classes: $background-size-pseudo-classes,
+    values: $background-size-values,
+    classes: $background-size-classes
+) !default;
+
+@include build-module($background-size-module);

@@ -1,0 +1,27 @@
+//
+// BACKGROUND POSITION
+//
+
+$background-position-breakpoints: null !default;
+$background-position-pseudo-classes: $pseudo-focusable !default;
+$background-position-values: (
+    #{$a-center}: center center,
+    #{$a-top}: top center,
+    #{$a-right}: center right,
+    #{$a-bottom}: bottom center,
+    #{$a-left}: center left
+) !default;
+$background-position-classes: (
+    #{$c-background-position}: (
+        background-repeat: no-repeat,
+        background-position: null
+    )
+) !default;
+$background-position-module: (
+    breakpoints: $background-position-breakpoints,
+    pseudo-classes: $background-position-pseudo-classes,
+    values: $background-position-values,
+    classes: $background-position-classes
+) !default;
+
+@include build-module($background-position-module);

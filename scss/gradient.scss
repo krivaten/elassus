@@ -1,0 +1,19 @@
+//
+// GRADIENTS
+//
+
+$gradient-breakpoints: null !default;
+$gradient-pseudo-classes: $pseudo-focusable !default;
+$gradient-values: (
+    primary: linear-gradient(lighten($primary, 15%), darken($primary, 15%)),
+    secondary: linear-gradient(lighten($secondary, 15%), darken($secondary, 15%))
+) !default;
+$gradient-classes: (#{$c-gradient}: background-image) !default;
+$gradient-module: (
+    breakpoints: $gradient-breakpoints,
+    pseudo-classes: $gradient-pseudo-classes,
+    values: $gradient-values,
+    classes: $gradient-classes
+) !default;
+
+@include build-module($gradient-module);

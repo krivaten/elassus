@@ -1,0 +1,20 @@
+//
+// WHITE SPACE
+//
+
+$white-space-breakpoints: null !default;
+$white-space-pseudo-classes: null !default;
+$white-space-values: (
+    #{$a-normal}: normal,
+    #{$a-nowrap}: nowrap,
+    #{$a-pre}: pre
+) !default;
+$white-space-classes: (#{$c-white-space}: white-space) !default;
+$white-space-module: (
+    breakpoints: $white-space-breakpoints,
+    pseudo-classes: $white-space-pseudo-classes,
+    values: $white-space-values,
+    classes: $white-space-classes
+) !default;
+
+@include build-module($white-space-module);

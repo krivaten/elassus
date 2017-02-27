@@ -1,0 +1,20 @@
+//
+// FLOAT
+//
+
+$float-breakpoints: $breakpoints !default;
+$float-pseudo-classes: null !default;
+$float-values: (
+    #{$a-left}: left,
+    #{$a-right}: right,
+    #{$a-none}: none
+) !default;
+$float-classes: (#{$c-float}: float) !default;
+$float-module: (
+    breakpoints: $float-breakpoints,
+    pseudo-classes: $float-pseudo-classes,
+    values: $float-values,
+    classes: $float-classes
+) !default;
+
+@include build-module($float-module);

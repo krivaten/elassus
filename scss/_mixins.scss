@@ -1,0 +1,79 @@
+// FUNCTIONS
+@function build-class-name($context, $value: null, $breakpoint: null, $pseudo-class: null) {
+    $result: #{$context};
+
+    @if($value) {
+        $result: #{$result}\(#{$value}\);
+    }
+
+    @if($breakpoint) {
+        $result: #{$result}-#{$breakpoint};
+    }
+
+    @if($pseudo-class) {
+        $alias: if((length($pseudo-class) > 0), nth($pseudo-class, 1), null);
+        $selector: if((length($pseudo-class) > 1), nth($pseudo-class, 2), null);
+
+        @if ($alias) {
+            $result: "#{$result}\\:#{$alias}";
+        }
+
+        @if ($selector) {
+            $result: "#{$result}:#{$selector}";
+        }
+    }
+
+    @return $result
+}
+
+
+@mixin build-class($item, $breakpoint: null, $pseudo-class: null) {
+    $classes: map-get($item, classes);
+    $values: map-get($item, values);
+
+    @each $label, $value in $values {
+        $value: if($value, $value, $label);
+
+        @each $context, $properties in $classes {
+            .#{build-class-name($context, $label, $breakpoint, $pseudo-class)} {
+                @each $property, $property-value in $properties {
+                    $property-value: if($property-value, $property-value, $value);
+
+                    #{$property}: $property-value;
+                }
+            }
+        }
+    }
+}
+
+@mixin build-module($item) {
+    $pseudo-only: map-get($item, pseudo-only);
+    $breakpoints: map-get($item, breakpoints);
+    $pseudo-classes: map-get($item, pseudo-classes);
+
+    @if (not $pseudo-only) {
+      @include build-class($item);
+    }
+
+    @if ($pseudo-classes) {
+        @each $pseudo-class in $pseudo-classes {
+            @include build-class($item, $pseudo-class: $pseudo-class);
+        }
+    }
+
+    @if ($breakpoints) {
+        @each $breakpoint, $query in $breakpoints {
+            @media #{$query} {
+                @if (not $pseudo-only) {
+                    @include build-class($item, $breakpoint: $breakpoint);
+                }
+
+                @if ($pseudo-classes) {
+                    @each $pseudo-class in $pseudo-classes {
+                        @include build-class($item, $breakpoint: $breakpoint, $pseudo-class: $pseudo-class);
+                    }
+                }
+            }
+        }
+    }
+}

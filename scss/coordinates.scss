@@ -1,0 +1,36 @@
+//
+// COORDINATES
+//
+
+$coordinate-breakpoints: $breakpoints !default;
+$coordinate-pseudo-classes: null !default;
+$coordinate-values: (
+    0: 0,
+    1: 1rem,
+    2: 2rem,
+    -1: -1rem,
+    -2: -2rem,
+) !default;
+$coordinate-classes: (
+    #{$c-top}: top,
+    #{$c-bottom}: bottom,
+    #{$c-left}: left,
+    #{$c-right}: right
+) !default;
+$coordinate-module: (
+    breakpoints: $coordinate-breakpoints,
+    pseudo-classes: $coordinate-pseudo-classes,
+    values: $coordinate-values,
+    classes: $coordinate-classes
+) !default;
+
+@include build-module($coordinate-module);
+
+// Custom Styles
+$fill-class: #{build-class-name($c-fill)} !default;
+.#{$fill-class} {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

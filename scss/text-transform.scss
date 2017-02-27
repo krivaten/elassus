@@ -1,0 +1,21 @@
+//
+// TEXT TRANSFORM
+//
+
+$text-transform-breakpoints: null !default;
+$text-transform-pseudo-classes: null !default;
+$text-transform-values: (
+    #{$a-none}: none,
+    #{$a-capitalize}: capitalize,
+    #{$a-lowercase}: lowercase,
+    #{$a-uppercase}: uppercase
+) !default;
+$text-transform-classes: (#{$c-text-transform}: text-transform) !default;
+$text-transform-module: (
+    breakpoints: $text-transform-breakpoints,
+    pseudo-classes: $text-transform-pseudo-classes,
+    values: $text-transform-values,
+    classes: $text-transform-classes
+) !default;
+
+@include build-module($text-transform-module);

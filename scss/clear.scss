@@ -1,0 +1,38 @@
+//
+// CLEAR
+//
+
+$clear-responsive: true !default;
+$clear-stateful: false !default;
+$clear-values: (
+    #{$a-left}: left,
+    #{$a-right}: right,
+    #{$a-both}: both,
+    #{$a-none}: none
+) !default;
+$clear-classes: (#{$c-clear}: clear) !default;
+$clear-module: (
+    responsive: $clear-responsive,
+    stateful: $clear-stateful,
+    values: $clear-values,
+    classes: $clear-classes
+) !default;
+
+@include build-module($clear-module);
+
+// Custom Styles
+$clear-class: #{build-class-name($c-clear)} !default;
+
+#{$clear-class}:before,
+#{$clear-class}:after {
+  content: " ";
+  display: table;
+}
+
+#{$clear-class}:after {
+  clear: both;
+}
+
+#{$clear-class} {
+  *zoom: 1;
+}

@@ -1,0 +1,22 @@
+//
+// DISPLAYS
+//
+
+$display-breakpoints: $breakpoints !default;
+$display-pseudo-classes: null !default;
+$display-values: (
+    #{$a-none}: none,
+    #{$a-inline}: inline,
+    #{$a-block}: block,
+    #{$a-flex}: flex,
+    #{$a-inline-flex}: inline-flex
+) !default;
+$display-classes: (#{$c-display}: display) !default;
+$display-module: (
+    breakpoints: $display-breakpoints,
+    pseudo-classes: $display-pseudo-classes,
+    values: $display-values,
+    classes: $display-classes
+) !default;
+
+@include build-module($display-module);

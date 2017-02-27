@@ -1,0 +1,19 @@
+//
+// STRIPE
+//
+
+$stripe-breakpoints: null !default;
+$stripe-pseudo-classes: (null: nth-child(odd)) !default;
+$stripe-values: $grays !default;
+$stripe-classes: (#{$c-stripe}: background-color) !default;
+$stripe-module: (
+    breakpoints: $stripe-breakpoints,
+    pseudo-classes: $stripe-pseudo-classes,
+    pseudo-only: true,
+    values: $stripe-values,
+    classes: $stripe-classes
+) !default;
+
+@include build-module($stripe-module);
+
+// Custom Styles

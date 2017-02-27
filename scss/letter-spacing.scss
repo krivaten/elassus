@@ -1,0 +1,20 @@
+//
+// LETTER SPACING
+//
+
+$letter-spacing-breakpoints: null !default;
+$letter-spacing-pseudo-classes: null !default;
+$letter-spacing-values: (
+    s: -.05em,
+    m: .1em,
+    l: .25em
+) !default;
+$letter-spacing-classes: (#{$c-letter-spacing}: letter-spacing) !default;
+$letter-spacing-module: (
+    breakpoints: $letter-spacing-breakpoints,
+    pseudo-classes: $letter-spacing-pseudo-classes,
+    values: $letter-spacing-values,
+    classes: $letter-spacing-classes
+) !default;
+
+@include build-module($letter-spacing-module);

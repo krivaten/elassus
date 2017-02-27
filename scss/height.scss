@@ -1,0 +1,49 @@
+//
+// HEIGHT
+//
+
+$height-breakpoints: $breakpoints !default;
+$height-pseudo-classes: null !default;
+$height-values: (
+    #{$a-auto}: auto,
+    #{$a-inherit}: inherit,
+    1#{$a-rem}: 1rem,
+    2#{$a-rem}: 2rem,
+    3#{$a-rem}: 4rem,
+    4#{$a-rem}: 8rem,
+    5#{$a-rem}: 16rem,
+    0#{$a-percent}: 0%,
+    25#{$a-percent}: 25%,
+    50#{$a-percent}: 50%,
+    75#{$a-percent}: 75%,
+    100#{$a-percent}: 100%,
+    25#{$a-viewport-height}: 25vh,
+    50#{$a-viewport-height}: 50vh,
+    75#{$a-viewport-height}: 75vh,
+    100#{$a-viewport-height}: 100vh
+) !default;
+$height-classes: (#{$c-height}: height) !default;
+$height-module: (
+    breakpoints: $height-breakpoints,
+    pseudo-classes: $height-pseudo-classes,
+    values: $height-values,
+    classes: $height-classes
+) !default;
+
+@include build-module($height-module);
+
+$min-height-breakpoints: $breakpoints !default;
+$min-height-pseudo-classes: null !default;
+$min-height-values: (
+    100#{$a-percent}: 100%,
+    100#{$a-viewport-height}: 100vh
+) !default;
+$min-height-classes: (#{$c-min-height}: min-height) !default;
+$min-height-module: (
+    breakpoints: $min-height-breakpoints,
+    pseudo-classes: $min-height-pseudo-classes,
+    values: $min-height-values,
+    classes: $min-height-classes
+) !default;
+
+@include build-module($min-height-module);

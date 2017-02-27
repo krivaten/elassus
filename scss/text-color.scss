@@ -1,0 +1,16 @@
+//
+// TEXT COLOR
+//
+
+$text-color-breakpoints: null !default;
+$text-color-pseudo-classes: $pseudo-focusable !default;
+$text-color-values: $colors !default;
+$text-color-classes: (#{$c-text-color}: text-color) !default;
+$text-color-module: (
+    breakpoints: $text-color-breakpoints,
+    pseudo-classes: $text-color-pseudo-classes,
+    values: $text-color-values,
+    classes: $text-color-classes
+) !default;
+
+@include build-module($text-color-module);
