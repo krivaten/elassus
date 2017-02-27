@@ -1,0 +1,20 @@
+//
+// SAMPLE
+//
+
+$sample-breakpoints: $breakpoints !default;
+$sample-pseudo-classes: null !default;
+$sample-values: (
+    #{$a-sample}: sample
+) !default;
+$sample-classes: (#{$c-sample}: sample) !default;
+$sample-module: (
+    breakpoints: $sample-breakpoints,
+    pseudo-classes: $sample-pseudo-classes,
+    values: $sample-values,
+    classes: $sample-classes
+) !default;
+
+@include build-module($sample-module);
+
+// Custom Styles
