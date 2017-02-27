@@ -3,7 +3,7 @@
 //
 
 $outlines-breakpoints: null !default;
-$outlines-pseudo-classes: $pseudo-focusable !default;
+$outlines-pseudo-classes: (null: focus) !default;
 $outlines-values: (
     #{$a-none}: 0
 ) !default;
@@ -11,6 +11,7 @@ $outlines-classes: (#{$c-outline}: outline) !default;
 $outlines-module: (
     breakpoints: $outlines-breakpoints,
     pseudo-classes: $outlines-pseudo-classes,
+    pseudo-only: true,
     values: $outlines-values,
     classes: $outlines-classes
 ) !default;
