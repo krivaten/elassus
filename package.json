@@ -1,0 +1,30 @@
+{
+    "name": "elassus",
+    "description": "Completely customizable functional CSS library",
+    "author": "Kris Van Houten",
+    "version": "0.1.0",
+    "style": "elassus.scss",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/krivaten/elassus"
+    },
+    "keywords": [
+        "sass",
+        "scss",
+        "css",
+        "functional",
+        "utility",
+        "grid",
+        "tools",
+        "styles"
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "csscomb": "^3.1.8",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "^2.0.5",
+        "gulp-connect": "^3.2.2",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^2.2.0"
+    }
+}
