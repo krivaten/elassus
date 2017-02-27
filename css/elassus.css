@@ -2227,16 +2227,7 @@ clr {
 .o\(0\)\:a:active {
   opacity: 0; }
 
-.ol\(0\) {
-  outline: 0; }
-
-.ol\(0\)\:f:focus {
-  outline: 0; }
-
-.ol\(0\)\:h:hover {
-  outline: 0; }
-
-.ol\(0\)\:a:active {
+.ol\(0\):focus {
   outline: 0; }
 
 .of\(v\) {
