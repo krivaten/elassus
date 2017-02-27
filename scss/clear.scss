@@ -32,7 +32,3 @@ $clear-class: #{build-class-name($c-clear)} !default;
 #{$clear-class}:after {
   clear: both;
 }
-
-#{$clear-class} {
-  *zoom: 1;
-}
