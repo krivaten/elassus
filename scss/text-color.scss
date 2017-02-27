@@ -5,7 +5,7 @@
 $text-color-breakpoints: null !default;
 $text-color-pseudo-classes: $pseudo-focusable !default;
 $text-color-values: $colors !default;
-$text-color-classes: (#{$c-text-color}: text-color) !default;
+$text-color-classes: (#{$c-text-color}: color) !default;
 $text-color-module: (
     breakpoints: $text-color-breakpoints,
     pseudo-classes: $text-color-pseudo-classes,
