@@ -23,7 +23,8 @@ $flex-direction-pseudo-classes: null !default;
 $flex-direction-values: (
     #{$a-column}: column,
     #{$a-row}: row,
-    #{$a-wrap}: wrap
+    #{$a-row-reverse}: row-reverse,
+    #{$a-column-reverse}: column-reverse
 ) !default;
 $flex-direction-classes: (#{$c-flex-direction}: flex-direction) !default;
 $flex-direction-module: (
