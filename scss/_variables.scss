@@ -16,12 +16,11 @@ $breakpoints: (
 // Colors
 $black: #000 !default;
 $white: #fff !default;
-$primary: #990000 !default;
-$secondary: #333 !default;
-$success: green !default;
-$info: blue !default;
-$warning: orange !default;
-$danger: red !default;
+$brand: #990000 !default;
+$success: #31844A !default;
+$info: #e6edf2 !default;
+$warning: #FAED97 !default;
+$danger: #B14F4E !default;
 $dark-gray:#333 !default;
 $mid-gray:#555 !default;
 $gray: #777 !default;
@@ -29,8 +28,7 @@ $light-gray: #eee !default;
 $near-white: #f4f4f4 !default;
 
 $theme: (
-    primary: $primary,
-    secondary: $secondary,
+    brand: $brand,
     success: $success,
     info: $info,
     warning: $warning,
@@ -57,7 +55,7 @@ $grays: (
 $monochrome: map-merge($black-white, $grays) !default;
 $colors: map-merge($theme, $monochrome) !default;
 
-$link-color: $primary !default;
+$link-color: $brand !default;
 
 // Pseudo Classes
 $pseudo-focusable: (

@@ -3,10 +3,9 @@
 //
 
 $gradient-breakpoints: null !default;
-$gradient-pseudo-classes: $pseudo-focusable !default;
+$gradient-pseudo-classes: null!default;
 $gradient-values: (
-    primary: linear-gradient(lighten($primary, 15%), darken($primary, 15%)),
-    secondary: linear-gradient(lighten($secondary, 15%), darken($secondary, 15%))
+    brand: linear-gradient(lighten($brand, 15%), darken($brand, 15%))
 ) !default;
 $gradient-classes: (#{$c-gradient}: background-image) !default;
 $gradient-module: (
