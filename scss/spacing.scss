@@ -15,6 +15,7 @@ $padding-values: (
     7: 8rem
 ) !default;
 $padding-classes: (
+    #{$c-padding}: padding,
     #{$c-padding-top}: padding-top,
     #{$c-padding-bottom}: padding-bottom,
     #{$c-padding-left}: padding-left,
@@ -61,6 +62,7 @@ $margin-values: (
     -7: -8rem
 ) !default;
 $margin-classes: (
+    #{$c-margin}: margin,
     #{$c-margin-top}: margin-top,
     #{$c-margin-bottom}: margin-bottom,
     #{$c-margin-left}: margin-left,
