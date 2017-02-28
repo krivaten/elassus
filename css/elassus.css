@@ -36,7 +36,7 @@ img {
   max-width: 100%; }
 
 a {
-  color: #990000; }
+  color: #64B6B1; }
 
 table {
   border-collapse: collapse;
@@ -177,7 +177,7 @@ table {
   z-index: 100; }
 
 .bgc\(brand\) {
-  background-color: #990000; }
+  background-color: #64B6B1; }
 
 .bgc\(success\) {
   background-color: #31844A; }
@@ -234,7 +234,7 @@ table {
   background-color: #f4f4f4; }
 
 .bgc\(brand\)\:f:focus {
-  background-color: #990000; }
+  background-color: #64B6B1; }
 
 .bgc\(success\)\:f:focus {
   background-color: #31844A; }
@@ -291,7 +291,7 @@ table {
   background-color: #f4f4f4; }
 
 .bgc\(brand\)\:h:hover {
-  background-color: #990000; }
+  background-color: #64B6B1; }
 
 .bgc\(success\)\:h:hover {
   background-color: #31844A; }
@@ -348,7 +348,7 @@ table {
   background-color: #f4f4f4; }
 
 .bgc\(brand\)\:a:active {
-  background-color: #990000; }
+  background-color: #64B6B1; }
 
 .bgc\(success\)\:a:active {
   background-color: #31844A; }
@@ -645,7 +645,7 @@ table {
     border-right-width: 1px; } }
 
 .brdc\(brand\) {
-  border-color: #990000; }
+  border-color: #64B6B1; }
 
 .brdc\(success\) {
   border-color: #31844A; }
@@ -702,7 +702,7 @@ table {
   border-color: #f4f4f4; }
 
 .brdc\(brand\)\:f:focus {
-  border-color: #990000; }
+  border-color: #64B6B1; }
 
 .brdc\(success\)\:f:focus {
   border-color: #31844A; }
@@ -759,7 +759,7 @@ table {
   border-color: #f4f4f4; }
 
 .brdc\(brand\)\:h:hover {
-  border-color: #990000; }
+  border-color: #64B6B1; }
 
 .brdc\(success\)\:h:hover {
   border-color: #31844A; }
@@ -816,7 +816,7 @@ table {
   border-color: #f4f4f4; }
 
 .brdc\(brand\)\:a:active {
-  border-color: #990000; }
+  border-color: #64B6B1; }
 
 .brdc\(success\)\:a:active {
   border-color: #31844A; }
@@ -1826,7 +1826,7 @@ clr:after {
   font-weight: 600; }
 
 .grad\(brand\) {
-  background-image: linear-gradient(#e60000, #4d0000); }
+  background-image: linear-gradient(#98cecb, #428c87); }
 
 .h\(auto\) {
   height: auto; }
@@ -4134,7 +4134,7 @@ clr:after {
     text-align: center; } }
 
 .tc\(brand\) {
-  color: #990000; }
+  color: #64B6B1; }
 
 .tc\(success\) {
   color: #31844A; }
@@ -4191,7 +4191,7 @@ clr:after {
   color: #f4f4f4; }
 
 .tc\(brand\)\:f:focus {
-  color: #990000; }
+  color: #64B6B1; }
 
 .tc\(success\)\:f:focus {
   color: #31844A; }
@@ -4248,7 +4248,7 @@ clr:after {
   color: #f4f4f4; }
 
 .tc\(brand\)\:h:hover {
-  color: #990000; }
+  color: #64B6B1; }
 
 .tc\(success\)\:h:hover {
   color: #31844A; }
@@ -4305,7 +4305,7 @@ clr:after {
   color: #f4f4f4; }
 
 .tc\(brand\)\:a:active {
-  color: #990000; }
+  color: #64B6B1; }
 
 .tc\(success\)\:a:active {
   color: #31844A; }
