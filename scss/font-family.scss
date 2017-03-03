@@ -5,9 +5,9 @@
 $font-family-breakpoints: null !default;
 $font-family-pseudo-classes: null !default;
 $font-family-values: (
-    monospace: unquote('"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace'),
-    serif: unquote('Georgia, Times, "Times New Roman", serif'),
-    sans-serif: unquote('-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif')
+    #{$a-monospace}: unquote('"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace'),
+    #{$a-serif}: unquote('Georgia, Times, "Times New Roman", serif'),
+    #{$a-sans-serif}: unquote('-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif')
 ) !default;
 $font-family-classes: (#{$c-font-family}: font-family) !default;
 $font-family-module: (
