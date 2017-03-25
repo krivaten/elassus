@@ -7,7 +7,7 @@
     }
 
     @if($breakpoint) {
-        $result: #{$result}-#{$breakpoint};
+        $result: #{$result}#{$breakpoint};
     }
 
     @if($pseudo-class) {
@@ -62,7 +62,9 @@
     }
 
     @if ($breakpoints) {
-        @each $breakpoint, $query in $breakpoints {
+        @each $breakpoint, $object in $breakpoints {
+            $query: map-get($object, query);
+
             @media #{$query} {
                 @if (not $pseudo-only) {
                     @include build-class($item, $breakpoint: $breakpoint);

@@ -18,6 +18,23 @@ $flex-module: (
 
 @include build-module($flex-module);
 
+$flex-wrap-breakpoints: $breakpoints !default;
+$flex-wrap-pseudo-classes: null !default;
+$flex-wrap-values: (
+    #{$a-wrap}: wrap,
+    #{$a-nowrap}: nowrap,
+    #{$a-wrap-reverse}: wrap-reverse
+) !default;
+$flex-wrap-classes: (#{$c-flex-wrap}: flex-wrap) !default;
+$flex-wrap-module: (
+    breakpoints: $flex-wrap-breakpoints,
+    pseudo-classes: $flex-wrap-pseudo-classes,
+    values: $flex-wrap-values,
+    classes: $flex-wrap-classes
+) !default;
+
+@include build-module($flex-wrap-module);
+
 $flex-direction-breakpoints: $breakpoints !default;
 $flex-direction-pseudo-classes: null !default;
 $flex-direction-values: (

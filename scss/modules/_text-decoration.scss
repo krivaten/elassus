@@ -9,7 +9,7 @@ $text-decoration-values: (
     #{$a-underline}: underline,
     #{$a-none}: none
 ) !default;
-$text-decoration-classes: (td: text-decoration) !default;
+$text-decoration-classes: (#{$c-text-decoration}: text-decoration) !default;
 $text-decoration-module: (
     breakpoints: $text-decoration-breakpoints,
     pseudo-classes: $text-decoration-pseudo-classes,

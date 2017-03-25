@@ -1,0 +1,19 @@
+//
+// CONTAINER
+//
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+
+    @each $breakpoint, $object in $breakpoints {
+        $size: map-get($object, size);
+        $query: map-get($object, query);
+        @media #{$query} {
+            max-width: $size;
+        }
+    }
+}

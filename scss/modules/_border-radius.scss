@@ -13,7 +13,13 @@ $border-radius-values: (
     #{$a-fill}: 100%,
     #{$a-pill}: 9999px
 ) !default;
-$border-radius-classes: (#{$c-border-radius}: border-radius) !default;
+$border-radius-classes: (
+    #{$c-border-radius}: border-radius,
+    #{$c-border-radius-top-left}: border-top-left-radius,
+    #{$c-border-radius-top-right}: border-top-right-radius,
+    #{$c-border-radius-bottom-left}: border-bottom-left-radius,
+    #{$c-border-radius-bottom-right}: border-bottom-right-radius,
+) !default;
 $border-radius-module: (
     breakpoints: $border-radius-breakpoints,
     pseudo-classes: $border-radius-pseudo-classes,

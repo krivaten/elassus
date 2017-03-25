@@ -25,12 +25,3 @@ $coordinate-module: (
 ) !default;
 
 @include build-module($coordinate-module);
-
-// Custom Styles
-$fill-class: #{build-class-name($c-fill)} !default;
-.#{$fill-class} {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}

@@ -7,7 +7,13 @@ $list-style-pseudo-classes: null !default;
 $list-style-values: (
     #{$a-none}: none
 ) !default;
-$list-style-classes: (#{$c-list-style}: list-style-type) !default;
+$list-style-classes: (
+    #{$c-list-style}: (
+        list-style-type: none,
+        margin: 0,
+        padding: 0
+    )
+) !default;
 $list-style-module: (
     breakpoints: $list-style-breakpoints,
     pseudo-classes: $list-style-pseudo-classes,

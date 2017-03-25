@@ -45,6 +45,7 @@ $padding-module: (
 $margin-breakpoints: $breakpoints !default;
 $margin-pseudo-classes: null !default;
 $margin-values: (
+    #{$a-auto}: auto,
     0#{$a-step}: 0,
     1#{$a-step}: .25rem,
     2#{$a-step}: .5rem,
@@ -53,13 +54,13 @@ $margin-values: (
     5#{$a-step}: 4rem,
     6#{$a-step}: 8rem,
     7#{$a-step}: 16rem,
-    -1#{$a-step}: .25rem,
-    -2#{$a-step}: .5rem,
-    -3#{$a-step}: 1rem,
-    -4#{$a-step}: 2rem,
-    -5#{$a-step}: 4rem,
-    -6#{$a-step}: 8rem,
-    -7#{$a-step}: 16rem,
+    -1#{$a-step}: -.25rem,
+    -2#{$a-step}: -.5rem,
+    -3#{$a-step}: -1rem,
+    -4#{$a-step}: -2rem,
+    -5#{$a-step}: -4rem,
+    -6#{$a-step}: -8rem,
+    -7#{$a-step}: -16rem,
 ) !default;
 $margin-classes: (
     #{$c-margin}: margin,

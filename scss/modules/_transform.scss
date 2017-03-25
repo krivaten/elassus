@@ -1,0 +1,48 @@
+//
+// TRANSFORM
+//
+
+$transform-breakpoints: null !default;
+$transform-pseudo-classes: $pseudo-focusable !default;
+$transform-values: (
+    45: rotate(45deg),
+    90: rotate(90deg),
+    135: rotate(135deg),
+    180: rotate(180deg),
+    225: rotate(225deg),
+    270: rotate(270deg),
+    315: rotate(315deg),
+    #{$a-vertical}0: scale3d(0, 1, 1),
+    #{$a-vertical}1: scale3d(.25, 1, 1),
+    #{$a-vertical}2: scale3d(.5, 1, 1),
+    #{$a-vertical}3: scale3d(1, 1, 1),
+    #{$a-horizontal}0: scale3d(1, 0, 1),
+    #{$a-horizontal}1: scale3d(1, .25, 1),
+    #{$a-horizontal}2: scale3d(1, .5, 1),
+    #{$a-horizontal}3: scale3d(1, 1, 1),
+    #{$a-left}0: translate3d(-0rem, 0, 0),
+    #{$a-left}1: translate3d(-.25rem, 0, 0),
+    #{$a-left}2: translate3d(-.5rem, 0, 0),
+    #{$a-left}3: translate3d(-1rem, 0, 0),
+    #{$a-right}0: translate3d(0rem, 0, 0),
+    #{$a-right}1: translate3d(.25rem, 0, 0),
+    #{$a-right}2: translate3d(.5rem, 0, 0),
+    #{$a-right}3: translate3d(1rem, 0, 0),
+    #{$a-top}0: translate3d(0, -0rem, 0),
+    #{$a-top}1: translate3d(0, -.25rem, 0),
+    #{$a-top}2: translate3d(0, -.5rem, 0),
+    #{$a-top}3: translate3d(0, -1rem, 0),
+    #{$a-bottom}0: translate3d(0, 0rem, 0),
+    #{$a-bottom}1: translate3d(0, .25rem, 0),
+    #{$a-bottom}2: translate3d(0, .5rem, 0),
+    #{$a-bottom}3: translate3d(0, 1rem, 0),
+) !default;
+$transform-classes: (#{$c-transform}: transform) !default;
+$transform-module: (
+    breakpoints: $transform-breakpoints,
+    pseudo-classes: $transform-pseudo-classes,
+    values: $transform-values,
+    classes: $transform-classes
+) !default;
+
+@include build-module($transform-module);

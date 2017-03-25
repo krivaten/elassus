@@ -5,8 +5,7 @@
 $box-shadow-breakpoints: $breakpoints !default;
 $box-shadow-pseudo-classes: null !default;
 $box-shadow-values: (
-    1: 0 0 4px 2px rgba($black, .2),
-    2: 0 0 8px 2px rgba($black, .2)
+    #{$a-top}: 0 2px 4px 0 rgba($black, .2)
 ) !default;
 $box-shadow-classes: (#{$c-box-shadow}: box-shadow) !default;
 $box-shadow-module: (

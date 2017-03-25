@@ -3,10 +3,14 @@
 //
 
 $border-breakpoints: $breakpoints !default;
-$border-pseudo-classes: null !default;
+$border-pseudo-classes: (
+    nl: unquote('not(:last-of-type)')
+) !default;
 $border-values: (
     0: 0,
-    1: 1px
+    1: 1px,
+    2: 2px,
+    3: 4px
 ) !default;
 $border-classes: (
     #{$c-border}: (

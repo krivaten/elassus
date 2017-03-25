@@ -3,32 +3,45 @@
 //
 
 // Breakpoints
-$screen-s: 'screen and (min-width: 768px)' !default;
-$screen-m: 'screen and (min-width: 992px)' !default;
-$screen-l: 'screen and (min-width: 1200px)' !default;
+$screen-s: 768px !default;
+$screen-m: 992px !default;
+$screen-l: 1200px !default;
+
+$query-s: 'screen and (min-width: #{$screen-s})' !default;
+$query-m: 'screen and (min-width: #{$screen-m})' !default;
+$query-l: 'screen and (min-width: #{$screen-l})' !default;
 
 $breakpoints: (
-    s: $screen-s,
-    m: $screen-m,
-    l: $screen-l
+    s: (
+        size: $screen-s,
+        query: $query-s
+    ),
+    m: (
+        size: $screen-m,
+        query: $query-m
+    ),
+    l: (
+        size: $screen-l,
+        query: $query-l
+    )
 ) !default;
 
 // Colors
 $black: #000 !default;
 $white: #fff !default;
-$brand: #64B6B1 !default;
-$success: #31844A !default;
-$info: #e6edf2 !default;
-$warning: #FAED97 !default;
-$danger: #B14F4E !default;
-$dark-gray:#333 !default;
-$mid-gray:#555 !default;
-$gray: #777 !default;
-$light-gray: #eee !default;
-$near-white: #f4f4f4 !default;
+$primary: #3E606F !default;
+$secondary: #D1DBBD !default;
+$success: #4CAF50 !default;
+$info: #2196F3 !default;
+$warning: #ff9800 !default;
+$danger: #f44336 !default;
 
 $theme: (
-    brand: $brand,
+    primary: $primary,
+    primary-dark: darken($primary, 15%),
+    primary-light: lighten($primary, 55%),
+    secondary: $secondary,
+    secondary-dark: darken($secondary, 15%),
     success: $success,
     info: $info,
     warning: $warning,
@@ -43,19 +56,18 @@ $black-white: (
     white-75: rgba($white, 0.75),
     white-50: rgba($white, 0.5),
     white-25: rgba($white, 0.25),
+    off-white: #f2f2f2,
     transparent: transparent
 ) !default;
 $grays: (
-    dark-gray: $dark-gray,
-    mid-gray: $mid-gray,
-    gray: $gray,
-    light-gray: $light-gray,
-    near-white: $near-white
+    gray-light: darken($white, 15%),
+    gray: darken($white, 35%),
+    gray-dark: darken($white, 55%)
 ) !default;
 $monochrome: map-merge($black-white, $grays) !default;
 $colors: map-merge($theme, $monochrome) !default;
 
-$link-color: $brand !default;
+$link-color: $primary !default;
 
 // Pseudo Classes
 $pseudo-focusable: (
@@ -63,3 +75,6 @@ $pseudo-focusable: (
     h: hover,
     a: active
 ) !default;
+
+$transition-duration: 0.35s !default;
+$transition-timing-function: ease-in-out;

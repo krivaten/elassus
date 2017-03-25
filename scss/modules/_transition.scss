@@ -1,0 +1,24 @@
+//
+// TRANSITIONS
+//
+
+$transition-breakpoints: null !default;
+$transition-pseudo-classes: null !default;
+$transition-values: (
+    #{$c-background-color}: background-color #{$transition-duration} #{$transition-timing-function},
+    #{$c-opacity}: opacity #{$transition-duration} #{$transition-timing-function},
+    #{$c-text-color}: color #{$transition-duration} #{$transition-timing-function},
+    #{$c-transform}: transform #{$transition-duration} #{$transition-timing-function},
+    #{$c-height}: height #{$transition-duration} #{$transition-timing-function},
+    #{$c-width}: width #{$transition-duration} #{$transition-timing-function},
+    #{$c-all}: all #{$transition-duration} #{$transition-timing-function}
+) !default;
+$transition-classes: (#{$c-transition}: transition) !default;
+$transition-module: (
+    breakpoints: $transition-breakpoints,
+    pseudo-classes: $transition-pseudo-classes,
+    values: $transition-values,
+    classes: $transition-classes
+) !default;
+
+@include build-module($transition-module);

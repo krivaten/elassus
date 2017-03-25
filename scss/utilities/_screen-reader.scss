@@ -1,25 +1,6 @@
-
-// Converted Variables
-
-
-// Custom Media Query Variables
-
-
-/*
-
-   UTILITIES
-
-*/
-
-* {
-    box-sizing: border-box;
-}
-
-.#{build-class-name($c-pre)} {
-    overflow-x: auto;
-    overflow-y: hidden;
-    overflow:   scroll;
-}
+//
+// SCREEN READER
+//
 
 $screen-reader-class: #{build-class-name($c-screen-reader)} !default;
 $screen-reader-focusable-class: #{build-class-name($c-screen-reader, $a-focus)} !default;
@@ -45,34 +26,4 @@ $screen-reader-focusable-class: #{build-class-name($c-screen-reader, $a-focus)} 
     position: static;
     width: auto;
     white-space: inherit;
-}
-
-img { max-width: 100%; }
-
-a {
-    color: $link-color;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-.pointer:hover {
-  cursor: pointer;
-}
-
-.overflow-container {
-  overflow-y: scroll;
-}
-
-.center {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.truncate {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }

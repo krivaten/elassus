@@ -8,6 +8,7 @@ $display-values: (
     #{$a-none}: none,
     #{$a-inline}: inline,
     #{$a-block}: block,
+    #{$a-inline-block}: inline-block,
     #{$a-flex}: flex,
     #{$a-inline-flex}: inline-flex
 ) !default;
