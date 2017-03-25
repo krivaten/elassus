@@ -8,7 +8,7 @@ var connect = require('gulp-connect');
 
 gulp.task('connect', function() {
     connect.server({
-        root: './html',
+        root: './docs',
         livereload: {
             port: 35730
         }
@@ -16,14 +16,14 @@ gulp.task('connect', function() {
 });
 
 gulp.task('styles', function() {
-    gulp.src('./elassus.scss')
+    gulp.src('./scss/elassus.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css/'))
-        .pipe(gulp.dest('./html/css/'))
+        .pipe(gulp.dest('./docs/css/'))
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./css/'))
-        .pipe(gulp.dest('./html/css/'))
+        .pipe(gulp.dest('./docs/css/'))
         .pipe(connect.reload());
 });
 
@@ -31,7 +31,7 @@ gulp.task('pug', function buildHTML() {
     return gulp.src('pug/*.pug')
         .pipe(pug())
         .pipe(prettify({ indent_char: ' ', indent_size: 4 }))
-        .pipe(gulp.dest('./html'))
+        .pipe(gulp.dest('./docs'))
         .pipe(connect.reload());
 });
 
