@@ -5996,6 +5996,18 @@ cl:after {
 .w\(7\) {
   width: 16rem; }
 
+.w\(25\%\) {
+  width: 25%; }
+
+.w\(50\%\) {
+  width: 50%; }
+
+.w\(75\%\) {
+  width: 75%; }
+
+.w\(100\%\) {
+  width: 100%; }
+
 .w\(1col\) {
   width: 8.33333%; }
 
@@ -6051,6 +6063,14 @@ cl:after {
     width: 8rem; }
   .w\(7\)s {
     width: 16rem; }
+  .w\(25\%\)s {
+    width: 25%; }
+  .w\(50\%\)s {
+    width: 50%; }
+  .w\(75\%\)s {
+    width: 75%; }
+  .w\(100\%\)s {
+    width: 100%; }
   .w\(1col\)s {
     width: 8.33333%; }
   .w\(2col\)s {
@@ -6095,6 +6115,14 @@ cl:after {
     width: 8rem; }
   .w\(7\)m {
     width: 16rem; }
+  .w\(25\%\)m {
+    width: 25%; }
+  .w\(50\%\)m {
+    width: 50%; }
+  .w\(75\%\)m {
+    width: 75%; }
+  .w\(100\%\)m {
+    width: 100%; }
   .w\(1col\)m {
     width: 8.33333%; }
   .w\(2col\)m {
@@ -6139,6 +6167,14 @@ cl:after {
     width: 8rem; }
   .w\(7\)l {
     width: 16rem; }
+  .w\(25\%\)l {
+    width: 25%; }
+  .w\(50\%\)l {
+    width: 50%; }
+  .w\(75\%\)l {
+    width: 75%; }
+  .w\(100\%\)l {
+    width: 100%; }
   .w\(1col\)l {
     width: 8.33333%; }
   .w\(2col\)l {
