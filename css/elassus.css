@@ -2952,16 +2952,16 @@ cl:after {
 .h\(7\) {
   height: 16rem; }
 
-.h\(25p\) {
+.h\(25\%\) {
   height: 25%; }
 
-.h\(50p\) {
+.h\(50\%\) {
   height: 50%; }
 
-.h\(75p\) {
+.h\(75\%\) {
   height: 75%; }
 
-.h\(100p\) {
+.h\(100\%\) {
   height: 100%; }
 
 .h\(25vh\) {
@@ -2997,13 +2997,13 @@ cl:after {
     height: 8rem; }
   .h\(7\)s {
     height: 16rem; }
-  .h\(25p\)s {
+  .h\(25\%\)s {
     height: 25%; }
-  .h\(50p\)s {
+  .h\(50\%\)s {
     height: 50%; }
-  .h\(75p\)s {
+  .h\(75\%\)s {
     height: 75%; }
-  .h\(100p\)s {
+  .h\(100\%\)s {
     height: 100%; }
   .h\(25vh\)s {
     height: 25vh; }
@@ -3035,13 +3035,13 @@ cl:after {
     height: 8rem; }
   .h\(7\)m {
     height: 16rem; }
-  .h\(25p\)m {
+  .h\(25\%\)m {
     height: 25%; }
-  .h\(50p\)m {
+  .h\(50\%\)m {
     height: 50%; }
-  .h\(75p\)m {
+  .h\(75\%\)m {
     height: 75%; }
-  .h\(100p\)m {
+  .h\(100\%\)m {
     height: 100%; }
   .h\(25vh\)m {
     height: 25vh; }
@@ -3073,13 +3073,13 @@ cl:after {
     height: 8rem; }
   .h\(7\)l {
     height: 16rem; }
-  .h\(25p\)l {
+  .h\(25\%\)l {
     height: 25%; }
-  .h\(50p\)l {
+  .h\(50\%\)l {
     height: 50%; }
-  .h\(75p\)l {
+  .h\(75\%\)l {
     height: 75%; }
-  .h\(100p\)l {
+  .h\(100\%\)l {
     height: 100%; }
   .h\(25vh\)l {
     height: 25vh; }
@@ -3090,26 +3090,26 @@ cl:after {
   .h\(100vh\)l {
     height: 100vh; } }
 
-.mh\(100p\) {
+.mh\(100\%\) {
   min-height: 100%; }
 
 .mh\(100vh\) {
   min-height: 100vh; }
 
 @media screen and (min-width: 768px) {
-  .mh\(100p\)s {
+  .mh\(100\%\)s {
     min-height: 100%; }
   .mh\(100vh\)s {
     min-height: 100vh; } }
 
 @media screen and (min-width: 992px) {
-  .mh\(100p\)m {
+  .mh\(100\%\)m {
     min-height: 100%; }
   .mh\(100vh\)m {
     min-height: 100vh; } }
 
 @media screen and (min-width: 1200px) {
-  .mh\(100p\)l {
+  .mh\(100\%\)l {
     min-height: 100%; }
   .mh\(100vh\)l {
     min-height: 100vh; } }
@@ -3164,16 +3164,16 @@ cl:after {
 .mw\(7\) {
   max-width: 16rem; }
 
-.mw\(25p\) {
+.mw\(25\%\) {
   max-width: 25%; }
 
-.mw\(50p\) {
+.mw\(50\%\) {
   max-width: 50%; }
 
-.mw\(75p\) {
+.mw\(75\%\) {
   max-width: 75%; }
 
-.mw\(100p\) {
+.mw\(100\%\) {
   max-width: 100%; }
 
 @media screen and (min-width: 768px) {
@@ -3195,13 +3195,13 @@ cl:after {
     max-width: 8rem; }
   .mw\(7\)s {
     max-width: 16rem; }
-  .mw\(25p\)s {
+  .mw\(25\%\)s {
     max-width: 25%; }
-  .mw\(50p\)s {
+  .mw\(50\%\)s {
     max-width: 50%; }
-  .mw\(75p\)s {
+  .mw\(75\%\)s {
     max-width: 75%; }
-  .mw\(100p\)s {
+  .mw\(100\%\)s {
     max-width: 100%; } }
 
 @media screen and (min-width: 992px) {
@@ -3223,13 +3223,13 @@ cl:after {
     max-width: 8rem; }
   .mw\(7\)m {
     max-width: 16rem; }
-  .mw\(25p\)m {
+  .mw\(25\%\)m {
     max-width: 25%; }
-  .mw\(50p\)m {
+  .mw\(50\%\)m {
     max-width: 50%; }
-  .mw\(75p\)m {
+  .mw\(75\%\)m {
     max-width: 75%; }
-  .mw\(100p\)m {
+  .mw\(100\%\)m {
     max-width: 100%; } }
 
 @media screen and (min-width: 1200px) {
@@ -3251,13 +3251,13 @@ cl:after {
     max-width: 8rem; }
   .mw\(7\)l {
     max-width: 16rem; }
-  .mw\(25p\)l {
+  .mw\(25\%\)l {
     max-width: 25%; }
-  .mw\(50p\)l {
+  .mw\(50\%\)l {
     max-width: 50%; }
-  .mw\(75p\)l {
+  .mw\(75\%\)l {
     max-width: 75%; }
-  .mw\(100p\)l {
+  .mw\(100\%\)l {
     max-width: 100%; } }
 
 .o\(100\) {
