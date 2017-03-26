@@ -443,6 +443,10 @@ img {
 
 a {
   color: #3D807D; }
+  a:hover {
+    color: #609794; }
+  a:active {
+    color: #326967; }
 
 table {
   border-collapse: collapse;
@@ -4500,97 +4504,109 @@ cl:after {
 .tt\(uc\) {
   text-transform: uppercase; }
 
-.tfm\(45\), .tfm\(45\)\:f:focus, .tfm\(45\)\:h:hover, .tfm\(45\)\:a:active {
+.tfm\(rotate45\), .tfm\(rotate45\)\:f:focus, .tfm\(rotate45\)\:h:hover, .tfm\(rotate45\)\:a:active {
   transform: rotate(45deg); }
 
-.tfm\(90\), .tfm\(90\)\:f:focus, .tfm\(90\)\:h:hover, .tfm\(90\)\:a:active {
+.tfm\(rotate90\), .tfm\(rotate90\)\:f:focus, .tfm\(rotate90\)\:h:hover, .tfm\(rotate90\)\:a:active {
   transform: rotate(90deg); }
 
-.tfm\(135\), .tfm\(135\)\:f:focus, .tfm\(135\)\:h:hover, .tfm\(135\)\:a:active {
+.tfm\(rotate135\), .tfm\(rotate135\)\:f:focus, .tfm\(rotate135\)\:h:hover, .tfm\(rotate135\)\:a:active {
   transform: rotate(135deg); }
 
-.tfm\(180\), .tfm\(180\)\:f:focus, .tfm\(180\)\:h:hover, .tfm\(180\)\:a:active {
+.tfm\(rotate180\), .tfm\(rotate180\)\:f:focus, .tfm\(rotate180\)\:h:hover, .tfm\(rotate180\)\:a:active {
   transform: rotate(180deg); }
 
-.tfm\(225\), .tfm\(225\)\:f:focus, .tfm\(225\)\:h:hover, .tfm\(225\)\:a:active {
+.tfm\(rotate225\), .tfm\(rotate225\)\:f:focus, .tfm\(rotate225\)\:h:hover, .tfm\(rotate225\)\:a:active {
   transform: rotate(225deg); }
 
-.tfm\(270\), .tfm\(270\)\:f:focus, .tfm\(270\)\:h:hover, .tfm\(270\)\:a:active {
+.tfm\(rotate270\), .tfm\(rotate270\)\:f:focus, .tfm\(rotate270\)\:h:hover, .tfm\(rotate270\)\:a:active {
   transform: rotate(270deg); }
 
-.tfm\(315\), .tfm\(315\)\:f:focus, .tfm\(315\)\:h:hover, .tfm\(315\)\:a:active {
+.tfm\(rotate315\), .tfm\(rotate315\)\:f:focus, .tfm\(rotate315\)\:h:hover, .tfm\(rotate315\)\:a:active {
   transform: rotate(315deg); }
 
-.tfm\(y0\), .tfm\(y0\)\:f:focus, .tfm\(y0\)\:h:hover, .tfm\(y0\)\:a:active {
+.tfm\(scale-y0\), .tfm\(scale-y0\)\:f:focus, .tfm\(scale-y0\)\:h:hover, .tfm\(scale-y0\)\:a:active {
   transform: scale3d(0, 1, 1); }
 
-.tfm\(y1\), .tfm\(y1\)\:f:focus, .tfm\(y1\)\:h:hover, .tfm\(y1\)\:a:active {
+.tfm\(scale-y1\), .tfm\(scale-y1\)\:f:focus, .tfm\(scale-y1\)\:h:hover, .tfm\(scale-y1\)\:a:active {
   transform: scale3d(0.25, 1, 1); }
 
-.tfm\(y2\), .tfm\(y2\)\:f:focus, .tfm\(y2\)\:h:hover, .tfm\(y2\)\:a:active {
+.tfm\(scale-y2\), .tfm\(scale-y2\)\:f:focus, .tfm\(scale-y2\)\:h:hover, .tfm\(scale-y2\)\:a:active {
   transform: scale3d(0.5, 1, 1); }
 
-.tfm\(y3\), .tfm\(y3\)\:f:focus, .tfm\(y3\)\:h:hover, .tfm\(y3\)\:a:active {
+.tfm\(scale-y3\), .tfm\(scale-y3\)\:f:focus, .tfm\(scale-y3\)\:h:hover, .tfm\(scale-y3\)\:a:active {
   transform: scale3d(1, 1, 1); }
 
-.tfm\(x0\), .tfm\(x0\)\:f:focus, .tfm\(x0\)\:h:hover, .tfm\(x0\)\:a:active {
+.tfm\(scale-x0\), .tfm\(scale-x0\)\:f:focus, .tfm\(scale-x0\)\:h:hover, .tfm\(scale-x0\)\:a:active {
   transform: scale3d(1, 0, 1); }
 
-.tfm\(x1\), .tfm\(x1\)\:f:focus, .tfm\(x1\)\:h:hover, .tfm\(x1\)\:a:active {
+.tfm\(scale-x1\), .tfm\(scale-x1\)\:f:focus, .tfm\(scale-x1\)\:h:hover, .tfm\(scale-x1\)\:a:active {
   transform: scale3d(1, 0.25, 1); }
 
-.tfm\(x2\), .tfm\(x2\)\:f:focus, .tfm\(x2\)\:h:hover, .tfm\(x2\)\:a:active {
+.tfm\(scale-x2\), .tfm\(scale-x2\)\:f:focus, .tfm\(scale-x2\)\:h:hover, .tfm\(scale-x2\)\:a:active {
   transform: scale3d(1, 0.5, 1); }
 
-.tfm\(x3\), .tfm\(x3\)\:f:focus, .tfm\(x3\)\:h:hover, .tfm\(x3\)\:a:active {
+.tfm\(scale-x3\), .tfm\(scale-x3\)\:f:focus, .tfm\(scale-x3\)\:h:hover, .tfm\(scale-x3\)\:a:active {
   transform: scale3d(1, 1, 1); }
 
-.tfm\(l0\), .tfm\(l0\)\:f:focus, .tfm\(l0\)\:h:hover, .tfm\(l0\)\:a:active {
+.tfm\(scale0\), .tfm\(scale0\)\:f:focus, .tfm\(scale0\)\:h:hover, .tfm\(scale0\)\:a:active {
+  transform: scale3d(0, 0, 1); }
+
+.tfm\(scale1\), .tfm\(scale1\)\:f:focus, .tfm\(scale1\)\:h:hover, .tfm\(scale1\)\:a:active {
+  transform: scale3d(0.25, 0.25, 1); }
+
+.tfm\(scale2\), .tfm\(scale2\)\:f:focus, .tfm\(scale2\)\:h:hover, .tfm\(scale2\)\:a:active {
+  transform: scale3d(0.5, 0.5, 1); }
+
+.tfm\(scale3\), .tfm\(scale3\)\:f:focus, .tfm\(scale3\)\:h:hover, .tfm\(scale3\)\:a:active {
+  transform: scale3d(1, 1, 1); }
+
+.tfm\(translate-l0\), .tfm\(translate-l0\)\:f:focus, .tfm\(translate-l0\)\:h:hover, .tfm\(translate-l0\)\:a:active {
   transform: translate3d(0rem, 0, 0); }
 
-.tfm\(l1\), .tfm\(l1\)\:f:focus, .tfm\(l1\)\:h:hover, .tfm\(l1\)\:a:active {
+.tfm\(translate-l1\), .tfm\(translate-l1\)\:f:focus, .tfm\(translate-l1\)\:h:hover, .tfm\(translate-l1\)\:a:active {
   transform: translate3d(-0.25rem, 0, 0); }
 
-.tfm\(l2\), .tfm\(l2\)\:f:focus, .tfm\(l2\)\:h:hover, .tfm\(l2\)\:a:active {
+.tfm\(translate-l2\), .tfm\(translate-l2\)\:f:focus, .tfm\(translate-l2\)\:h:hover, .tfm\(translate-l2\)\:a:active {
   transform: translate3d(-0.5rem, 0, 0); }
 
-.tfm\(l3\), .tfm\(l3\)\:f:focus, .tfm\(l3\)\:h:hover, .tfm\(l3\)\:a:active {
+.tfm\(translate-l3\), .tfm\(translate-l3\)\:f:focus, .tfm\(translate-l3\)\:h:hover, .tfm\(translate-l3\)\:a:active {
   transform: translate3d(-1rem, 0, 0); }
 
-.tfm\(r0\), .tfm\(r0\)\:f:focus, .tfm\(r0\)\:h:hover, .tfm\(r0\)\:a:active {
+.tfm\(translate-r0\), .tfm\(translate-r0\)\:f:focus, .tfm\(translate-r0\)\:h:hover, .tfm\(translate-r0\)\:a:active {
   transform: translate3d(0rem, 0, 0); }
 
-.tfm\(r1\), .tfm\(r1\)\:f:focus, .tfm\(r1\)\:h:hover, .tfm\(r1\)\:a:active {
+.tfm\(translate-r1\), .tfm\(translate-r1\)\:f:focus, .tfm\(translate-r1\)\:h:hover, .tfm\(translate-r1\)\:a:active {
   transform: translate3d(0.25rem, 0, 0); }
 
-.tfm\(r2\), .tfm\(r2\)\:f:focus, .tfm\(r2\)\:h:hover, .tfm\(r2\)\:a:active {
+.tfm\(translate-r2\), .tfm\(translate-r2\)\:f:focus, .tfm\(translate-r2\)\:h:hover, .tfm\(translate-r2\)\:a:active {
   transform: translate3d(0.5rem, 0, 0); }
 
-.tfm\(r3\), .tfm\(r3\)\:f:focus, .tfm\(r3\)\:h:hover, .tfm\(r3\)\:a:active {
+.tfm\(translate-r3\), .tfm\(translate-r3\)\:f:focus, .tfm\(translate-r3\)\:h:hover, .tfm\(translate-r3\)\:a:active {
   transform: translate3d(1rem, 0, 0); }
 
-.tfm\(t0\), .tfm\(t0\)\:f:focus, .tfm\(t0\)\:h:hover, .tfm\(t0\)\:a:active {
+.tfm\(translate-t0\), .tfm\(translate-t0\)\:f:focus, .tfm\(translate-t0\)\:h:hover, .tfm\(translate-t0\)\:a:active {
   transform: translate3d(0, 0rem, 0); }
 
-.tfm\(t1\), .tfm\(t1\)\:f:focus, .tfm\(t1\)\:h:hover, .tfm\(t1\)\:a:active {
+.tfm\(translate-t1\), .tfm\(translate-t1\)\:f:focus, .tfm\(translate-t1\)\:h:hover, .tfm\(translate-t1\)\:a:active {
   transform: translate3d(0, -0.25rem, 0); }
 
-.tfm\(t2\), .tfm\(t2\)\:f:focus, .tfm\(t2\)\:h:hover, .tfm\(t2\)\:a:active {
+.tfm\(translate-t2\), .tfm\(translate-t2\)\:f:focus, .tfm\(translate-t2\)\:h:hover, .tfm\(translate-t2\)\:a:active {
   transform: translate3d(0, -0.5rem, 0); }
 
-.tfm\(t3\), .tfm\(t3\)\:f:focus, .tfm\(t3\)\:h:hover, .tfm\(t3\)\:a:active {
+.tfm\(translate-t3\), .tfm\(translate-t3\)\:f:focus, .tfm\(translate-t3\)\:h:hover, .tfm\(translate-t3\)\:a:active {
   transform: translate3d(0, -1rem, 0); }
 
-.tfm\(b0\), .tfm\(b0\)\:f:focus, .tfm\(b0\)\:h:hover, .tfm\(b0\)\:a:active {
+.tfm\(translate-b0\), .tfm\(translate-b0\)\:f:focus, .tfm\(translate-b0\)\:h:hover, .tfm\(translate-b0\)\:a:active {
   transform: translate3d(0, 0rem, 0); }
 
-.tfm\(b1\), .tfm\(b1\)\:f:focus, .tfm\(b1\)\:h:hover, .tfm\(b1\)\:a:active {
+.tfm\(translate-b1\), .tfm\(translate-b1\)\:f:focus, .tfm\(translate-b1\)\:h:hover, .tfm\(translate-b1\)\:a:active {
   transform: translate3d(0, 0.25rem, 0); }
 
-.tfm\(b2\), .tfm\(b2\)\:f:focus, .tfm\(b2\)\:h:hover, .tfm\(b2\)\:a:active {
+.tfm\(translate-b2\), .tfm\(translate-b2\)\:f:focus, .tfm\(translate-b2\)\:h:hover, .tfm\(translate-b2\)\:a:active {
   transform: translate3d(0, 0.5rem, 0); }
 
-.tfm\(b3\), .tfm\(b3\)\:f:focus, .tfm\(b3\)\:h:hover, .tfm\(b3\)\:a:active {
+.tfm\(translate-b3\), .tfm\(translate-b3\)\:f:focus, .tfm\(translate-b3\)\:h:hover, .tfm\(translate-b3\)\:a:active {
   transform: translate3d(0, 1rem, 0); }
 
 .trs\(bg-c\) {
