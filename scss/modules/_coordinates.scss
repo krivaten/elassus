@@ -6,10 +6,10 @@ $coordinate-breakpoints: $breakpoints !default;
 $coordinate-pseudo-classes: null !default;
 $coordinate-values: (
     0: 0,
-    1: 1rem,
-    2: 2rem,
-    -1: -1rem,
-    -2: -2rem,
+    1#{$a-step}: .25rem,
+    2#{$a-step}: .5rem,
+    3#{$a-step}: 1rem,
+    4#{$a-step}: 2rem
 ) !default;
 $coordinate-classes: (
     #{$c-top}: top,
