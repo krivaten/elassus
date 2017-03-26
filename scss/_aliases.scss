@@ -2,6 +2,7 @@
 // ALIASES
 //
 $a-absolute:            absolute !default;
+$a-active:              a !default;
 $a-auto:                a !default;
 $a-around:              around !default;
 $a-baseline:            bl !default;
@@ -23,9 +24,10 @@ $a-end:                 e !default;
 $a-fixed:               fixed !default;
 $a-fill:                fill !default;
 $a-flex:                f !default;
-$a-focus:               focus !default;
+$a-focus:               f !default;
 $a-hidden:              h !default;
 $a-horizontal:          x !default;
+$a-hover:               h !default;
 $a-inline:              i !default;
 $a-inline-block:        #{$a-inline}#{$a-block} !default;
 $a-inline-flex:         #{$a-inline}#{$a-flex} !default;
