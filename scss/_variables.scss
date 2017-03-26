@@ -29,19 +29,18 @@ $breakpoints: (
 // Colors
 $black: #000 !default;
 $white: #fff !default;
-$primary: #3E606F !default;
-$secondary: #D1DBBD !default;
-$success: #4CAF50 !default;
-$info: #2196F3 !default;
-$warning: #ff9800 !default;
-$danger: #f44336 !default;
+$primary: #3D807D !default;
+$primary-light: #609794 !default;
+$primary-dark: #326967 !default;
+$success: #6CBD6F !default;
+$info: #49A9F5 !default;
+$warning: #FFEE5E !default;
+$danger: #F6655A !default;
 
 $theme: (
     primary: $primary,
-    primary-dark: darken($primary, 15%),
-    primary-light: lighten($primary, 55%),
-    secondary: $secondary,
-    secondary-dark: darken($secondary, 15%),
+    primary-light: $primary-light,
+    primary-dark: $primary-dark,
     success: $success,
     info: $info,
     warning: $warning,
