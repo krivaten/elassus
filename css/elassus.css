@@ -1,9 +1,3 @@
-/**
- * ESSENTIALS
- */
-/**
- * UTILITIES
- */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -662,9 +656,6 @@ blockquote,
   width: auto;
   white-space: inherit; }
 
-/** 
- *  MODULES
- */
 .ar\(16x9\) {
   padding-bottom: 56.25%; }
 

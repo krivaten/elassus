@@ -1,22 +1,22 @@
-/**
- * ESSENTIALS
- */
+//
+// ESSENTIALS
+//
 @import 'aliases';
 @import 'variables';
 @import 'mixins';
 
-/**
- * UTILITIES
- */
+//
+// UTILITIES
+//
 @import 'utilities/normalize';
 @import 'utilities/helpers';
 @import 'utilities/typography';
 @import 'utilities/container';
 @import 'utilities/screen-reader';
 
-/** 
- *  MODULES
- */
+//
+// MODULES
+//
 @import 'modules/aspect-ratio';
 @import 'modules/background-color';
 @import 'modules/background-position';
