@@ -1,5 +1,5 @@
 // FUNCTIONS
-@function build-class-name($context, $value: null, $breakpoint: null, $pseudo-class: null) {
+@function build-class-name($context, $value: null, $breakpoint: null, $pseudo-classes: null, $pseudo-only: false) {
     $result: #{$context};
 
     @if($value) {
@@ -10,24 +10,35 @@
         $result: #{$result}#{$breakpoint};
     }
 
-    @if($pseudo-class) {
-        $alias: if((length($pseudo-class) > 0), nth($pseudo-class, 1), null);
-        $selector: if((length($pseudo-class) > 1), nth($pseudo-class, 2), null);
+    @if($pseudo-classes) {
+        $base: $result;
 
-        @if ($alias) {
-            $result: "#{$result}\\:#{$alias}";
-        }
+        @for $index from 1 through length($pseudo-classes) {
+            $pseudo-class: nth($pseudo-classes, $index);
+            $alias: if((length($pseudo-class) > 0), nth($pseudo-class, 1), null);
+            $selector: if((length($pseudo-class) > 1), nth($pseudo-class, 2), null);
+            $new: $base;
 
-        @if ($selector) {
-            $result: "#{$result}:#{$selector}";
+            @if ($alias) {
+                $new: "#{$new}\\:#{$alias}";
+            }
+
+            @if ($selector) {
+                $new: "#{$new}:#{$selector}";
+            }
+
+            @if ($pseudo-only == true and $index == 1) {
+                $result: "#{$new}";
+            } @else {
+                $result: "#{$result}, .#{$new}";
+            }
         }
     }
 
     @return $result
 }
 
-
-@mixin build-class($item, $breakpoint: null, $pseudo-class: null) {
+@mixin build-class($item, $breakpoint: null, $pseudo-classes: null, $pseudo-only: false) {
     $classes: map-get($item, classes);
     $values: map-get($item, values);
 
@@ -35,7 +46,7 @@
         $value: if($value, $value, $label);
 
         @each $context, $properties in $classes {
-            .#{build-class-name($context, $label, $breakpoint, $pseudo-class)} {
+            .#{build-class-name($context, $label, $breakpoint, $pseudo-classes, $pseudo-only)} {
                 @each $property, $property-value in $properties {
                     $property-value: if($property-value, $property-value, $value);
 
@@ -51,30 +62,14 @@
     $breakpoints: map-get($item, breakpoints);
     $pseudo-classes: map-get($item, pseudo-classes);
 
-    @if (not $pseudo-only) {
-      @include build-class($item);
-    }
-
-    @if ($pseudo-classes) {
-        @each $pseudo-class in $pseudo-classes {
-            @include build-class($item, $pseudo-class: $pseudo-class);
-        }
-    }
+    @include build-class($item, null, $pseudo-classes, $pseudo-only);
 
     @if ($breakpoints) {
         @each $breakpoint, $object in $breakpoints {
             $query: map-get($object, query);
 
             @media #{$query} {
-                @if (not $pseudo-only) {
-                    @include build-class($item, $breakpoint: $breakpoint);
-                }
-
-                @if ($pseudo-classes) {
-                    @each $pseudo-class in $pseudo-classes {
-                        @include build-class($item, $breakpoint: $breakpoint, $pseudo-class: $pseudo-class);
-                    }
-                }
+               @include build-class($item, $breakpoint, $pseudo-classes, $pseudo-only);
             }
         }
     }
