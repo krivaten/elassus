@@ -67,13 +67,16 @@ $monochrome: map-merge($black-white, $grays) !default;
 $colors: map-merge($theme, $monochrome) !default;
 
 $link-color: $primary !default;
+$link-color-hover: $primary-light !default;
+$link-color-active: $primary-dark !default;
 
 // Pseudo Classes
 $pseudo-focusable: (
-    f: focus,
-    h: hover,
-    a: active
+    #{$a-focus}: focus,
+    #{$a-hover}: hover,
+    #{$a-active}: active
 ) !default;
 
+// Transitions
 $transition-duration: 0.35s !default;
 $transition-timing-function: ease-in-out;
