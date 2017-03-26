@@ -9,12 +9,14 @@
     /* equivalent to 20px */
 }
 
-p {
+p,
+.p {
     padding-top: 0;
     margin: 0;
 }
 
-h1 {
+h1,
+.h1 {
     font-size: 2em;
     /* 2x body copy size = 32px */
     letter-spacing: -1px;
@@ -27,7 +29,8 @@ h1 {
     /* (20px / 32px) * .5 */
 }
 
-h2 {
+h2,
+.h2 {
     font-size: 1.625em;
     /* 1.625x body copy size = 26px */
     line-height: 1.15384615;
@@ -38,7 +41,8 @@ h2 {
     /* (20px / 26px) * .5 */
 }
 
-h3 {
+h3,
+.h3 {
     font-size: 1.375em;
     /* 1.375x body copy size = 22px */
     line-height: 1.13636364;
@@ -49,7 +53,8 @@ h3 {
     /* (20px / 22px) * .5 */
 }
 
-h4 {
+h4,
+.h5 {
     font-size: 1.125em;
     /* 1.125x body copy size = 18px */
     line-height: 1.11111111;
@@ -60,7 +65,8 @@ h4 {
 }
 
 /* Blockquote styles */
-blockquote {
+blockquote,
+.blockquote {
     width: 85%;
     margin-top: 1em;
     /* (20px / 20px) */
@@ -85,7 +91,8 @@ blockquote {
         line-height: 1.375;
         /* equivalent to 22px */
     }
-    h1 {
+    h1,
+    .h1 {
         font-size: 2.5em;
         /* 2.5x body copy size = 40px */
         letter-spacing: normal;
@@ -96,7 +103,8 @@ blockquote {
         margin-bottom: 0.24444445em;
         /* (22px / 45px) * .5 */
     }
-    h2 {
+    h2,
+    .h2 {
         font-size: 2em;
         /* 2x body copy size = 32px */
         line-height: 1.25;
@@ -105,7 +113,8 @@ blockquote {
         margin-bottom: 0.34375em;
         /* (22px / 32px) * .5 */
     }
-    h3 {
+    h3,
+    .h3 {
         font-size: 1.5em;
         /* 1.5x body copy size = 24px */
         line-height: 1.25;
@@ -114,7 +123,8 @@ blockquote {
         margin-bottom: 0.45833334em;
         /* (22px / 24px) * .5 */
     }
-    h4 {
+    h4,
+    .h4 {
         line-height: 1.22222222;
         /* (22px / 18px */
         margin-top: 1.83333333em;
@@ -125,7 +135,8 @@ blockquote {
         margin-left: auto;
         margin-right: auto;
     }
-    blockquote {
+    blockquote,
+    .blockquote {
         font-size: 1.5em;
         /* 24px / 16px = */
         line-height: 1.45833333;
@@ -134,7 +145,8 @@ blockquote {
 }
 
 @media #{$query-m} {
-    h1 {
+    h1,
+    .h1 {
         font-size: 3em;
         /* 3x body copy size = 48px */
         letter-spacing: normal;
@@ -145,7 +157,8 @@ blockquote {
         margin-bottom: 0.22916667em;
         /* (22px / 48px) * .5 */
     }
-    h2 {
+    h2,
+    .h2 {
         font-size: 2.25em;
         /* 2.25x body copy size = 36px */
         line-height: 1.25;
@@ -154,7 +167,8 @@ blockquote {
         margin-bottom: 0.34375em;
         /* (22px / 32px) * .5 */
     }
-    h3 {
+    h3,
+    .h3 {
         font-size: 1.75em;
         /* 1.75x body copy size = 28px */
         line-height: 1.25;
@@ -163,7 +177,8 @@ blockquote {
         margin-bottom: 0.45833334em;
         /* (22px / 24px) * .5 */
     }
-    h4 {
+    h4,
+    .h4 {
         max-width: 33.77778em;
     }
 }
