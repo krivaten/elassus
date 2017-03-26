@@ -45,6 +45,12 @@ img {
 
 a {
     color: $link-color;
+    &:hover {
+        color: $link-color-hover;
+    }
+    &:active {
+        color: $link-color-active;
+    }
 }
 
 table {
