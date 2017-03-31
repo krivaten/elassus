@@ -12,6 +12,7 @@ $clear-values: (
 ) !default;
 $clear-classes: (#{$c-clear}: clear) !default;
 $clear-module: (
+
     responsive: $clear-responsive,
     stateful: $clear-stateful,
     values: $clear-values,

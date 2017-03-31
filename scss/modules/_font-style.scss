@@ -10,6 +10,7 @@ $font-style-values: (
 ) !default;
 $font-style-classes: (#{$c-font-style}: font-style) !default;
 $font-style-module: (
+    title: 'Font Style',
     breakpoints: $font-style-breakpoints,
     pseudo-classes: $font-style-pseudo-classes,
     values: $font-style-values,

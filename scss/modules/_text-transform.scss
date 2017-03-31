@@ -12,6 +12,7 @@ $text-transform-values: (
 ) !default;
 $text-transform-classes: (#{$c-text-transform}: text-transform) !default;
 $text-transform-module: (
+    title: 'Text Transformation',
     breakpoints: $text-transform-breakpoints,
     pseudo-classes: $text-transform-pseudo-classes,
     values: $text-transform-values,

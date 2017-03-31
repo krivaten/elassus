@@ -13,6 +13,7 @@ $font-weight-values: (
 ) !default;
 $font-weight-classes: (#{$c-font-weight}: font-weight) !default;
 $font-weight-module: (
+    title: 'Font Weight',
     breakpoints: $font-weight-breakpoints,
     pseudo-classes: $font-weight-pseudo-classes,
     values: $font-weight-values,

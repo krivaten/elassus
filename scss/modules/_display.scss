@@ -14,6 +14,7 @@ $display-values: (
 ) !default;
 $display-classes: (#{$c-display}: display) !default;
 $display-module: (
+    title: 'Display',
     breakpoints: $display-breakpoints,
     pseudo-classes: $display-pseudo-classes,
     values: $display-values,

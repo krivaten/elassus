@@ -21,6 +21,7 @@ $aspect-ratio-values: (
 ) !default;
 $aspect-ratio-classes: (#{$c-aspect-ratio}: padding-bottom) !default;
 $aspect-ratio-module: (
+    title: 'Aspect Ratio',
     breakpoints: $aspect-ratio-breakpoints,
     pseudo-classes: $aspect-ratio-pseudo-classes,
     values: $aspect-ratio-values,

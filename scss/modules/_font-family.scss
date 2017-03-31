@@ -11,6 +11,7 @@ $font-family-values: (
 ) !default;
 $font-family-classes: (#{$c-font-family}: font-family) !default;
 $font-family-module: (
+    title: 'Font Family',
     breakpoints: $font-family-breakpoints,
     pseudo-classes: $font-family-pseudo-classes,
     values: $font-family-values,

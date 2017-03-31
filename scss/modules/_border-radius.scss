@@ -21,6 +21,7 @@ $border-radius-classes: (
     #{$c-border-radius-bottom-right}: border-bottom-right-radius,
 ) !default;
 $border-radius-module: (
+    title: 'Border Radius',
     breakpoints: $border-radius-breakpoints,
     pseudo-classes: $border-radius-pseudo-classes,
     values: $border-radius-values,

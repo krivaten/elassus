@@ -11,6 +11,7 @@ $letter-spacing-values: (
 ) !default;
 $letter-spacing-classes: (#{$c-letter-spacing}: letter-spacing) !default;
 $letter-spacing-module: (
+    title: 'Letter Spacing',
     breakpoints: $letter-spacing-breakpoints,
     pseudo-classes: $letter-spacing-pseudo-classes,
     values: $letter-spacing-values,

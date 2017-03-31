@@ -11,6 +11,7 @@ $word-break-values: (
 ) !default;
 $word-break-classes: (#{$c-word-break}: word-break) !default;
 $word-break-module: (
+    title: 'Word Break',
     breakpoints: $word-break-breakpoints,
     pseudo-classes: $word-break-pseudo-classes,
     values: $word-break-values,

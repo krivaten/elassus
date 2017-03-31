@@ -15,6 +15,7 @@ $list-style-classes: (
     )
 ) !default;
 $list-style-module: (
+    title: 'List',
     breakpoints: $list-style-breakpoints,
     pseudo-classes: $list-style-pseudo-classes,
     values: $list-style-values,

@@ -11,6 +11,7 @@ $text-decoration-values: (
 ) !default;
 $text-decoration-classes: (#{$c-text-decoration}: text-decoration) !default;
 $text-decoration-module: (
+    title: 'Text Decoration',
     breakpoints: $text-decoration-breakpoints,
     pseudo-classes: $text-decoration-pseudo-classes,
     values: $text-decoration-values,

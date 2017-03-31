@@ -11,6 +11,7 @@ $line-height-values: (
 ) !default;
 $line-height-classes: (#{$c-line-height}: line-height) !default;
 $line-height-module: (
+    title: 'Line Height',
     breakpoints: $line-height-breakpoints,
     pseudo-classes: $line-height-pseudo-classes,
     values: $line-height-values,

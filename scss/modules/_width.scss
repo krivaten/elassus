@@ -33,6 +33,7 @@ $width-values: (
 ) !default;
 $width-classes: (#{$c-width}: width) !default;
 $width-module: (
+    title: 'Width',
     breakpoints: $width-breakpoints,
     pseudo-classes: $width-pseudo-classes,
     values: $width-values,

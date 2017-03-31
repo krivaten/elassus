@@ -9,6 +9,7 @@ $box-shadow-values: (
 ) !default;
 $box-shadow-classes: (#{$c-box-shadow}: box-shadow) !default;
 $box-shadow-module: (
+    title: 'Box Shadow',
     breakpoints: $box-shadow-breakpoints,
     pseudo-classes: $box-shadow-pseudo-classes,
     values: $box-shadow-values,

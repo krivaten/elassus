@@ -7,6 +7,7 @@ $border-color-pseudo-classes: $pseudo-focusable !default;
 $border-color-values: $colors !default;
 $border-color-classes: (#{$c-border-color}: border-color) !default;
 $border-color-module: (
+    title: 'Border Color',
     breakpoints: $border-color-breakpoints,
     pseudo-classes: $border-color-pseudo-classes,
     values: $border-color-values,

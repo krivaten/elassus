@@ -12,6 +12,7 @@ $vertical-align-values: (
 ) !default;
 $vertical-align-classes: (#{$c-vertical-align}: vertical-align) !default;
 $vertical-align-module: (
+    title: 'Vertical Align',
     breakpoints: $vertical-align-breakpoints,
     pseudo-classes: $vertical-align-pseudo-classes,
     values: $vertical-align-values,

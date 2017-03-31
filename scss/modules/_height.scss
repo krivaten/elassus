@@ -26,6 +26,7 @@ $height-values: (
 ) !default;
 $height-classes: (#{$c-height}: height) !default;
 $height-module: (
+    title: 'Height',
     breakpoints: $height-breakpoints,
     pseudo-classes: $height-pseudo-classes,
     values: $height-values,

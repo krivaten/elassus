@@ -13,6 +13,7 @@ $opacity-values: (
 ) !default;
 $opacity-classes: (#{$c-opacity}: opacity) !default;
 $opacity-module: (
+    title: 'Opacity',
     breakpoints: $opacity-breakpoints,
     pseudo-classes: $opacity-pseudo-classes,
     values: $opacity-values,

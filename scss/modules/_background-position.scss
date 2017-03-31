@@ -18,6 +18,7 @@ $background-position-classes: (
     )
 ) !default;
 $background-position-module: (
+    title: 'Background Position',
     breakpoints: $background-position-breakpoints,
     pseudo-classes: $background-position-pseudo-classes,
     values: $background-position-values,

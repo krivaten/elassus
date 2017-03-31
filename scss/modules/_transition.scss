@@ -15,6 +15,7 @@ $transition-values: (
 ) !default;
 $transition-classes: (#{$c-transition}: transition) !default;
 $transition-module: (
+    title: 'Transition',
     breakpoints: $transition-breakpoints,
     pseudo-classes: $transition-pseudo-classes,
     values: $transition-values,

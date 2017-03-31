@@ -18,6 +18,7 @@ $coordinate-classes: (
     #{$c-right}: right
 ) !default;
 $coordinate-module: (
+    title: 'Coordinates',
     breakpoints: $coordinate-breakpoints,
     pseudo-classes: $coordinate-pseudo-classes,
     values: $coordinate-values,

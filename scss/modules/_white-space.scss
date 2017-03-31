@@ -11,6 +11,7 @@ $white-space-values: (
 ) !default;
 $white-space-classes: (#{$c-white-space}: white-space) !default;
 $white-space-module: (
+    title: 'White Space',
     breakpoints: $white-space-breakpoints,
     pseudo-classes: $white-space-pseudo-classes,
     values: $white-space-values,

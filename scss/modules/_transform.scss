@@ -43,6 +43,7 @@ $transform-values: (
 ) !default;
 $transform-classes: (#{$c-transform}: transform) !default;
 $transform-module: (
+    title: 'Transform',
     breakpoints: $transform-breakpoints,
     pseudo-classes: $transform-pseudo-classes,
     values: $transform-values,
