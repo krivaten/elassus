@@ -24,6 +24,8 @@ let parseCssJsonArray = (data) => {
         else if (type === 'rule') addChild(item);
         else if (type === '@media') addBucket(item);
     });
+
+    return result;
 };
 
 let setCurrentSection = (item) => {
@@ -46,11 +48,16 @@ let setCurrentSection = (item) => {
 
 let addChild = (item) => {
     let selectors = item.selectors.map((selector) => {
-        selector = selector.replace(/\\/g, '');
-        let pseudo = selector.split(':');
+        selector = selector
+            .replace(/\\/g, '')
+            .split(':');
 
-        if (pseudo.length > 1) pseudo = pseudo[pseudo.length -1];
-        else pseudo = null;
+        let pseudo = null;
+        if (selector.length > 1) {
+            pseudo = selector.pop();
+        }
+
+        selector = selector.join(':');
 
         return {
             selector,
