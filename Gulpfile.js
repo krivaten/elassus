@@ -1,10 +1,12 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var pug = require('gulp-pug');
-var prettify = require('gulp-html-prettify');
-var cleanCSS = require('gulp-clean-css');
-var rename = require('gulp-rename');
-var connect = require('gulp-connect');
+let gulp = require('gulp');
+let sass = require('gulp-sass');
+let pug = require('gulp-pug');
+let prettify = require('gulp-html-prettify');
+let exec = require('gulp-exec');
+let cleanCSS = require('gulp-clean-css');
+let rename = require('gulp-rename');
+let connect = require('gulp-connect');
+let cleanCssJson = require('./json/parseCssJson');
 
 gulp.task('connect', function() {
     connect.server({
@@ -25,6 +27,15 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('./css/'))
         .pipe(gulp.dest('./docs/css/'))
         .pipe(connect.reload());
+});
+
+gulp.task('json', function() {
+    gulp.src('./json/modules.scss')
+        .pipe(sass({ includePaths: './scss' }).on('error', sass.logError))
+        .pipe(gulp.dest('./json/'))
+        .pipe(exec('cssparser ./json/modules.css -o ./json/css.json'))
+        .pipe(exec('rm ./json/modules.css'))
+        .pipe(cleanCssJson());
 });
 
 gulp.task('pug', function buildHTML() {
