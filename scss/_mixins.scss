@@ -38,6 +38,10 @@
     @return $result
 }
 
+// Only for generating documentation
+// Otherwise it will compile invalid syntax
+$include-docs: false !default;
+
 @mixin build-class($item, $breakpoint: null, $pseudo-classes: null, $pseudo-only: false) {
     $classes: map-get($item, classes);
     $values: map-get($item, values);
@@ -58,9 +62,16 @@
 }
 
 @mixin build-module($item) {
+    $title: map-get($item, title);
     $pseudo-only: map-get($item, pseudo-only);
     $breakpoints: map-get($item, breakpoints);
     $pseudo-classes: map-get($item, pseudo-classes);
+
+    @if ($include-docs == true) {
+        documentation {
+            title: $title;
+        }
+    }
 
     @include build-class($item, null, $pseudo-classes, $pseudo-only);
 
