@@ -11,7 +11,7 @@ $text-align-values: (
 ) !default;
 $text-align-classes: (#{$c-text-align}: text-align) !default;
 $text-align-module: (
-    title: 'Text Align',
+    title: 'Module: Text Align',
     breakpoints: $text-align-breakpoints,
     pseudo-classes: $text-align-pseudo-classes,
     values: $text-align-values,

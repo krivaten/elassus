@@ -30,7 +30,7 @@ $padding-classes: (
     )
 ) !default;
 $padding-module: (
-    title: 'Padding',
+    title: 'Module: Padding',
     breakpoints: $padding-breakpoints,
     pseudo-classes: $padding-pseudo-classes,
     values: $padding-values,
@@ -79,7 +79,7 @@ $margin-classes: (
     )
 ) !default;
 $margin-module: (
-    title: 'Margin',
+    title: 'Module: Margin',
     breakpoints: $margin-breakpoints,
     pseudo-classes: $margin-pseudo-classes,
     values: $margin-values,

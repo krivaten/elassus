@@ -21,7 +21,7 @@ $max-width-values: (
 ) !default;
 $max-width-classes: (#{$c-max-width}: max-width) !default;
 $max-width-module: (
-    title: 'Max Width',
+    title: 'Module: Max Width',
     breakpoints: $max-width-breakpoints,
     pseudo-classes: $max-width-pseudo-classes,
     values: $max-width-values,

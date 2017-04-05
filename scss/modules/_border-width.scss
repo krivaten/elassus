@@ -14,7 +14,7 @@ $border-width-values: (
 ) !default;
 $border-width-classes: (#{$c-border-width}: border-width) !default;
 $border-width-module: (
-    title: 'Border Width',
+    title: 'Module: Border Width',
     breakpoints: $border-width-breakpoints,
     pseudo-classes: $border-width-pseudo-classes,
     values: $border-width-values,

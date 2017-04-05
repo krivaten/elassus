@@ -13,7 +13,7 @@ $position-values: (
 ) !default;
 $position-classes: (#{$c-position}: position) !default;
 $position-module: (
-    overflow: 'Position',
+    title: 'Module: Position',
     breakpoints: $position-breakpoints,
     pseudo-classes: $position-pseudo-classes,
     values: $position-values,

@@ -10,7 +10,7 @@ $flex-values: (
 ) !default;
 $flex-classes: (#{$c-flex}: flex) !default;
 $flex-module: (
-    title: 'Flex',
+    title: 'Module: Flex',
     breakpoints: $flex-breakpoints,
     pseudo-classes: $flex-pseudo-classes,
     values: $flex-values,
@@ -28,7 +28,7 @@ $flex-wrap-values: (
 ) !default;
 $flex-wrap-classes: (#{$c-flex-wrap}: flex-wrap) !default;
 $flex-wrap-module: (
-    title: 'Flex Wrap',
+    title: 'Module: Flex Wrap',
     breakpoints: $flex-wrap-breakpoints,
     pseudo-classes: $flex-wrap-pseudo-classes,
     values: $flex-wrap-values,
@@ -47,7 +47,7 @@ $flex-direction-values: (
 ) !default;
 $flex-direction-classes: (#{$c-flex-direction}: flex-direction) !default;
 $flex-direction-module: (
-    title: 'Flex Direction',
+    title: 'Module: Flex Direction',
     breakpoints: $flex-direction-breakpoints,
     pseudo-classes: $flex-direction-pseudo-classes,
     values: $flex-direction-values,
@@ -67,7 +67,7 @@ $align-items-values: (
 ) !default;
 $align-items-classes: (#{$c-align-items}: align-items) !default;
 $align-items-module: (
-    title: 'Align Items',
+    title: 'Module: Align Items',
     breakpoints: $align-items-breakpoints,
     pseudo-classes: $align-items-pseudo-classes,
     values: $align-items-values,
@@ -87,7 +87,7 @@ $align-self-values: (
 ) !default;
 $align-self-classes: (#{$c-align-self}: align-self) !default;
 $align-self-module: (
-    title: 'Align Self',
+    title: 'Module: Align Self',
     breakpoints: $align-self-breakpoints,
     pseudo-classes: $align-self-pseudo-classes,
     values: $align-self-values,
@@ -107,7 +107,7 @@ $justify-content-values: (
 ) !default;
 $justify-content-classes: (#{$c-justify-content}: justify-content) !default;
 $justify-content-module: (
-    title: 'Justify Content',
+    title: 'Module: Justify Content',
     breakpoints: $justify-content-breakpoints,
     pseudo-classes: $justify-content-pseudo-classes,
     values: $justify-content-values,
@@ -128,7 +128,7 @@ $align-content-values: (
 ) !default;
 $align-content-classes: (#{$c-align-content}: align-content) !default;
 $align-content-module: (
-    title: 'Align Content',
+    title: 'Module: Align Content',
     breakpoints: $align-content-breakpoints,
     pseudo-classes: $align-content-pseudo-classes,
     values: $align-content-values,
@@ -142,7 +142,7 @@ $order-pseudo-classes: null !default;
 $order-values: 0 1 2 3 4 5 6 7 8 9999 !default;
 $order-classes: (#{$c-order}: order) !default;
 $order-module: (
-    title: 'Order',
+    title: 'Module: Order',
     breakpoints: $order-breakpoints,
     pseudo-classes: $order-pseudo-classes,
     values: $order-values,

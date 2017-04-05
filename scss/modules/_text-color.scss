@@ -7,7 +7,7 @@ $text-color-pseudo-classes: $pseudo-focusable !default;
 $text-color-values: $colors !default;
 $text-color-classes: (#{$c-text-color}: color) !default;
 $text-color-module: (
-    title: 'Text Color',
+    title: 'Module: Text Color',
     breakpoints: $text-color-breakpoints,
     pseudo-classes: $text-color-pseudo-classes,
     values: $text-color-values,

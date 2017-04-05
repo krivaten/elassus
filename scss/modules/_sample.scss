@@ -9,7 +9,7 @@ $sample-values: (
 ) !default;
 $sample-classes: (#{$c-sample}: sample) !default;
 $sample-module: (
-    title: 'Sample',
+    title: 'Module: Sample',
     breakpoints: $sample-breakpoints,
     pseudo-classes: $sample-pseudo-classes,
     values: $sample-values,

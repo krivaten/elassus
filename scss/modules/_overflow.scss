@@ -16,7 +16,7 @@ $overflow-classes: (
     #{$c-overflow-horizontal}: overflow-y
 ) !default;
 $overflow-module: (
-    overflow: 'Overflow',
+    title: 'Module: Overflow',
     breakpoints: $overflow-breakpoints,
     pseudo-classes: $overflow-pseudo-classes,
     values: $overflow-values,

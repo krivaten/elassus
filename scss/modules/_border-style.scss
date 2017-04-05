@@ -12,7 +12,7 @@ $border-style-values: (
 ) !default;
 $border-style-classes: (#{$c-border-style}: border-style) !default;
 $border-style-module: (
-    title: 'Border Style',
+    title: 'Module: Border Style',
     breakpoints: $border-style-breakpoints,
     pseudo-classes: $border-style-pseudo-classes,
     values: $border-style-values,

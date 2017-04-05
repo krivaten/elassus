@@ -7,7 +7,7 @@ $stripe-pseudo-classes: (null: nth-child(odd)) !default;
 $stripe-values: $grays !default;
 $stripe-classes: (#{$c-stripe}: background-color) !default;
 $stripe-module: (
-    title: 'Stripe',
+    title: 'Module: Stripe',
     breakpoints: $stripe-breakpoints,
     pseudo-classes: $stripe-pseudo-classes,
     pseudo-only: true,

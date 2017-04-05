@@ -11,7 +11,7 @@ $float-values: (
 ) !default;
 $float-classes: (#{$c-float}: float) !default;
 $float-module: (
-    title: 'Float',
+    title: 'Module: Float',
     breakpoints: $float-breakpoints,
     pseudo-classes: $float-pseudo-classes,
     values: $float-values,

@@ -10,7 +10,7 @@ $background-size-values: (
 ) !default;
 $background-size-classes: (#{$c-background-size}: background-size) !default;
 $background-size-module: (
-    title: 'Background Size',
+    title: 'Module: Background Size',
     breakpoints: $background-size-breakpoints,
     pseudo-classes: $background-size-pseudo-classes,
     values: $background-size-values,
