@@ -2,6 +2,7 @@ let gulp = require('gulp');
 let sass = require('gulp-sass');
 let pug = require('gulp-pug');
 let prettify = require('gulp-html-prettify');
+let autoprefixer = require('gulp-autoprefixer');
 let exec = require('gulp-exec');
 let cleanCSS = require('gulp-clean-css');
 let rename = require('gulp-rename');
@@ -20,6 +21,10 @@ gulp.task('connect', function() {
 gulp.task('styles', function() {
     gulp.src('./scss/elassus.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions', 'IE 11'],
+            cascade: false
+        }))
         .pipe(gulp.dest('./css/'))
         .pipe(gulp.dest('./docs/css/'))
         .pipe(cleanCSS({ compatibility: 'ie8' }))
