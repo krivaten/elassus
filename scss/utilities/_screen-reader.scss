@@ -2,6 +2,7 @@
 // SCREEN READER
 //
 
+@include build-docs('Utility: Screen Reader', $include-docs);
 $screen-reader-class: #{build-class-name($c-screen-reader)} !default;
 $screen-reader-focusable-class: #{build-class-name($c-screen-reader, $a-focus)} !default;
 

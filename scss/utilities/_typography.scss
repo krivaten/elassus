@@ -2,6 +2,7 @@
 // TYPOGRAPHY
 //
 
+@include build-docs('Utility: Typography', $include-docs);
 .content {
     font-size: 1em;
     /* equivalent to 16px */
@@ -72,8 +73,6 @@ blockquote,
     /* (20px / 20px) */
     margin-bottom: 1em;
     /* (20px / 20px) * .5 */
-    margin-right: auto;
-    margin-left: auto;
     font-size: 1.25em;
     /* 20px / 16px */
     line-height: 1.25;
@@ -132,8 +131,6 @@ blockquote,
         margin-bottom: 0.61111111em;
         /* (22px / 18px) * .5 */
         max-width: 32em;
-        margin-left: auto;
-        margin-right: auto;
     }
     blockquote,
     .blockquote {
