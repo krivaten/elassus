@@ -1709,9 +1709,11 @@ cl:after {
   display: inline-block; }
 
 .d\(f\) {
+  display: -ms-flexbox;
   display: flex; }
 
 .d\(if\) {
+  display: -ms-inline-flexbox;
   display: inline-flex; }
 
 @media screen and (min-width: 768px) {
@@ -1724,8 +1726,10 @@ cl:after {
   .d\(ib\)s {
     display: inline-block; }
   .d\(f\)s {
+    display: -ms-flexbox;
     display: flex; }
   .d\(if\)s {
+    display: -ms-inline-flexbox;
     display: inline-flex; } }
 
 @media screen and (min-width: 992px) {
@@ -1738,8 +1742,10 @@ cl:after {
   .d\(ib\)m {
     display: inline-block; }
   .d\(f\)m {
+    display: -ms-flexbox;
     display: flex; }
   .d\(if\)m {
+    display: -ms-inline-flexbox;
     display: inline-flex; } }
 
 @media screen and (min-width: 1200px) {
@@ -1752,416 +1758,586 @@ cl:after {
   .d\(ib\)l {
     display: inline-block; }
   .d\(f\)l {
+    display: -ms-flexbox;
     display: flex; }
   .d\(if\)l {
+    display: -ms-inline-flexbox;
     display: inline-flex; } }
 
 .f\(n\) {
+  -ms-flex: none;
   flex: none; }
 
 .f\(a\) {
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto; }
 
 @media screen and (min-width: 768px) {
   .f\(n\)s {
+    -ms-flex: none;
     flex: none; }
   .f\(a\)s {
+    -ms-flex: 1 1 auto;
     flex: 1 1 auto; } }
 
 @media screen and (min-width: 992px) {
   .f\(n\)m {
+    -ms-flex: none;
     flex: none; }
   .f\(a\)m {
+    -ms-flex: 1 1 auto;
     flex: 1 1 auto; } }
 
 @media screen and (min-width: 1200px) {
   .f\(n\)l {
+    -ms-flex: none;
     flex: none; }
   .f\(a\)l {
+    -ms-flex: 1 1 auto;
     flex: 1 1 auto; } }
 
 .fw\(wrap\) {
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
 .fw\(nw\) {
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap; }
 
 .fw\(wrap-reverse\) {
+  -ms-flex-wrap: wrap-reverse;
   flex-wrap: wrap-reverse; }
 
 @media screen and (min-width: 768px) {
   .fw\(wrap\)s {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .fw\(nw\)s {
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap; }
   .fw\(wrap-reverse\)s {
+    -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse; } }
 
 @media screen and (min-width: 992px) {
   .fw\(wrap\)m {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .fw\(nw\)m {
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap; }
   .fw\(wrap-reverse\)m {
+    -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse; } }
 
 @media screen and (min-width: 1200px) {
   .fw\(wrap\)l {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .fw\(nw\)l {
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap; }
   .fw\(wrap-reverse\)l {
+    -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse; } }
 
 .fd\(col\) {
+  -ms-flex-direction: column;
   flex-direction: column; }
 
 .fd\(row\) {
+  -ms-flex-direction: row;
   flex-direction: row; }
 
 .fd\(row-reverse\) {
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse; }
 
 .fd\(col-reverse\) {
+  -ms-flex-direction: column-reverse;
   flex-direction: column-reverse; }
 
 @media screen and (min-width: 768px) {
   .fd\(col\)s {
+    -ms-flex-direction: column;
     flex-direction: column; }
   .fd\(row\)s {
+    -ms-flex-direction: row;
     flex-direction: row; }
   .fd\(row-reverse\)s {
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
   .fd\(col-reverse\)s {
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; } }
 
 @media screen and (min-width: 992px) {
   .fd\(col\)m {
+    -ms-flex-direction: column;
     flex-direction: column; }
   .fd\(row\)m {
+    -ms-flex-direction: row;
     flex-direction: row; }
   .fd\(row-reverse\)m {
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
   .fd\(col-reverse\)m {
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; } }
 
 @media screen and (min-width: 1200px) {
   .fd\(col\)l {
+    -ms-flex-direction: column;
     flex-direction: column; }
   .fd\(row\)l {
+    -ms-flex-direction: row;
     flex-direction: row; }
   .fd\(row-reverse\)l {
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
   .fd\(col-reverse\)l {
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; } }
 
 .ai\(fs\) {
+  -ms-flex-align: start;
   align-items: flex-start; }
 
 .ai\(fe\) {
+  -ms-flex-align: end;
   align-items: flex-end; }
 
 .ai\(c\) {
+  -ms-flex-align: center;
   align-items: center; }
 
 .ai\(bl\) {
+  -ms-flex-align: baseline;
   align-items: baseline; }
 
 .ai\(stretch\) {
+  -ms-flex-align: stretch;
   align-items: stretch; }
 
 @media screen and (min-width: 768px) {
   .ai\(fs\)s {
+    -ms-flex-align: start;
     align-items: flex-start; }
   .ai\(fe\)s {
+    -ms-flex-align: end;
     align-items: flex-end; }
   .ai\(c\)s {
+    -ms-flex-align: center;
     align-items: center; }
   .ai\(bl\)s {
+    -ms-flex-align: baseline;
     align-items: baseline; }
   .ai\(stretch\)s {
+    -ms-flex-align: stretch;
     align-items: stretch; } }
 
 @media screen and (min-width: 992px) {
   .ai\(fs\)m {
+    -ms-flex-align: start;
     align-items: flex-start; }
   .ai\(fe\)m {
+    -ms-flex-align: end;
     align-items: flex-end; }
   .ai\(c\)m {
+    -ms-flex-align: center;
     align-items: center; }
   .ai\(bl\)m {
+    -ms-flex-align: baseline;
     align-items: baseline; }
   .ai\(stretch\)m {
+    -ms-flex-align: stretch;
     align-items: stretch; } }
 
 @media screen and (min-width: 1200px) {
   .ai\(fs\)l {
+    -ms-flex-align: start;
     align-items: flex-start; }
   .ai\(fe\)l {
+    -ms-flex-align: end;
     align-items: flex-end; }
   .ai\(c\)l {
+    -ms-flex-align: center;
     align-items: center; }
   .ai\(bl\)l {
+    -ms-flex-align: baseline;
     align-items: baseline; }
   .ai\(stretch\)l {
+    -ms-flex-align: stretch;
     align-items: stretch; } }
 
 .as\(fs\) {
+  -ms-flex-item-align: start;
   align-self: flex-start; }
 
 .as\(fe\) {
+  -ms-flex-item-align: end;
   align-self: flex-end; }
 
 .as\(c\) {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center; }
 
 .as\(bl\) {
+  -ms-flex-item-align: baseline;
   align-self: baseline; }
 
 .as\(stretch\) {
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
   align-self: stretch; }
 
 @media screen and (min-width: 768px) {
   .as\(fs\)s {
+    -ms-flex-item-align: start;
     align-self: flex-start; }
   .as\(fe\)s {
+    -ms-flex-item-align: end;
     align-self: flex-end; }
   .as\(c\)s {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center; }
   .as\(bl\)s {
+    -ms-flex-item-align: baseline;
     align-self: baseline; }
   .as\(stretch\)s {
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
     align-self: stretch; } }
 
 @media screen and (min-width: 992px) {
   .as\(fs\)m {
+    -ms-flex-item-align: start;
     align-self: flex-start; }
   .as\(fe\)m {
+    -ms-flex-item-align: end;
     align-self: flex-end; }
   .as\(c\)m {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center; }
   .as\(bl\)m {
+    -ms-flex-item-align: baseline;
     align-self: baseline; }
   .as\(stretch\)m {
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
     align-self: stretch; } }
 
 @media screen and (min-width: 1200px) {
   .as\(fs\)l {
+    -ms-flex-item-align: start;
     align-self: flex-start; }
   .as\(fe\)l {
+    -ms-flex-item-align: end;
     align-self: flex-end; }
   .as\(c\)l {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center; }
   .as\(bl\)l {
+    -ms-flex-item-align: baseline;
     align-self: baseline; }
   .as\(stretch\)l {
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
     align-self: stretch; } }
 
 .jc\(fs\) {
+  -ms-flex-pack: start;
   justify-content: flex-start; }
 
 .jc\(fe\) {
+  -ms-flex-pack: end;
   justify-content: flex-end; }
 
 .jc\(c\) {
+  -ms-flex-pack: center;
   justify-content: center; }
 
 .jc\(sb\) {
+  -ms-flex-pack: justify;
   justify-content: space-between; }
 
 .jc\(sa\) {
+  -ms-flex-pack: distribute;
   justify-content: space-around; }
 
 @media screen and (min-width: 768px) {
   .jc\(fs\)s {
+    -ms-flex-pack: start;
     justify-content: flex-start; }
   .jc\(fe\)s {
+    -ms-flex-pack: end;
     justify-content: flex-end; }
   .jc\(c\)s {
+    -ms-flex-pack: center;
     justify-content: center; }
   .jc\(sb\)s {
+    -ms-flex-pack: justify;
     justify-content: space-between; }
   .jc\(sa\)s {
+    -ms-flex-pack: distribute;
     justify-content: space-around; } }
 
 @media screen and (min-width: 992px) {
   .jc\(fs\)m {
+    -ms-flex-pack: start;
     justify-content: flex-start; }
   .jc\(fe\)m {
+    -ms-flex-pack: end;
     justify-content: flex-end; }
   .jc\(c\)m {
+    -ms-flex-pack: center;
     justify-content: center; }
   .jc\(sb\)m {
+    -ms-flex-pack: justify;
     justify-content: space-between; }
   .jc\(sa\)m {
+    -ms-flex-pack: distribute;
     justify-content: space-around; } }
 
 @media screen and (min-width: 1200px) {
   .jc\(fs\)l {
+    -ms-flex-pack: start;
     justify-content: flex-start; }
   .jc\(fe\)l {
+    -ms-flex-pack: end;
     justify-content: flex-end; }
   .jc\(c\)l {
+    -ms-flex-pack: center;
     justify-content: center; }
   .jc\(sb\)l {
+    -ms-flex-pack: justify;
     justify-content: space-between; }
   .jc\(sa\)l {
+    -ms-flex-pack: distribute;
     justify-content: space-around; } }
 
 .ac\(fs\) {
+  -ms-flex-line-pack: start;
   align-content: flex-start; }
 
 .ac\(fe\) {
+  -ms-flex-line-pack: end;
   align-content: flex-end; }
 
 .ac\(c\) {
+  -ms-flex-line-pack: center;
   align-content: center; }
 
 .ac\(sb\) {
+  -ms-flex-line-pack: justify;
   align-content: space-between; }
 
 .ac\(sa\) {
+  -ms-flex-line-pack: distribute;
   align-content: space-around; }
 
 .ac\(stretch\) {
+  -ms-flex-line-pack: stretch;
   align-content: stretch; }
 
 @media screen and (min-width: 768px) {
   .ac\(fs\)s {
+    -ms-flex-line-pack: start;
     align-content: flex-start; }
   .ac\(fe\)s {
+    -ms-flex-line-pack: end;
     align-content: flex-end; }
   .ac\(c\)s {
+    -ms-flex-line-pack: center;
     align-content: center; }
   .ac\(sb\)s {
+    -ms-flex-line-pack: justify;
     align-content: space-between; }
   .ac\(sa\)s {
+    -ms-flex-line-pack: distribute;
     align-content: space-around; }
   .ac\(stretch\)s {
+    -ms-flex-line-pack: stretch;
     align-content: stretch; } }
 
 @media screen and (min-width: 992px) {
   .ac\(fs\)m {
+    -ms-flex-line-pack: start;
     align-content: flex-start; }
   .ac\(fe\)m {
+    -ms-flex-line-pack: end;
     align-content: flex-end; }
   .ac\(c\)m {
+    -ms-flex-line-pack: center;
     align-content: center; }
   .ac\(sb\)m {
+    -ms-flex-line-pack: justify;
     align-content: space-between; }
   .ac\(sa\)m {
+    -ms-flex-line-pack: distribute;
     align-content: space-around; }
   .ac\(stretch\)m {
+    -ms-flex-line-pack: stretch;
     align-content: stretch; } }
 
 @media screen and (min-width: 1200px) {
   .ac\(fs\)l {
+    -ms-flex-line-pack: start;
     align-content: flex-start; }
   .ac\(fe\)l {
+    -ms-flex-line-pack: end;
     align-content: flex-end; }
   .ac\(c\)l {
+    -ms-flex-line-pack: center;
     align-content: center; }
   .ac\(sb\)l {
+    -ms-flex-line-pack: justify;
     align-content: space-between; }
   .ac\(sa\)l {
+    -ms-flex-line-pack: distribute;
     align-content: space-around; }
   .ac\(stretch\)l {
+    -ms-flex-line-pack: stretch;
     align-content: stretch; } }
 
 .ord\(0\) {
+  -ms-flex-order: 0;
   order: 0; }
 
 .ord\(1\) {
+  -ms-flex-order: 1;
   order: 1; }
 
 .ord\(2\) {
+  -ms-flex-order: 2;
   order: 2; }
 
 .ord\(3\) {
+  -ms-flex-order: 3;
   order: 3; }
 
 .ord\(4\) {
+  -ms-flex-order: 4;
   order: 4; }
 
 .ord\(5\) {
+  -ms-flex-order: 5;
   order: 5; }
 
 .ord\(6\) {
+  -ms-flex-order: 6;
   order: 6; }
 
 .ord\(7\) {
+  -ms-flex-order: 7;
   order: 7; }
 
 .ord\(8\) {
+  -ms-flex-order: 8;
   order: 8; }
 
 .ord\(9999\) {
+  -ms-flex-order: 9999;
   order: 9999; }
 
 @media screen and (min-width: 768px) {
   .ord\(0\)s {
+    -ms-flex-order: 0;
     order: 0; }
   .ord\(1\)s {
+    -ms-flex-order: 1;
     order: 1; }
   .ord\(2\)s {
+    -ms-flex-order: 2;
     order: 2; }
   .ord\(3\)s {
+    -ms-flex-order: 3;
     order: 3; }
   .ord\(4\)s {
+    -ms-flex-order: 4;
     order: 4; }
   .ord\(5\)s {
+    -ms-flex-order: 5;
     order: 5; }
   .ord\(6\)s {
+    -ms-flex-order: 6;
     order: 6; }
   .ord\(7\)s {
+    -ms-flex-order: 7;
     order: 7; }
   .ord\(8\)s {
+    -ms-flex-order: 8;
     order: 8; }
   .ord\(9999\)s {
+    -ms-flex-order: 9999;
     order: 9999; } }
 
 @media screen and (min-width: 992px) {
   .ord\(0\)m {
+    -ms-flex-order: 0;
     order: 0; }
   .ord\(1\)m {
+    -ms-flex-order: 1;
     order: 1; }
   .ord\(2\)m {
+    -ms-flex-order: 2;
     order: 2; }
   .ord\(3\)m {
+    -ms-flex-order: 3;
     order: 3; }
   .ord\(4\)m {
+    -ms-flex-order: 4;
     order: 4; }
   .ord\(5\)m {
+    -ms-flex-order: 5;
     order: 5; }
   .ord\(6\)m {
+    -ms-flex-order: 6;
     order: 6; }
   .ord\(7\)m {
+    -ms-flex-order: 7;
     order: 7; }
   .ord\(8\)m {
+    -ms-flex-order: 8;
     order: 8; }
   .ord\(9999\)m {
+    -ms-flex-order: 9999;
     order: 9999; } }
 
 @media screen and (min-width: 1200px) {
   .ord\(0\)l {
+    -ms-flex-order: 0;
     order: 0; }
   .ord\(1\)l {
+    -ms-flex-order: 1;
     order: 1; }
   .ord\(2\)l {
+    -ms-flex-order: 2;
     order: 2; }
   .ord\(3\)l {
+    -ms-flex-order: 3;
     order: 3; }
   .ord\(4\)l {
+    -ms-flex-order: 4;
     order: 4; }
   .ord\(5\)l {
+    -ms-flex-order: 5;
     order: 5; }
   .ord\(6\)l {
+    -ms-flex-order: 6;
     order: 6; }
   .ord\(7\)l {
+    -ms-flex-order: 7;
     order: 7; }
   .ord\(8\)l {
+    -ms-flex-order: 8;
     order: 8; }
   .ord\(9999\)l {
+    -ms-flex-order: 9999;
     order: 9999; } }
 
 .fl\(l\) {
@@ -2701,6 +2877,7 @@ cl:after {
   position: fixed; }
 
 .pos\(sticky\) {
+  position: -webkit-sticky;
   position: sticky; }
 
 @media screen and (min-width: 768px) {
@@ -2713,6 +2890,7 @@ cl:after {
   .pos\(fixed\)s {
     position: fixed; }
   .pos\(sticky\)s {
+    position: -webkit-sticky;
     position: sticky; } }
 
 @media screen and (min-width: 992px) {
@@ -2725,6 +2903,7 @@ cl:after {
   .pos\(fixed\)m {
     position: fixed; }
   .pos\(sticky\)m {
+    position: -webkit-sticky;
     position: sticky; } }
 
 @media screen and (min-width: 1200px) {
@@ -2737,6 +2916,7 @@ cl:after {
   .pos\(fixed\)l {
     position: fixed; }
   .pos\(sticky\)l {
+    position: -webkit-sticky;
     position: sticky; } }
 
 .p\(0\) {
