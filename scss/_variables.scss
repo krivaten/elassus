@@ -28,40 +28,45 @@ $breakpoints: (
 
 // Colors
 $black: #000 !default;
-$white: #fff !default;
-$primary: #3D807D !default;
-$primary-light: #609794 !default;
-$primary-dark: #326967 !default;
-$success: #6CBD6F !default;
-$info: #49A9F5 !default;
-$warning: #FFEE5E !default;
-$danger: #F6655A !default;
+$white: #FFF !default;
+$primary: #009688 !default;
+$primary-light: #4DB6AC !default;
+$primary-dark: #00796B !default;
+$success: #4CAF50 !default;
+$success-light: #81C784 !default;
+$success-dark: #388E3C !default;
+$warning: #FFC107 !default;
+$warning-light: #FFD54F !default;
+$warning-dark: #FFA000 !default;
+$danger: #FF5722 !default;
+$danger-light: #FF8A65 !default;
+$danger-dark: #E64A19 !default;
 
 $theme: (
     primary: $primary,
     primary-light: $primary-light,
     primary-dark: $primary-dark,
     success: $success,
-    info: $info,
+    success-light: $success-light,
+    success-dark: $success-dark,
     warning: $warning,
-    danger: $danger
+    warning-light: $warning-light,
+    warning-dark: $warning-dark,
+    danger: $danger,
+    danger-light: $danger-light,
+    danger-dark: $danger-dark,
 ) !default;
 $black-white: (
     black: $black,
-    black-75: rgba($black, 0.75),
-    black-50: rgba($black, 0.5),
-    black-25: rgba($black, 0.25),
     white: $white,
-    white-75: rgba($white, 0.75),
-    white-50: rgba($white, 0.5),
-    white-25: rgba($white, 0.25),
-    off-white: #f2f2f2,
     transparent: transparent
 ) !default;
 $grays: (
+    gray-lighter: darken($white, 5%),
     gray-light: darken($white, 15%),
-    gray: darken($white, 35%),
-    gray-dark: darken($white, 55%)
+    gray: darken($white, 40%),
+    gray-dark: darken($white, 65%),
+    gray-darker: darken($white, 75%)
 ) !default;
 $monochrome: map-merge($black-white, $grays) !default;
 $colors: map-merge($theme, $monochrome) !default;
