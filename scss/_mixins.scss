@@ -41,6 +41,13 @@
 // Only for generating documentation
 // Otherwise it will compile invalid syntax
 $include-docs: false !default;
+@mixin build-docs($title: null, $include-docs: false) {
+    @if ($include-docs == true) {
+        documentation {
+            title: $title;
+        }
+    }
+};
 
 @mixin build-class($item, $breakpoint: null, $pseudo-classes: null, $pseudo-only: false) {
     $classes: map-get($item, classes);
@@ -67,11 +74,7 @@ $include-docs: false !default;
     $breakpoints: map-get($item, breakpoints);
     $pseudo-classes: map-get($item, pseudo-classes);
 
-    @if ($include-docs == true) {
-        documentation {
-            title: $title;
-        }
-    }
+    @include build-docs($title, $include-docs);
 
     @include build-class($item, null, $pseudo-classes, $pseudo-only);
 
