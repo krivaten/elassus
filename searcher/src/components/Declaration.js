@@ -6,7 +6,9 @@ class Result extends React.Component {
 
         return (
             <li className="c(danger-dark) p(2)">
-                { property }: { value }
+                <code>
+                    { property }: { value }
+                </code>
             </li>
         )
     }

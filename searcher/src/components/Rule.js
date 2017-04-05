@@ -7,7 +7,7 @@ class Result extends React.Component {
         let { rule } = this.props;
 
         return (
-            <li className="bd-l(1) bd-r(1) bd-c(gray-light) d(f) fw(wrap) stripe(gray-lighter) ff(mono)">
+            <li className="bd-l(1) bd-r(1) bd-c(gray-light) d(f) fw(wrap) stripe(gray-lighter)">
                 <ul className="ls(n) w(12col) w(6col)s">
                     {
                         Object
