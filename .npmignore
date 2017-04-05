@@ -1,0 +1,8 @@
+docs/
+json/
+pug/
+searcher/
+
+.editorconfig
+.npmignore
+.nvmrc
