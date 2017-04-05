@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Elassus |</title>
+    <link rel="stylesheet" href="/css/elassus.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+</head>
+
+<body class="p(0) pt(5) m(0) ff(sans) bgc(near-white)">
+    <header class="pos(fixed) z(999) h(5) bgc(white) bs(t) D(flex) w(12col) t(0) bs(1)">
+        <div class="w(12col) D(flex) fxd(row-reverse) fxd(row)-m ai(c) jc(between) mx(2) mx(5)-m mx(6)-l">
+            <nav class="w(auto) w(5col)-m">
+                <ul class="ls(none) D(flex)">
+                    <li><a class="px(3) tc(gray) tc(primary):h D(flex) h(5) bdb(3) bdc(transparent) bdc(primary):h ai(c) td(none)" href="#"><span class="mr(2) fa fa-lg fa-home"></span><span class="D(none) D(inline)-s">Home</span></a>
+                    </li>
+                    <li><a class="px(3) tc(gray) tc(primary):h D(flex) h(5) bdb(3) bdc(transparent) bdc(primary):h ai(c) td(none)" href="#"><span class="mr(2) fa fa-lg fa-envelope"></span><span class="D(none) D(inline)-s">Messages</span></a>
+                    </li>
+                    <li><a class="px(3) tc(gray) tc(primary):h D(flex) h(5) bdb(3) bdc(transparent) bdc(primary):h ai(c) td(none)" href="#"><span class="mr(2) fa fa-lg fa-bolt"></span><span class="D(none) D(inline)-s">Notifcations</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="w(auto) w(2col)-m ta(c)"><a class="px(2)" href="#"><span class="fa fa-twitter fa-2x"></span></a>
+            </div>
+            <div class="D(none) D(flex)-m w(5col) jc(e)">
+                <div>
+                    <input class="BR(pill) bgc(off-white) bgc(white):f tsn(bgc) pl(3) pr(4) py(2) bd(1) bdc(gray-light)" placeholder="Search"><span class="fa fa-search ml(-4) tc(black-25)"></span>
+                </div>
+                <a class="mx(2)" href="#">
+                    <img class="h(4) w(4) BR(fill) bd(1) bdc(gray-light) bgc(off-white) dsp(flex) ai(middle)" src="https://unsplash.it/200">
+                </a>
+                <button class="BR(2) bd(0) px(2) py(2) fw(200) tsn(bgc) bgc(primary) bgc(primary-dark):h tc(white)"><span class="fa fa-fw fa-paper-plane"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="bgc(white) bs(t) mx(2) mx(5)-m mx(6)-l pos(relative)">
+        <div class="w(12col) bs(t) pos(absolute) t(0) tc(white) bgc(info) px(3) py(2) w(12col) mx(-3)">
+            <p class="m(0) p(0)">I really like the weather today</p>
+        </div>
+        <h1>Settings</h1>
+        <p>Let's see if you can make yourself sound as cool as you think you are.</p>
+        <div class="mx(-3) d(flex) fxw(wrap)">
+            <div class="mb(-3) w(4col) bgc(off-white)">
+                <ul class="ls(none) py(2)">
+                    <li><a class="px(3) py(2) d(block) tc(primary) tc(white):h tsn(bgc-t) td(none) bgc(primary):h" href="#">Profile</a>
+                    </li>
+                    <li><a class="px(3) py(2) d(block) tc(primary) tc(white):h tsn(bgc-t) td(none) bgc(primary):h" href="#">Payments</a>
+                    </li>
+                    <li><a class="px(3) py(2) d(block) tc(primary) tc(white):h tsn(bgc-t) td(none) bgc(primary):h" href="#">History</a>
+                    </li>
+                    <li><a class="px(3) py(2) d(block) tc(primary) tc(white):h tsn(bgc-t) td(none) bgc(primary):h" href="#">Complaints</a>
+                    </li>
+                    <li><a class="px(3) py(2) d(block) tc(primary) tc(white):h tsn(bgc-t) td(none) bgc(primary):h" href="#">Customer Service</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w(8col) px(3)">
+                <div class="mx(-3) d(flex) fxw(wrap)">
+                    <div class="px(3) py(2) w(12col) w(6col)-m">
+                        <label class="fs(6) my(1) tc(gray) d(block)" for="first-name">Name</label>
+                        <input class="p(2) d(block) w(12col) fs(5)" id="first-name">
+                    </div>
+                    <div class="px(3) py(2) w(12col) w(6col)-m">
+                        <label class="fs(6) my(1) tc(gray) d(block)" for="first-name">Email</label>
+                        <input class="p(2) d(block) w(12col) fs(5)" id="first-name">
+                    </div>
+                    <div class="px(3) py(2) w(12col) w(6col)-m">
+                        <label class="fs(6) my(1) tc(gray) d(block)" for="first-name">Phone</label>
+                        <input class="p(2) d(block) w(12col) fs(5)" id="first-name">
+                    </div>
+                </div>
+                <div class="mt(3) ta(r)">
+                    <button class="rad(2) bd(0) px(3) py(2) tt(uc) fw(200) tsn(bgc) bgc(gray) bgc(gray-dark):h tc(white)">Reset</button>
+                    <button class="rad(2) bd(0) px(3) py(2) tt(uc) fw(200) tsn(bgc) bgc(primary) bgc(primary-dark):h tc(white)">Submit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
