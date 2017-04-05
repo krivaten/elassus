@@ -4,13 +4,13 @@ let result = [];
 let currentSection = null;
 let currentBucket = null;
 
-let cleanCssJson = () => {
-    fs.readFile('./json/css.json', 'utf8', (err, data) => {
+let cleanCssJson = (filePath) => {
+    fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) throw err;
         let json = JSON.parse(data);
         let result = parseCssJsonArray(json.value);
 
-        fs.writeFile("./json/css.json", JSON.stringify(result), (err) => {
+        fs.writeFile(filePath, JSON.stringify(result), (err) => {
             if(err) throw err;
         });
     });
@@ -47,20 +47,20 @@ let setCurrentSection = (item) => {
 };
 
 let addChild = (item) => {
-    let selectors = item.selectors.map((selector) => {
-        selector = selector
+    let selectors = item.selectors.map((className) => {
+        className = className
             .replace(/\\/g, '')
             .split(':');
 
         let pseudo = null;
-        if (selector.length > 1) {
-            pseudo = selector.pop();
+        if (className.length > 1) {
+            pseudo = className.pop();
         }
 
-        selector = selector.join(':');
+        className = className.join(':');
 
         return {
-            selector,
+            className,
             pseudo
         };
     });
@@ -89,8 +89,8 @@ let addBucket = (item) => {
     }
 };
 
-module.exports = () => {
+module.exports = (filePath) => {
     return through.obj((file, encoding, callback) => {
-        callback(null, cleanCssJson());
+        callback(null, cleanCssJson(filePath));
     });
 };
