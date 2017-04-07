@@ -29,22 +29,3 @@ $aspect-ratio-module: (
 ) !default;
 
 @include build-module($aspect-ratio-module);
-
-// Custom Styles
-$aspect-ratio-class: #{build-class-name($c-aspect-ratio)} !default;
-.#{$aspect-ratio-class} {
-    height: 0;
-    position: relative;
-}
-
-$aspect-ratio-object-class: #{build-class-name($c-aspect-ratio, $a-object)} !default;
-.#{$aspect-ratio-object-class} {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-}
