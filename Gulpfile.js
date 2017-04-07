@@ -43,7 +43,7 @@ gulp.task('json', function() {
 });
 
 gulp.task('pug', function buildHTML() {
-    return gulp.src('pug/*.pug')
+    return gulp.src(['pug/**/*.pug', '!**/includes/**'])
         .pipe(pug())
         .pipe(prettify({ indent_char: ' ', indent_size: 4 }))
         .pipe(gulp.dest('./docs'))
