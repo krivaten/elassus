@@ -11,7 +11,7 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(gray-l3)')
                 ul(class='ls(n) d(f)')
                         each icon, label in { Home: 'home', Messages: 'envelope', Notifcations: 'bolt' }
                             li
-                                a(href='#' class='p-x(3) c(gray) c(primary):h d(f) bd-b(3) bd-c(transparent) bd-c(primary):h ai(c) td(n)')
+                                a(href='#' class='p-x(3) p-y(3) m-y(-2) c(gray) c(primary):h d(f) bd-b(3) bd-c(transparent) bd-c(primary):h ai(c) td(n)')
                                     span(class='m-r(2) fa fa-lg fa-' + icon)
                                     span(class='d(n) d(i)s')= label
 
@@ -21,7 +21,7 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(gray-l3)')
 
             div(class='w(5col) d(n) d(f)m jc(fe)')
                 div
-                    input(class='br(pill) bg-c(off-white) bg-c(white):f trs(bgc) p-l(3) p-r(4) p-y(2) bd(1) bd-c(gray-l1)' placeholder='Search')
+                    input(class='w(100%) br(pill) bg-c(off-white) bg-c(white):f trs(bgc) p-l(3) p-r(4) p-y(2) bd(1) bd-c(gray-l1)' placeholder='Search')
                     span(class='fa fa-search m-l(-4) c(black-25)')
 
                 a(href='#' class='m-x(2)')
