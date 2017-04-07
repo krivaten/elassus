@@ -1,6 +1,6 @@
 {
   "name": "elassus",
-  "description": "Completely customizable functional CSS library",
+  "description": "A functional CSS library built for speed and granular customization",
   "author": "Kris Van Houten",
   "version": "0.1.0",
   "style": "elassus.scss",
