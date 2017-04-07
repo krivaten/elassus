@@ -1,0 +1,25 @@
+header(class='pos(fixed) z(999) h(5) bgc(white) bs(1) D(flex) w(12col) t(0) bs(1)')
+    div(class='w(12col) D(flex) fxd(row-reverse) fxd(row)-m ai(c) jc(between) mx(2) mx(5)-m mx(6)-l')
+        nav(class='w(auto) w(5col)-m')
+            ul(class='ls(none) D(flex)')
+                    each icon, label in { Home: 'home', Messages: 'envelope', Notifcations: 'bolt' }
+                        li
+                            a(href='#' class='px(3) tc(gray) tc(primary):h D(flex) h(5) bdb(3) bdc(transparent) bdc(primary):h ai(c) td(none)')
+                                span(class='mr(2) fa fa-lg fa-' + icon)
+                                span(class='D(none) D(inline)-s')= label
+
+        div(class='w(auto) w(2col)-m ta(c)')
+            a(href='#' class='px(2)')
+                span(class='fa fa-twitter fa-2x')
+
+        div(class='D(none) D(flex)-m w(5col) jc(e)')
+            div(class='')
+                input(class='BR(pill) bgc(off-white) bgc(white):f tsn(bgc) pl(3) pr(4) py(2) bd(1) bdc(gray-l1)' placeholder='Search')
+                span(class='fa fa-search ml(-4) tc(black-25)')
+
+            a(href='#' class='mx(2)')
+                img(src='https://unsplash.it/200' class='h(4) w(4) BR(fill) bd(1) bdc(gray-l1) bgc(off-white) dsp(flex) ai(middle)')
+
+            button(class='BR(2) bd(0) px(2) py(2) fw(200) tsn(bgc) bgc(primary) bgc(primary-d1):h tc(white)')
+                span(class='fa fa-fw fa-paper-plane')
+

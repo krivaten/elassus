@@ -1,0 +1,136 @@
+doctype html
+
+-var title = 'Home'
+-var currentUrl = '/'
+include includes/head.pug
+
+body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
+
+    include includes/nav.pug
+
+    main(class='container content m-y(2)')
+        div(class='h(5) d(f)')
+
+        h1(class='fw(200)') A functional CSS library built for speed and granular customization.
+
+        p In Elassus, the modules are customizable in every way. Want more color options? Overwrite the scss variable that contains them with your own. Don't need a particular module? Don't include it in the build. Need a module of your own? Create one using the patterns laid out in the sample file. Don't like the class name syntax? Overwrite the function that builds them with your own preference.
+
+        div(class='m-y(3)')
+            a(class="github-button" href="https://github.com/krivaten/elassus" data-count-href="/krivaten/elassus/stargazers" data-count-api="/repos/krivaten/elassus#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star krivaten/elassus on GitHub") Star
+
+        div(class='bg-c(primary) c(white) p-y(4) m-y(4) m-x(-3) p-x(3)')
+            h2(class='fw(200)') Highlights
+
+            div(class='d(f) fw(wrap) m-x(-3)')
+                div(class='p-x(3) w(4col)m')
+                    h3 Small
+                    p At it’s largest, Elassus is less than 15kb gzipped. That means your project isn’t going to turn in to a bloated mess of ever growing CSS.
+
+                div(class='p-x(3) w(4col)m')
+                    h3 Customizable
+                    p Other style libraries may claim it, but finding that to be untrue was the initial inspiration for creating Elassus. Finally, you can always get what you want.
+
+                div(class='p-x(3) w(4col)m')
+                    h3 Unbreakable
+                    p No more having to audit your project with every small change to your CSS to see if it broke something. In Elassus you change class names, not styles.
+
+                div(class='p-x(3) w(4col)m')
+                    h3 Understandable
+                    p Within minutes you’ll be reading and writing markup using Elassus. Imagine knowing the styles applied to your code without looking at the CSS.
+
+                div(class='p-x(3) w(4col)m')
+                    h3 Uniqueness
+                    p Finally, the freedom to create something that doesn’t look like a billion other products out that because it was built with a popular framework.
+
+                div(class='p-x(3) w(4col)m')
+                    h3 Responsive
+                    p The modules that most often need responsive breakpoints have them right out of the box. If you need more control, you can easily bend it to your will.
+
+        h2(class='fw(200)') Getting Started
+        p Elassus is really easy to get up and running in your project. If you want full control you can fork the <a href="https://github.com/krivaten/elassus" target="_blank">repo</a> or copy the files directly in to your scss directory, or use one of the following methods:
+
+        h3 NPM
+        code npm install elassus --save-dev
+
+        h3 Bower
+        code bower install elassus --save-dev
+
+        h2(class='fw(200)') Module Class Names
+        p A lot of time went in to determining the class name syntax to use for Elassus. We wanted to do our best to make sure that each selector was not only concise (As seen in libraries such as <a href="http://tachyons.io/" target="_blank">Tachyons</a> and <a href="http://basscss.com/" target="_blank">Basscss</a>), but easy to read and understand what it was responsible for (Like you see in tools like <a href="https://acss.io/" target="_blank">Atomic CSS</a>). With that being said, what follows is a map of the naming syntax developed:
+
+        code(class='m-y(3)') &lt;context&gt;-&lt;modifier&gt;(&lt;value&gt;)&lt;breakpoint&gt;:&lt;pseudo&gt;
+
+        ul
+            li <code>context</code>: Calls out the primary declaration of the style (i.e., padding, text-align, justify-content, etc).
+            li <code>modifier</code>: Identifies an optional subset of the primary declaration (e.g., top, bottom, color, etc)
+            li <code>value</code>: The primary value being added to the declaration (e.g., 12col, center, gray, etc)
+            li <code>breakpoint</code>: An optional breakpoint to limit the style to (e.g., small, medium, large, etc)
+            li <code>pseudo</code>: An optional pseudo class to apply the styles to (e.g., focus, hover, active, etc)
+
+        p With all this you are able to have classes like the following:
+
+        ul
+            li <code class="c(danger-d1)">.p-t(2)l</code>: Adds padding-top with a value of 0.5rem (The second value in the size scale).
+            li <code class="c(danger-d1)">.ta(c)</code>: Aligns text to the center.
+            li <code class="c(danger-d1)">.bg-c(gray)</code>: Adds a background color of "gray"
+            li <code class="c(danger-d1)">.w(50%)</code>: Sets the width to 50%
+            li <code class="c(danger-d1)">.c(gray-d1):h</code>: Sets the text color to "d1 gray" on hover
+
+        h2(class='fw(200)') Overview
+        p What follows is an overview of several of the key components and styles that Elassus provides. However, for a full glance of everything, head on over to the <a href="/reference.html">Reference page</a>.
+
+        h3 Color Palette
+        p Elassus comes with an appropriate amount of colors to choose from to aide in the construction of your product. Out of the box you have access to the following:
+
+        div(class='m-y(2)')
+            each colorClass, name in {"Primary Light 3":"primary-l3","Primary Light 2":"primary-l2","Primary Light 1":"primary-l1","Primary":"primary","Primary Dark 1":"primary-d1","Primary Dark 2":"primary-d2","Success Light 3":"success-l3","Success Light 2":"success-l2","Success Light 1":"success-l1","Success":"success","Success Dark 1":"success-d1","Success Dark 2":"success-d2","Warning Light 3":"warning-l3","Warning Light 2":"warning-l2","Warning Light 1":"warning-l1","Warning":"warning","Warning Dark 1":"warning-d1","Warning Dark 2":"warning-d2","Danger Light 3":"danger-l3","Danger Light 2":"danger-l2","Danger Light 1":"danger-l1","Danger":"danger","Danger Dark 1":"danger-d1","Danger Dark 2":"danger-d2","Gray Light 3":"gray-l3","Gray Light 2":"gray-l2","Gray Light 1":"gray-l1","Gray":"gray","Gray Dark 1":"gray-d1","Gray Dark 2":"gray-d2","Black":"black","White":"white"}
+                div(class='m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)')
+                    div(class='w(12col) w(2col)s h(6) h(a)s bg-c(' + colorClass + ')')
+                    div(class='w(12col) w(10col)s bd-l(1)s bd-c(gray-l2)')
+                        div(class='p-x(3)')
+                            h4(class='h3 fw(200)')= name
+
+                        div(class='d(f) fw(wrap) bd-t(1) bd-c(gray-l2)')
+                            div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)') Background Color
+                            div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)')
+                                code(class='c(danger-d1)') .bg-c(!{colorClass})
+
+                        div(class='d(f) fw(wrap) bd-t(1) bd-c(gray-l2)')
+                            div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)') Text Color
+                            div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)')
+                                code(class='c(danger-d1)') .c(!{colorClass})
+
+                        div(class='d(f) fw(wrap) bd-t(1) bd-c(gray-l2)')
+                            div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)') Border Color
+                            div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)')
+                                code(class='c(danger-d1)') .bd-c(!{colorClass})
+
+        h3 Spacing Scale
+        p With things like padding, margin, width<sup>*</sup>, height<sup>*</sup>, and position we believe that consistency is important. That is why there is a <em>scale</em> used in Elassus, where each <em>step</em> in the scale corresponds to fixed values used system wide. Those values are as follows:
+
+        div(class='bd-l(1) bd-r(1) bd-b(1) bd-c(gray-l2) m-y(2)')
+            div(class='d(f) bd-r(1) p-y(3) bd-c(gray-l2) bg-c(gray-l2) fw(600)')
+                div(class='w(6col) w(2col)s p-x(3) ta(c)') Step
+                div(class='w(6col) w(2col)s p-x(3) ta(c)') Value
+                div(class='d(n) d(b)s w(8col) p-x(3)') Examples
+            each value, step in { 0: '0', 1: '0.25rem', 2: '0.5rem', 3: '1rem', 4: '2rem', 5: '4rem', 6: '8rem', 7: '16rem' }
+                div(class='d(f) fw(wrap) bd-t(1) bd-c(gray-l2)')
+                    div(class='w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)')= step
+                    div(class='w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)')= value
+                    div(class='w(12col) w(8col)s p-x(3) p-y(2) d(f) jc(c)')
+                        pre(class='d(ib)')
+                            code(class='c(danger-d1)')
+                                span(class='d(n)s c(gray)') Example: <br/>
+                                | .p-t(!{step})
+                                span(class='c(gray)') { padding-top: !{value}; } <br/>
+                                | .m(!{step})
+                                span(class='c(gray)') { margin: !{value}; } <br/>
+                                | .r(!{step})
+                                span(class='c(gray)') { right: !{value}; }
+
+        p <sup>*</sup> The width and height modules include more options than just the scale such as a 12 column grid and more.
+
+        h3 Check out the Reference
+        p This is just a brief overview of everything you get out of the box with Elassus. <a href="/reference.html">Check out the Reference Page</a> for a searchable tool.
+
+script(async defer src="https://buttons.github.io/buttons.js")
