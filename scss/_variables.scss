@@ -30,31 +30,61 @@ $breakpoints: (
 $black: #000 !default;
 $white: #FFF !default;
 $primary: #009688 !default;
-$primary-light: #4DB6AC !default;
-$primary-dark: #00796B !default;
+$primary-l3: #E0F2F1 !default;
+$primary-l2: #B2DFDB !default;
+$primary-l1: #4DB6AC !default;
+$primary-d1: #00796B !default;
+$primary-d2: #004D40 !default;
 $success: #4CAF50 !default;
-$success-light: #81C784 !default;
-$success-dark: #388E3C !default;
+$success-l3: #E8F5E9 !default;
+$success-l2: #C8E6C9 !default;
+$success-l1: #81C784 !default;
+$success-d1: #388E3C !default;
+$success-d2: #1B5E20 !default;
 $warning: #FFC107 !default;
-$warning-light: #FFD54F !default;
-$warning-dark: #FFA000 !default;
+$warning-l3: #FFF8E1 !default;
+$warning-l2: #FFECB3 !default;
+$warning-l1: #FFD54F !default;
+$warning-d1: #FFA000 !default;
+$warning-d2: #FF6F00 !default;
 $danger: #FF5722 !default;
-$danger-light: #FF8A65 !default;
-$danger-dark: #E64A19 !default;
+$danger-l3: #FBE9E7 !default;
+$danger-l2: #FFCCBC !default;
+$danger-l1: #FF8A65 !default;
+$danger-d1: #E64A19 !default;
+$danger-d2: #BF360C !default;
+$gray-l3: darken($white, 3%) !default;
+$gray-l2: darken($white, 5%) !default;
+$gray-l1: darken($white, 15%) !default;
+$gray: darken($white, 40%) !default;
+$gray-d1: darken($white, 65%) !default;
+$gray-d2: darken($white, 75%) !default;
 
 $theme: (
     primary: $primary,
-    primary-light: $primary-light,
-    primary-dark: $primary-dark,
+    primary-l3: $primary-l3,
+    primary-l2: $primary-l2,
+    primary-l1: $primary-l1,
+    primary-d1: $primary-d1,
+    primary-d2: $primary-d2,
     success: $success,
-    success-light: $success-light,
-    success-dark: $success-dark,
+    success-l3: $success-l3,
+    success-l2: $success-l2,
+    success-l1: $success-l1,
+    success-d1: $success-d1,
+    success-d2: $success-d2,
     warning: $warning,
-    warning-light: $warning-light,
-    warning-dark: $warning-dark,
+    warning-l3: $warning-l3,
+    warning-l2: $warning-l2,
+    warning-l1: $warning-l1,
+    warning-d1: $warning-d1,
+    warning-d2: $warning-d2,
     danger: $danger,
-    danger-light: $danger-light,
-    danger-dark: $danger-dark,
+    danger-l3: $danger-l3,
+    danger-l2: $danger-l2,
+    danger-l1: $danger-l1,
+    danger-d1: $danger-d1,
+    danger-d2: $danger-d2,
 ) !default;
 $black-white: (
     black: $black,
@@ -62,18 +92,19 @@ $black-white: (
     transparent: transparent
 ) !default;
 $grays: (
-    gray-lighter: darken($white, 5%),
-    gray-light: darken($white, 15%),
-    gray: darken($white, 40%),
-    gray-dark: darken($white, 65%),
-    gray-darker: darken($white, 75%)
+    gray-l3: $gray-l3,
+    gray-l2: $gray-l2,
+    gray-l1: $gray-l1,
+    gray: $gray,
+    gray-d1: $gray-d1,
+    gray-d2: $gray-d2
 ) !default;
 $monochrome: map-merge($black-white, $grays) !default;
 $colors: map-merge($theme, $monochrome) !default;
 
 $link-color: $primary !default;
-$link-color-hover: $primary-light !default;
-$link-color-active: $primary-dark !default;
+$link-color-hover: $primary-l1 !default;
+$link-color-active: $primary-d1 !default;
 
 // Pseudo Classes
 $pseudo-focusable: (
