@@ -5,11 +5,9 @@ class Result extends React.Component {
         let { property, value } = this.props;
 
         return (
-            <li className="c(danger-dark) p(2)">
-                <code>
-                    { property }: { value }
-                </code>
-            </li>
+            <div>
+                { property }: { value };
+            </div>
         )
     }
 }

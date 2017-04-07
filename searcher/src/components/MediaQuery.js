@@ -11,8 +11,8 @@ class Result extends React.Component {
             breakpointElement = <div className="p(2)">Media Query: <em>{ breakpoint }</em></div>;
         }
         return (
-            <li className="m-b(2) bd-b(1) bd-c(gray-light)">
-                <div className="bg-c(white) pos(sticky) t(6) z(4) bd(1) bd-c(gray-light) fw(600)">
+            <li className="m-b(2)">
+                <div className="bg-c(white) pos(sticky) t(6) z(4) bd(1) bd-c(gray-l1) fw(600)">
                     { breakpointElement }
                     <div className="d(n) d(f)s">
                         <div className="w(6col) p(2)">

@@ -6,17 +6,13 @@ class Result extends React.Component {
 
         let pseudoElement = null;
         if (selector.pseudo) {
-            pseudoElement = <small className="c(gray-dark)">&nbsp;({ selector.pseudo })</small>;
+            pseudoElement = <small className="c(gray)">&nbsp;({ selector.pseudo })</small>;
         }
         return (
-            <li className="p(2)">
-                <strong>
-                    <code>
-                        { selector.className }
-                    </code>
-                </strong>
+            <div>
+                { selector.className }
                 { pseudoElement }
-            </li>
+            </div>
         )
     }
 }

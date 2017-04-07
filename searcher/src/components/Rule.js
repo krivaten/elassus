@@ -7,21 +7,25 @@ class Result extends React.Component {
         let { rule } = this.props;
 
         return (
-            <li className="bd-l(1) bd-r(1) bd-c(gray-light) d(f) fw(wrap) stripe(gray-lighter)">
-                <ul className="ls(n) w(12col) w(6col)s">
-                    {
-                        Object
-                            .keys(rule.selectors)
-                            .map((key) => <Selector key={ key } selector={ rule.selectors[key] } />)
-                    }
-                </ul>
-                <ul className="ls(n) w(12col) w(6col)s">
-                    {
-                        Object
-                            .keys(rule.declarations)
-                            .map((key) => <Declaration key={ key } property={ key } value={ rule.declarations[key] } />)
-                    }
-                </ul>
+            <li className="bd-l(1) bd-r(1) bd-c(gray-l1) d(f) fw(wrap) bd-b(1)">
+                <div className="w(12col) w(6col)s p(2)">
+                    <code className="c(danger-d1) bg-c(transparent)">
+                        {
+                            Object
+                                .keys(rule.selectors)
+                                .map((key) => <Selector key={ key } selector={ rule.selectors[key] } />)
+                        }
+                    </code>
+                </div>
+                <div className="w(12col) w(6col)s p(2)">
+                    <code className="c(gray) bg-c(transparent)">
+                        {
+                            Object
+                                .keys(rule.declarations)
+                                .map((key) => <Declaration key={ key } property={ key } value={ rule.declarations[key] } />)
+                        }
+                    </code>
+                </div>
             </li>
         )
     }
