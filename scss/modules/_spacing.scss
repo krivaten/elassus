@@ -5,14 +5,14 @@
 $padding-breakpoints: $breakpoints !default;
 $padding-pseudo-classes: null !default;
 $padding-values: (
-    0#{$a-step}: 0,
-    1#{$a-step}: .25rem,
-    2#{$a-step}: .5rem,
-    3#{$a-step}: 1rem,
-    4#{$a-step}: 2rem,
-    5#{$a-step}: 4rem,
-    6#{$a-step}: 8rem,
-    7#{$a-step}: 16rem
+    0: 0,
+    1: .25rem,
+    2: .5rem,
+    3: 1rem,
+    4: 2rem,
+    5: 4rem,
+    6: 8rem,
+    7: 16rem
 ) !default;
 $padding-classes: (
     #{$c-padding}: padding,
@@ -47,21 +47,21 @@ $margin-breakpoints: $breakpoints !default;
 $margin-pseudo-classes: null !default;
 $margin-values: (
     #{$a-auto}: auto,
-    0#{$a-step}: 0,
-    1#{$a-step}: .25rem,
-    2#{$a-step}: .5rem,
-    3#{$a-step}: 1rem,
-    4#{$a-step}: 2rem,
-    5#{$a-step}: 4rem,
-    6#{$a-step}: 8rem,
-    7#{$a-step}: 16rem,
-    -1#{$a-step}: -.25rem,
-    -2#{$a-step}: -.5rem,
-    -3#{$a-step}: -1rem,
-    -4#{$a-step}: -2rem,
-    -5#{$a-step}: -4rem,
-    -6#{$a-step}: -8rem,
-    -7#{$a-step}: -16rem,
+    0: 0,
+    1: .25rem,
+    2: .5rem,
+    3: 1rem,
+    4: 2rem,
+    5: 4rem,
+    6: 8rem,
+    7: 16rem,
+    -1: -.25rem,
+    -2: -.5rem,
+    -3: -1rem,
+    -4: -2rem,
+    -5: -4rem,
+    -6: -8rem,
+    -7: -16rem,
 ) !default;
 $margin-classes: (
     #{$c-margin}: margin,
