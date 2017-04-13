@@ -5,6 +5,7 @@
 $transition-breakpoints: null !default;
 $transition-pseudo-classes: null !default;
 $transition-values: (
+    #{$c-box-shadow}: box-shadow #{$transition-duration} #{$transition-timing-function},
     #{$c-background-color}: background-color #{$transition-duration} #{$transition-timing-function},
     #{$c-opacity}: opacity #{$transition-duration} #{$transition-timing-function},
     #{$c-text-color}: color #{$transition-duration} #{$transition-timing-function},
