@@ -514,6 +514,10 @@ blockquote,
   font-style: normal;
   position: relative; }
 
+small,
+.small {
+  font-size: 80%; }
+
 @media screen and (min-width: 768px) {
   .content {
     font-size: 1em;
@@ -1402,55 +1406,55 @@ blockquote,
 .bdw\(5\) {
   border-width: 2rem; }
 
-.bs\(1\) {
+.bs\(1\), .bs\(1\)\:f:focus, .bs\(1\)\:h:hover, .bs\(1\)\:a:active {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
 
-.bs\(2\) {
+.bs\(2\), .bs\(2\)\:f:focus, .bs\(2\)\:h:hover, .bs\(2\)\:a:active {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
 
-.bs\(3\) {
+.bs\(3\), .bs\(3\)\:f:focus, .bs\(3\)\:h:hover, .bs\(3\)\:a:active {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
 
-.bs\(4\) {
+.bs\(4\), .bs\(4\)\:f:focus, .bs\(4\)\:h:hover, .bs\(4\)\:a:active {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
 
-.bs\(5\) {
+.bs\(5\), .bs\(5\)\:f:focus, .bs\(5\)\:h:hover, .bs\(5\)\:a:active {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); }
 
 @media screen and (min-width: 768px) {
-  .bs\(1\)s {
+  .bs\(1\)s, .bs\(1\)s\:f:focus, .bs\(1\)s\:h:hover, .bs\(1\)s\:a:active {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-  .bs\(2\)s {
+  .bs\(2\)s, .bs\(2\)s\:f:focus, .bs\(2\)s\:h:hover, .bs\(2\)s\:a:active {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
-  .bs\(3\)s {
+  .bs\(3\)s, .bs\(3\)s\:f:focus, .bs\(3\)s\:h:hover, .bs\(3\)s\:a:active {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
-  .bs\(4\)s {
+  .bs\(4\)s, .bs\(4\)s\:f:focus, .bs\(4\)s\:h:hover, .bs\(4\)s\:a:active {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
-  .bs\(5\)s {
+  .bs\(5\)s, .bs\(5\)s\:f:focus, .bs\(5\)s\:h:hover, .bs\(5\)s\:a:active {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); } }
 
 @media screen and (min-width: 992px) {
-  .bs\(1\)m {
+  .bs\(1\)m, .bs\(1\)m\:f:focus, .bs\(1\)m\:h:hover, .bs\(1\)m\:a:active {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-  .bs\(2\)m {
+  .bs\(2\)m, .bs\(2\)m\:f:focus, .bs\(2\)m\:h:hover, .bs\(2\)m\:a:active {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
-  .bs\(3\)m {
+  .bs\(3\)m, .bs\(3\)m\:f:focus, .bs\(3\)m\:h:hover, .bs\(3\)m\:a:active {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
-  .bs\(4\)m {
+  .bs\(4\)m, .bs\(4\)m\:f:focus, .bs\(4\)m\:h:hover, .bs\(4\)m\:a:active {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
-  .bs\(5\)m {
+  .bs\(5\)m, .bs\(5\)m\:f:focus, .bs\(5\)m\:h:hover, .bs\(5\)m\:a:active {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); } }
 
 @media screen and (min-width: 1200px) {
-  .bs\(1\)l {
+  .bs\(1\)l, .bs\(1\)l\:f:focus, .bs\(1\)l\:h:hover, .bs\(1\)l\:a:active {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-  .bs\(2\)l {
+  .bs\(2\)l, .bs\(2\)l\:f:focus, .bs\(2\)l\:h:hover, .bs\(2\)l\:a:active {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
-  .bs\(3\)l {
+  .bs\(3\)l, .bs\(3\)l\:f:focus, .bs\(3\)l\:h:hover, .bs\(3\)l\:a:active {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
-  .bs\(4\)l {
+  .bs\(4\)l, .bs\(4\)l\:f:focus, .bs\(4\)l\:h:hover, .bs\(4\)l\:a:active {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
-  .bs\(5\)l {
+  .bs\(5\)l, .bs\(5\)l\:f:focus, .bs\(5\)l\:h:hover, .bs\(5\)l\:a:active {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); } }
 
 .cl\(l\) {
@@ -5005,6 +5009,9 @@ cl:after {
 
 .tfm\(translate-b3\), .tfm\(translate-b3\)\:f:focus, .tfm\(translate-b3\)\:h:hover, .tfm\(translate-b3\)\:a:active {
   transform: translate3d(0, 1rem, 0); }
+
+.trs\(bs\) {
+  transition: box-shadow 0.35s ease-in-out; }
 
 .trs\(bg-c\) {
   transition: background-color 0.35s ease-in-out; }
