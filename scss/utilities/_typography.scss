@@ -82,6 +82,11 @@ blockquote,
     position: relative;
 }
 
+small,
+.small {
+    font-size: 80%;
+}
+
 @media #{$query-s} {
     .content {
         font-size: 1em;
