@@ -12,7 +12,15 @@ $coordinate-values: (
     4: 2rem,
     5: 4rem,
     6: 8rem,
-    7: 16rem
+    7: 16rem,
+    25#{$a-percent}: 25%,
+    50#{$a-percent}: 50%,
+    75#{$a-percent}: 75%,
+    100#{$a-percent}: 100%,
+    25#{$a-viewport-height}: 25vh,
+    50#{$a-viewport-height}: 50vh,
+    75#{$a-viewport-height}: 75vh,
+    100#{$a-viewport-height}: 100vh
 ) !default;
 $coordinate-classes: (
     #{$c-top}: top,
