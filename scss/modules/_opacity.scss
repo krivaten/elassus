@@ -5,10 +5,10 @@
 $opacity-breakpoints: null !default;
 $opacity-pseudo-classes: $pseudo-focusable !default;
 $opacity-values: (
-    100: 1,
-    75: .75,
-    50: .5,
-    25: .25,
+    100#{$a-percent}: 1,
+    75#{$a-percent}: .75,
+    50#{$a-percent}: .5,
+    25#{$a-percent}: .25,
     0: 0
 ) !default;
 $opacity-classes: (#{$c-opacity}: opacity) !default;
