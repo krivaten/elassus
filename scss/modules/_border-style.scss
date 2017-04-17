@@ -8,7 +8,8 @@ $border-style-values: (
     #{$a-none}: none,
     #{$a-solid}: solid,
     #{$a-dashed}: dashed,
-    #{$a-dotted}: dotted
+    #{$a-dotted}: dotted,
+    #{$a-double}: double
 ) !default;
 $border-style-classes: (#{$c-border-style}: border-style) !default;
 $border-style-module: (
