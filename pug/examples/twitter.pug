@@ -11,7 +11,7 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(gray-l3)')
                 ul(class='ls(n) d(f)')
                         each icon, label in { Home: 'home', Messages: 'envelope', Notifcations: 'bolt' }
                             li
-                                a(href='#' class='p-x(3) p-y(3) m-y(-2) c(gray) c(primary):h d(f) bd-b(3) bd-c(transparent) bd-c(primary):h ai(c) td(n)')
+                                a(href='#' class='p-x(3) p-y(3) m-y(-2) c(gray) c(primary):h d(f) bd-b(3) bd-c(transparent) bd-c(primary):h ai(c) t-d(n)')
                                     span(class='m-r(2) fa fa-lg fa-' + icon)
                                     span(class='d(n) d(i)m')= label
 
@@ -48,16 +48,16 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(gray-l3)')
                         div(class='d(f) fw(wrap) jc(between)')
                             each value, label in { tweets: 947, lovers: 65, haters: 223 }
                                 div(class='p-y(1) w(4col) w(12col)s w(4col)m')
-                                    div(class='tt(uc) c(gray)')
+                                    div(class='t-t(uc) c(gray)')
                                         small= label
                                     div
-                                        a(href='#' class='td(n)')= value
+                                        a(href='#' class='t-d(n)')= value
 
                 section(class='m-b(3) d(n) d(b)s p(3) bd(1) bd-c(gray-l1) br(3) bg-c(white)')
                     h4(class='fw(200) m-t(0)') Trends
 
                     each value, trend in { 'Politics': '643m', 'ClimateDelta': '2k', 'OffendMeIn3Words': '15.8k', 'CssIsDead': '32', 'KrisIsDreamy': '2'  }
-                        a(href='#' class='td(n) d(b) m-y(2)')
+                        a(href='#' class='t-d(n) d(b) m-y(2)')
                             strong ##{trend}<br />
                             small(class='c(gray)') #{value} Tweets
 
@@ -101,7 +101,7 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(gray-l3)')
                     h4(class='fw(200) m-t(0)') Who to Follow
 
                     each username, name in { 'Dwayne Johnson': 'theRock', 'Wes Bos': 'wesbos', 'Tim Kennedy': 'TimKennedy' }
-                        a(href='#' class='td(n) d(f) m-y(3)')
+                        a(href='#' class='t-d(n) d(f) m-y(3)')
                             img(src='https://unsplash.it/200' class='br(fill) w(4) h(4)')
 
                             div(class='m-l(2)')
