@@ -113,6 +113,11 @@ $pseudo-focusable: (
     #{$a-active}: active
 ) !default;
 
+$pseudo-first-last: (
+    #{$a-not-first}: unquote("not(:first-child)"),
+    #{$a-not-last}: unquote("not(:last-child)")
+) !default;
+
 // Transitions
 $transition-duration: 0.35s !default;
 $transition-timing-function: ease-in-out;
