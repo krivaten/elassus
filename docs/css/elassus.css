@@ -448,8 +448,8 @@ button,
 
 p,
 .p {
-  padding-top: 0;
-  margin: 0; }
+  line-height: 1.618em;
+  margin-bottom: 1.618em; }
 
 h1,
 .h1 {
@@ -474,7 +474,7 @@ h3,
   margin-bottom: 0.45454546em; }
 
 h4,
-.h5 {
+.h4 {
   font-size: 1.125em;
   line-height: 1.11111111;
   margin-top: 1.66666667em;
@@ -2951,6 +2951,15 @@ cl:after {
 .mw\(7\) {
   max-width: 16rem; }
 
+.mw\(s\) {
+  max-width: 24em; }
+
+.mw\(m\) {
+  max-width: 30em; }
+
+.mw\(l\) {
+  max-width: 24em; }
+
 .mw\(25\%\) {
   max-width: 25%; }
 
@@ -2982,6 +2991,12 @@ cl:after {
     max-width: 8rem; }
   .mw\(7\)s {
     max-width: 16rem; }
+  .mw\(s\)s {
+    max-width: 24em; }
+  .mw\(m\)s {
+    max-width: 30em; }
+  .mw\(l\)s {
+    max-width: 24em; }
   .mw\(25\%\)s {
     max-width: 25%; }
   .mw\(50\%\)s {
@@ -3010,6 +3025,12 @@ cl:after {
     max-width: 8rem; }
   .mw\(7\)m {
     max-width: 16rem; }
+  .mw\(s\)m {
+    max-width: 24em; }
+  .mw\(m\)m {
+    max-width: 30em; }
+  .mw\(l\)m {
+    max-width: 24em; }
   .mw\(25\%\)m {
     max-width: 25%; }
   .mw\(50\%\)m {
@@ -3038,6 +3059,12 @@ cl:after {
     max-width: 8rem; }
   .mw\(7\)l {
     max-width: 16rem; }
+  .mw\(s\)l {
+    max-width: 24em; }
+  .mw\(m\)l {
+    max-width: 30em; }
+  .mw\(l\)l {
+    max-width: 24em; }
   .mw\(25\%\)l {
     max-width: 25%; }
   .mw\(50\%\)l {
