@@ -2877,28 +2877,28 @@ cl:after {
   .h\(100vh\)l {
     height: 100vh; } }
 
-.mh\(100\%\) {
+.min-h\(100\%\) {
   min-height: 100%; }
 
-.mh\(100vh\) {
+.min-h\(100vh\) {
   min-height: 100vh; }
 
 @media screen and (min-width: 768px) {
-  .mh\(100\%\)s {
+  .min-h\(100\%\)s {
     min-height: 100%; }
-  .mh\(100vh\)s {
+  .min-h\(100vh\)s {
     min-height: 100vh; } }
 
 @media screen and (min-width: 992px) {
-  .mh\(100\%\)m {
+  .min-h\(100\%\)m {
     min-height: 100%; }
-  .mh\(100vh\)m {
+  .min-h\(100vh\)m {
     min-height: 100vh; } }
 
 @media screen and (min-width: 1200px) {
-  .mh\(100\%\)l {
+  .min-h\(100\%\)l {
     min-height: 100%; }
-  .mh\(100vh\)l {
+  .min-h\(100vh\)l {
     min-height: 100vh; } }
 
 .ls\(s\) {
@@ -2924,154 +2924,154 @@ cl:after {
   margin: 0;
   padding: 0; }
 
-.mw\(n\) {
+.max-w\(n\) {
   max-width: none; }
 
-.mw\(0\) {
+.max-w\(0\) {
   max-width: 0; }
 
-.mw\(1\) {
+.max-w\(1\) {
   max-width: 0.25rem; }
 
-.mw\(2\) {
+.max-w\(2\) {
   max-width: 0.5rem; }
 
-.mw\(3\) {
+.max-w\(3\) {
   max-width: 1rem; }
 
-.mw\(4\) {
+.max-w\(4\) {
   max-width: 2rem; }
 
-.mw\(5\) {
+.max-w\(5\) {
   max-width: 4rem; }
 
-.mw\(6\) {
+.max-w\(6\) {
   max-width: 8rem; }
 
-.mw\(7\) {
+.max-w\(7\) {
   max-width: 16rem; }
 
-.mw\(s\) {
+.max-w\(s\) {
   max-width: 24em; }
 
-.mw\(m\) {
+.max-w\(m\) {
   max-width: 30em; }
 
-.mw\(l\) {
+.max-w\(l\) {
   max-width: 24em; }
 
-.mw\(25\%\) {
+.max-w\(25\%\) {
   max-width: 25%; }
 
-.mw\(50\%\) {
+.max-w\(50\%\) {
   max-width: 50%; }
 
-.mw\(75\%\) {
+.max-w\(75\%\) {
   max-width: 75%; }
 
-.mw\(100\%\) {
+.max-w\(100\%\) {
   max-width: 100%; }
 
 @media screen and (min-width: 768px) {
-  .mw\(n\)s {
+  .max-w\(n\)s {
     max-width: none; }
-  .mw\(0\)s {
+  .max-w\(0\)s {
     max-width: 0; }
-  .mw\(1\)s {
+  .max-w\(1\)s {
     max-width: 0.25rem; }
-  .mw\(2\)s {
+  .max-w\(2\)s {
     max-width: 0.5rem; }
-  .mw\(3\)s {
+  .max-w\(3\)s {
     max-width: 1rem; }
-  .mw\(4\)s {
+  .max-w\(4\)s {
     max-width: 2rem; }
-  .mw\(5\)s {
+  .max-w\(5\)s {
     max-width: 4rem; }
-  .mw\(6\)s {
+  .max-w\(6\)s {
     max-width: 8rem; }
-  .mw\(7\)s {
+  .max-w\(7\)s {
     max-width: 16rem; }
-  .mw\(s\)s {
+  .max-w\(s\)s {
     max-width: 24em; }
-  .mw\(m\)s {
+  .max-w\(m\)s {
     max-width: 30em; }
-  .mw\(l\)s {
+  .max-w\(l\)s {
     max-width: 24em; }
-  .mw\(25\%\)s {
+  .max-w\(25\%\)s {
     max-width: 25%; }
-  .mw\(50\%\)s {
+  .max-w\(50\%\)s {
     max-width: 50%; }
-  .mw\(75\%\)s {
+  .max-w\(75\%\)s {
     max-width: 75%; }
-  .mw\(100\%\)s {
+  .max-w\(100\%\)s {
     max-width: 100%; } }
 
 @media screen and (min-width: 992px) {
-  .mw\(n\)m {
+  .max-w\(n\)m {
     max-width: none; }
-  .mw\(0\)m {
+  .max-w\(0\)m {
     max-width: 0; }
-  .mw\(1\)m {
+  .max-w\(1\)m {
     max-width: 0.25rem; }
-  .mw\(2\)m {
+  .max-w\(2\)m {
     max-width: 0.5rem; }
-  .mw\(3\)m {
+  .max-w\(3\)m {
     max-width: 1rem; }
-  .mw\(4\)m {
+  .max-w\(4\)m {
     max-width: 2rem; }
-  .mw\(5\)m {
+  .max-w\(5\)m {
     max-width: 4rem; }
-  .mw\(6\)m {
+  .max-w\(6\)m {
     max-width: 8rem; }
-  .mw\(7\)m {
+  .max-w\(7\)m {
     max-width: 16rem; }
-  .mw\(s\)m {
+  .max-w\(s\)m {
     max-width: 24em; }
-  .mw\(m\)m {
+  .max-w\(m\)m {
     max-width: 30em; }
-  .mw\(l\)m {
+  .max-w\(l\)m {
     max-width: 24em; }
-  .mw\(25\%\)m {
+  .max-w\(25\%\)m {
     max-width: 25%; }
-  .mw\(50\%\)m {
+  .max-w\(50\%\)m {
     max-width: 50%; }
-  .mw\(75\%\)m {
+  .max-w\(75\%\)m {
     max-width: 75%; }
-  .mw\(100\%\)m {
+  .max-w\(100\%\)m {
     max-width: 100%; } }
 
 @media screen and (min-width: 1200px) {
-  .mw\(n\)l {
+  .max-w\(n\)l {
     max-width: none; }
-  .mw\(0\)l {
+  .max-w\(0\)l {
     max-width: 0; }
-  .mw\(1\)l {
+  .max-w\(1\)l {
     max-width: 0.25rem; }
-  .mw\(2\)l {
+  .max-w\(2\)l {
     max-width: 0.5rem; }
-  .mw\(3\)l {
+  .max-w\(3\)l {
     max-width: 1rem; }
-  .mw\(4\)l {
+  .max-w\(4\)l {
     max-width: 2rem; }
-  .mw\(5\)l {
+  .max-w\(5\)l {
     max-width: 4rem; }
-  .mw\(6\)l {
+  .max-w\(6\)l {
     max-width: 8rem; }
-  .mw\(7\)l {
+  .max-w\(7\)l {
     max-width: 16rem; }
-  .mw\(s\)l {
+  .max-w\(s\)l {
     max-width: 24em; }
-  .mw\(m\)l {
+  .max-w\(m\)l {
     max-width: 30em; }
-  .mw\(l\)l {
+  .max-w\(l\)l {
     max-width: 24em; }
-  .mw\(25\%\)l {
+  .max-w\(25\%\)l {
     max-width: 25%; }
-  .mw\(50\%\)l {
+  .max-w\(50\%\)l {
     max-width: 50%; }
-  .mw\(75\%\)l {
+  .max-w\(75\%\)l {
     max-width: 75%; }
-  .mw\(100\%\)l {
+  .max-w\(100\%\)l {
     max-width: 100%; } }
 
 .o\(100\%\), .o\(100\%\)\:f:focus, .o\(100\%\)\:h:hover, .o\(100\%\)\:a:active {

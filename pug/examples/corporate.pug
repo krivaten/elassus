@@ -11,8 +11,8 @@ body(class='p(0) m(0) ff(sans) bg-c(white) c(gray-d1)')
                 p Welcome to Elassus
                 h1 We Make CSS Manageable
                 div(class='d(f) jc(c)')
-                    button(class='bg-c(transparent) bd(1) bd-c(white) bg-c(white):h br(2) c(white) c(gray-d1):h fw(600) t-t(uc) p(2) m-x(3) trs(all)') Details
-                    button(class='bg-c(primary) bd(1) bd-c(primary) bg-c(primary-d1):h br(2) c(white) fw(600) t-t(uc) p(2) m-x(3) trs(all)') Details
+                    button(class='bg-c(transparent) bd(1) bd-c(white) bg-c(white):h br(2) c(white) c(gray-d1):h fw(600) t-t(uc) p(2) m-x(3) trs(all) w(2col)') Learn More
+                    button(class='bg-c(primary) bd(1) bd-c(primary) bg-c(primary-d1):h br(2) c(white) fw(600) t-t(uc) p(2) m-x(3) trs(all) w(2col)') Sign Up
 
     header(class='pos(sticky) z(9999) t(0) w(100%) h(5) bg-c(white) bs(1)')
         div(class='container h(5) d(f) ai(c) jc(sb)')
@@ -45,7 +45,7 @@ body(class='p(0) m(0) ff(sans) bg-c(white) c(gray-d1)')
                     h3(class='fw(200)') About the Company
                     p Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
                     div(class='m-t(2)')
-                        button(class='bg-c(white) bg-c(gray-l1):h bg-c(gray-d1):a bd(1) bd-c(gray-l1) c(primary) br(2) p(2)') Learn More
+                        button(class='bg-c(white) bg-c(gray-l1):h bg-c(gray-d1):a bd(1) bd-c(gray-l1) c(primary) trs(all) br(2) p(2)') Learn More
                 div(class='d(n) d(b)m w(4col)m p-x(3)')
                     img(src='https://unsplash.it/640/360?image=179' class='br(2)')
 
@@ -54,12 +54,12 @@ body(class='p(0) m(0) ff(sans) bg-c(white) c(gray-d1)')
         div(class='fill bg-c(gray-d2) o(75%)')
         div(class='container pos(relative) t-a(c)')
             h2(class='fw(200)') What We Do
-            p Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+            p(class='max-w(m) m-x(a)') Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
 
     div(class='p-y(6) pos(relative)')
         div(class='container pos(relative) t-a(c)')
             h2(class='fw(200)') Our Services
-            p Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+            p(class='max-w(m) m-x(a)') Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
 
 
             div(class='d(f) fw(wrap) m-y(3) bd(1) bd-c(gray-l2)')
@@ -74,11 +74,11 @@ body(class='p(0) m(0) ff(sans) bg-c(white) c(gray-d1)')
     div(class='p-y(6) pos(relative) bg-c(gray-l3)')
         div(class='container pos(relative) t-a(c)')
             h2(class='fw(200)') What People Say
-            p Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+            p(class='max-w(m) m-x(a)') Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
 
             div(class='bd(1) bd-c(gray-l1) bg-c(white) p-y(3) p-x(5) br(2) m-t(3) small pos(relative) d(ib)')
                 div(class='w(3) h(3) bg-c(white) bd-r(1) bd-b(1) bd-c(gray-l1) tfm(rotate45) pos(absolute) b(0) l(50%) m-l(-2) m-b(-2)')
-                div(class='mw(m)')
+                div(class='max-w(m)')
                     p Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.
 
             div(class='m-t(4)')
@@ -102,7 +102,7 @@ body(class='p(0) m(0) ff(sans) bg-c(white) c(gray-d1)')
     div(class='p-y(6) pos(relative)')
         div(class='container pos(relative) t-a(c)')
             h2(class='fw(200)') Pricing
-            p At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+            p(class='max-w(m) m-x(a)') At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
 
             div(class='d(f) fw(wrap) m-x(-3)')
                 div(class='w(12col) w(6col)m p-x(3) m-y(4)')
@@ -116,10 +116,10 @@ body(class='p(0) m(0) ff(sans) bg-c(white) c(gray-d1)')
                                 span(class='small')
                                     em Yearly
 
-                        ul(class='ls(n) t-a(l) m-y(3)')
+                        ul(class='ls(n) t-a(l) m-y(3) t-a(c)')
                             each item in [ 'Talk to Corporate', 'Approve Memos', 'Lead a Workship', 'Direct Workflow' ]
                                 li(class='p-y(2) bd-b(1):nl bd-c(gray-l1)')
-                                    span(class='fa fa-check fa-lg fa-fw c(success)')
+                                    span(class='fa fa-check fa-lg w(4) m-l(-4) c(success)')
                                     span= item
 
                         button(class='bd(1) bd-c(primary-d1) bg-c(primary) bg-c(primary-d1):h br(2) c(white) fw(600) t-t(uc) p(3) m-y(4) trs(all)') Become a Starter Today
@@ -135,10 +135,10 @@ body(class='p(0) m(0) ff(sans) bg-c(white) c(gray-d1)')
                                 span(class='small')
                                     em Yearly
 
-                        ul(class='ls(n) t-a(l) m-y(3)')
+                        ul(class='ls(n) t-a(l) m-y(3) t-a(c)')
                             each item in [ 'All the starter features', 'Micro Manage', 'Promote Synergy', 'Be the boss!' ]
                                 li(class='p-y(2) bd-b(1):nl bd-c(gray-l1)')
-                                    span(class='fa fa-check fa-lg fa-fw c(success)')
+                                    span(class='fa fa-check fa-lg w(4) m-l(-4) c(success)')
                                     span= item
 
                         button(class='bd(1) bd-c(primary-d1) bg-c(primary) bg-c(primary-d1):h br(2) c(white) fw(600) t-t(uc) p(3) m-y(4) trs(all)') Upgrade to Awesome Now
@@ -151,7 +151,7 @@ body(class='p(0) m(0) ff(sans) bg-c(white) c(gray-d1)')
     div(class='p-y(6) pos(relative) bg-c(gray-l3)')
         div(class='container pos(relative) t-a(c)')
             h2(class='fw(200)') Breaking News
-            p At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+            p(class='max-w(m) m-x(a)') At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
 
             ul(class='ls(n) t-a(l) m-y(3) d(f) fw(wrap) m-x(-3)')
                 each item in [ 'Sales Numbers Are In', 'Getting Your Boss to Ping Pong', '10 Brogrammer Tips', 'Life Work Balance', 'How Stella Got Her Groove Back', 'One Final Title' ]
@@ -186,11 +186,11 @@ body(class='p(0) m(0) ff(sans) bg-c(white) c(gray-d1)')
                         each item in [ 'Name', 'Email', 'Phone Number' ]
                             div(class='m-y(3)')
                                 label(class='d(b) w(100%) small m-b(2)')= item
-                                input(class='d(b) w(100%) bg-c(transparent) bg-c(white):f c(white) c(black):f bd(1) br(0) bd-c(white) p(2)')
+                                input(class='d(b) w(100%) bg-c(transparent) bg-c(white):f c(white) c(black):f bd(1) br(0) bd-c(white) p(2) trs(all)')
                         
                         div(class='m-y(3)')
                             label(class='d(b) w(100%) small m-b(2)') Message
-                            textarea(class='d(b) w(100%) bg-c(transparent) bg-c(white):f c(white) c(black):f bd(1) br(0) bd-c(white) p(2)' rows=5)
+                            textarea(class='d(b) w(100%) bg-c(transparent) bg-c(white):f c(white) c(black):f bd(1) br(0) bd-c(white) p(2) trs(all)' rows=5)
 
                         div(class='t-a(r)')
                             button(class='bd(1) bd-c(primary-d1) bg-c(primary) bg-c(primary-d1):h br(2) c(white) fw(600) t-t(uc) p(2) trs(all)') Submit
