@@ -106,6 +106,8 @@ $link-color: $primary !default;
 $link-color-hover: $primary-l1 !default;
 $link-color-active: $primary-d1 !default;
 
+$code-background: $gray-l2 !default;
+
 // Pseudo Classes
 $pseudo-focusable: (
     #{$a-focus}: focus,
