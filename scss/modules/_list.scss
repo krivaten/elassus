@@ -9,7 +9,7 @@ $list-style-values: (
 ) !default;
 $list-style-classes: (
     #{$c-list-style}: (
-        list-style-type: none,
+        list-style-type: null,
         margin: 0,
         padding: 0
     )
