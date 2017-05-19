@@ -2961,7 +2961,7 @@ cl:after {
   max-width: 30em; }
 
 .max-w\(l\) {
-  max-width: 24em; }
+  max-width: 34em; }
 
 .max-w\(25\%\) {
   max-width: 25%; }
@@ -2999,7 +2999,7 @@ cl:after {
   .max-w\(m\)s {
     max-width: 30em; }
   .max-w\(l\)s {
-    max-width: 24em; }
+    max-width: 34em; }
   .max-w\(25\%\)s {
     max-width: 25%; }
   .max-w\(50\%\)s {
@@ -3033,7 +3033,7 @@ cl:after {
   .max-w\(m\)m {
     max-width: 30em; }
   .max-w\(l\)m {
-    max-width: 24em; }
+    max-width: 34em; }
   .max-w\(25\%\)m {
     max-width: 25%; }
   .max-w\(50\%\)m {
@@ -3067,7 +3067,7 @@ cl:after {
   .max-w\(m\)l {
     max-width: 30em; }
   .max-w\(l\)l {
-    max-width: 24em; }
+    max-width: 34em; }
   .max-w\(25\%\)l {
     max-width: 25%; }
   .max-w\(50\%\)l {
