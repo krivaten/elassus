@@ -1,0 +1,77 @@
+doctype html
+
+-var title = 'Styleguide'
+-var currentUrl = '/styleguide.html'
+include includes/head.pug
+
+body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
+    include includes/nav.pug
+    
+    div(class='container content m-t(2)')
+        h1(class='fw(200)') Styleguide
+        
+        div(class='d(f) fw(wrap) jc(c) m-x(-3)')
+            aside(class='d(n) d(b)s p-x(3) w(3col)')
+                nav(class='pos(sticky) t(5) p-t(2)')
+                    ul(class='ls(n) bg-c(gray-l3) br(2) m-t(3) p(2)')
+                        each item in [ { name: 'Color Palette' }, { name: 'Spacing Scale' } ]
+                            li 
+                                - itemId = item.name.replace(/ /g, '-').toLowerCase()
+                                a(href='#'+itemId class='d(b) p-y(2) t-d(n) fw(600)')= item.name
+
+            main(class='p-x(3) w(12col) w(9col)s')
+                p What follows is an overview of several of the key components and styles that Elassus provides. However, for a full glance of everything, head on over to the <a href="/reference.html">Reference page</a>.
+
+                h2#color-palette Color Palette
+                p Elassus comes with an appropriate amount of colors to choose from to aide in the construction of your product. Out of the box you have access to the following:
+
+                div(class='m-y(2)')
+                    each colorClass, name in {"Primary Light 3":"primary-l3","Primary Light 2":"primary-l2","Primary Light 1":"primary-l1","Primary":"primary","Primary Dark 1":"primary-d1","Primary Dark 2":"primary-d2","Success Light 3":"success-l3","Success Light 2":"success-l2","Success Light 1":"success-l1","Success":"success","Success Dark 1":"success-d1","Success Dark 2":"success-d2","Warning Light 3":"warning-l3","Warning Light 2":"warning-l2","Warning Light 1":"warning-l1","Warning":"warning","Warning Dark 1":"warning-d1","Warning Dark 2":"warning-d2","Danger Light 3":"danger-l3","Danger Light 2":"danger-l2","Danger Light 1":"danger-l1","Danger":"danger","Danger Dark 1":"danger-d1","Danger Dark 2":"danger-d2","Gray Light 3":"gray-l3","Gray Light 2":"gray-l2","Gray Light 1":"gray-l1","Gray":"gray","Gray Dark 1":"gray-d1","Gray Dark 2":"gray-d2","Black":"black","White":"white"}
+                        div(class='m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)')
+                            div(class='w(12col) w(3col)s h(6) h(a)s bg-c(' + colorClass + ')')
+                            div(class='w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)')
+                                div(class='p-x(3)')
+                                    h4(class='h3 fw(200)')= name
+
+                                div(class='d(f) fw(wrap) bd-t(1) bd-c(gray-l2)')
+                                    div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)') Background Color
+                                    div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)')
+                                        code(class='c(danger)') .bg-c(!{colorClass})
+
+                                div(class='d(f) fw(wrap) bd-t(1) bd-c(gray-l2)')
+                                    div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)') Text Color
+                                    div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)')
+                                        code(class='c(danger)') .c(!{colorClass})
+
+                                div(class='d(f) fw(wrap) bd-t(1) bd-c(gray-l2)')
+                                    div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)') Border Color
+                                    div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)')
+                                        code(class='c(danger)') .bd-c(!{colorClass})
+
+                h2#spacing-scale Spacing Scale
+                p With things like padding, margin, width<sup>*</sup>, height<sup>*</sup>, and position we believe that consistency is important. That is why there is a <em>scale</em> used in Elassus, where each <em>step</em> in the scale corresponds to fixed values used system wide. Those values are as follows:
+
+                div(class='bd-l(1) bd-r(1) bd-b(1) bd-c(gray-l2) m-y(2)')
+                    div(class='d(f) bd-r(1) p-y(3) bd-c(gray-l2) bg-c(gray-l2) fw(600)')
+                        div(class='w(6col) w(2col)s p-x(3) ta(c)') Step
+                        div(class='w(6col) w(2col)s p-x(3) ta(c)') Value
+                        div(class='d(n) d(b)s w(8col) p-x(3)') Examples
+                    each value, step in { 0: '0', 1: '0.25rem', 2: '0.5rem', 3: '1rem', 4: '2rem', 5: '4rem', 6: '8rem', 7: '16rem' }
+                        div(class='d(f) fw(wrap) bd-t(1) bd-c(gray-l2)')
+                            div(class='w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)')= step
+                            div(class='w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)')= value
+                            div(class='w(12col) w(8col)s p-x(3) p-y(2) d(f) jc(c)')
+                                pre(class='d(ib)')
+                                    code
+                                        span(class='d(n)s c(gray)') Example: <br/>
+                                        | .<span class="c(danger)">p-t(!{step})</span>
+                                        | { padding-top: !{value}; } <br/>
+                                        | .<span class="c(danger)">m(!{step})</span>
+                                        | { margin: !{value}; } <br/>
+                                        | .<span class="c(danger)">r(!{step})</span>
+                                        | { right: !{value}; }
+
+                p <sup>*</sup> The width and height modules include more options than just the scale such as a 12 column grid and more.
+
+                h3 Check out the Reference
+                p This is just a brief overview of everything you get out of the box with Elassus. <a href="/reference.html">Check out the Reference Page</a> for a searchable tool.

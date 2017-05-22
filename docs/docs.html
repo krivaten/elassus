@@ -32,11 +32,13 @@
     <header class="pos(fixed) z(9999) t(0) w(100%) h(5) bg-c(white) bs(1)">
         <div class="container h(5) d(f) ai(c) jc(sb)">
             <a class="t-d(n) d(f) ai(c)" href="/" title="Elassus">
-                <img class="pos(relative) w(4) h(4)" src="/img/logo.svg"><span class="h3 fw(200) c(black) m-y(0) m-l(2) d(n) d(i)s">Elassus</span>
+                <img class="pos(relative) w(4) h(4)" src="/img/logo.svg" aria-hidden="true"><span class="h3 fw(200) c(black) m-y(0) m-l(2) d(n) d(i)s">Elassus</span>
             </a>
             <nav>
                 <ul class="ls(n) d(f) h(5)">
                     <li class="h(5)"><a class="p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h bg-c(gray-l2)" href="/docs.html">Docs</a>
+                    </li>
+                    <li class="h(5)"><a class="p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h " href="/styleguide.html">Styleguide</a>
                     </li>
                     <li class="h(5)"><a class="p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h " href="/reference.html">Reference</a>
                     </li>
@@ -48,6 +50,319 @@
     </header>
     <div class="container content m-t(2)">
         <h1 class="fw(200)">Documentation</h1>
-        <p>Currently working on documentation on how to customize this awesome library. Please have patience!</p>
+        <div class="d(f) fw(wrap) jc(c) m-x(-3)">
+            <aside class="d(n) d(b)s p-x(3) w(3col)">
+                <nav class="pos(sticky) t(5) p-t(2)">
+                    <ul class="ls(n) bg-c(gray-l3) br(2) m-t(3) p(2)">
+                        <li> <a class="d(b) p-y(2) t-d(n) fw(600)" href="#getting-started">Getting Started</a>
+                        </li>
+                        <li> <a class="d(b) p-y(2) t-d(n) fw(600)" href="#class-name-syntax">Class Name Syntax</a>
+                        </li>
+                        <li> <a class="d(b) p-y(2) t-d(n) fw(600)" href="#understanding-modules">Understanding Modules</a>
+                            <ul class="ls(n) m-l(3) bd-l(1) bd-c(gray-l1) p-l(2)">
+                                <li><a class="t-d(n) d(b)" href="#understanding-modules-title">Title</a>
+                                </li>
+                                <li><a class="t-d(n) d(b)" href="#understanding-modules-breakpoints">Breakpoints</a>
+                                </li>
+                                <li><a class="t-d(n) d(b)" href="#understanding-modules-pseudo-classes">Pseudo Classes</a>
+                                </li>
+                                <li><a class="t-d(n) d(b)" href="#understanding-modules-values">Values</a>
+                                </li>
+                                <li><a class="t-d(n) d(b)" href="#understanding-modules-classes">Classes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> <a class="d(b) p-y(2) t-d(n) fw(600)" href="#customization">Customization</a>
+                            <ul class="ls(n) m-l(3) bd-l(1) bd-c(gray-l1) p-l(2)">
+                                <li><a class="t-d(n) d(b)" href="#customization-colors">Colors</a>
+                                </li>
+                                <li><a class="t-d(n) d(b)" href="#customization-aliases">Aliases</a>
+                                </li>
+                                <li><a class="t-d(n) d(b)" href="#customization-class-name-syntax">Class Name Syntax</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="p-x(3) w(12col) w(9col)s">
+                <h2 id="getting-started">Getting Started </h2>
+                <p>Elassus is really easy to get up and running in your project. If you want full control you can fork the <a href="https://github.com/krivaten/elassus" target="_blank">repo</a> or do one of the following:</p>
+                <h3>NPM</h3>
+                <p>Elassus is published on NPM, so you can easily add it to your project by running the following command:</p><code>npm install elassus --save-dev</code>
+                <p>From there, just import <code>scss/elassus.scss</code> in to your stylesheet and you'll be up and running!</p>
+                <h3>Download</h3>
+                <p>You can download a zip file of the most up to date Elassus <a href="https://github.com/krivaten/elassus/archive/master.zip" target="_blank">by clicking here</a>. Unzip it and put it in your project.</p>
+                <hr>
+                <h2 id="class-name-syntax">Class Name Syntax</h2>
+                <p>A lot of time went in to determining the class name syntax for Elassus. We wanted to do our best to make sure that each selector was not only concise (As seen in libraries such as <a href="http://tachyons.io/" target="_blank">Tachyons</a> and
+                    <a
+                    href="http://basscss.com/" target="_blank">Basscss</a>), but also easy to read and understand what it was responsible for (Like you see in tools like <a href="https://acss.io/" target="_blank">Atomic CSS</a>). With that being said, what follows is a map of the naming syntax
+                        developed:</p><code class="m-y(3)">&lt;context&gt;-&lt;modifier&gt;(&lt;value&gt;)&lt;breakpoint&gt;:&lt;pseudo&gt;</code>
+                <ul>
+                    <li><code>context</code>: Calls out the primary declaration of the style (i.e., padding, text-align, justify-content, etc).</li>
+                    <li><code>modifier</code>: Identifies an optional subset of the primary declaration (e.g., top, bottom, color, etc)</li>
+                    <li><code>value</code>: The primary value being added to the declaration (e.g., 12col, center, gray, etc)</li>
+                    <li><code>breakpoint</code>: An optional breakpoint to limit the style to (e.g., small, medium, large, etc)</li>
+                    <li><code>pseudo</code>: An optional pseudo class to apply the styles to (e.g., focus, hover, active, etc)</li>
+                </ul>
+                <p>With all this you are able to have classes like the following:</p>
+                <ul>
+                    <li><code class="c(danger-d1)">.p-t(2)l</code>: Adds padding-top with a value of 0.5rem (The second value in the size scale).</li>
+                    <li><code class="c(danger-d1)">.ta(c)</code>: Aligns text to the center.</li>
+                    <li><code class="c(danger-d1)">.bg-c(gray)</code>: Adds a background color of "gray"</li>
+                    <li><code class="c(danger-d1)">.w(50%)</code>: Sets the width to 50%</li>
+                    <li><code class="c(danger-d1)">.c(gray):h</code>: Sets the text color to "gray" on hover</li>
+                </ul>
+                <hr>
+                <h2 id="understanding-modules">Understanding Modules</h2>
+                <p>In Elassus a simple module, in it's entirety, can look like the following:</p><pre><code>$text-align-breakpoints: $breakpoints !default;
+$text-align-pseudo-classes: null !default;
+$text-align-values: (
+    #{$a-left}: left,
+    #{$a-right}: right,
+    #{$a-center}: center
+) !default;
+$text-align-classes: (#{$c-text-align}: text-align) !default;
+$text-align-module: (
+    title: 'Module: Text Align',
+    breakpoints: $text-align-breakpoints,
+    pseudo-classes: $text-align-pseudo-classes,
+    values: $text-align-values,
+    classes: $text-align-classes
+) !default;
+
+@include build-module($text-align-module);</code></pre>
+                <p>You might be asking yourself, "where's the CSS?!". Well, we're going to get to that. But in short, not only is Elassus a functional CSS library, it is created functionally as well. This is the key to making it so customizable and its naming
+                    conventions consistent.</p>
+                <p>Each module in Elassus is built with a few interwoven mixins, and it all starts with one aptly called <code>build-module</code>. As you can see above, we pass this mixin a map of properties that are used to generate all the CSS for a module.
+                    This section will help you get familiar with each of the properties in this map and what they do.</p>
+                <h3 id="understanding-modules-title">Title</h3>
+                <p>This value is only used for purposes of automatically generating the reference page and can basically be ignored. If you wish to add a new module that will be part of Elassus, you may follow the naming pattern we have set up in all the
+                    other modules.</p>
+                <h3 id="understanding-modules-breakpoints">Breakpoints</h3>
+                <p>If you desire a particular module to include media query reliant classes for responsive design, then you will want to provide a map of breakpoints for it to reference. By default, responsive modules contain the following map:</p><pre><code>$breakpoints: (
+   <span class="c(danger)">s</span>: (
+       size: 768px,
+       query: <span class="c(success)">screen and (min-width: 768px)</span>
+   ),
+   <span class="c(danger)">m</span>: (
+       size: 992px,
+       query: <span class="c(success)">screen and (min-width: 992px)</span>
+   ),
+   <span class="c(danger)">l</span>: (
+       size: 1200px,
+       query: <span class="c(success)">screen and (min-width: 1200px)</span>
+   )
+) !default;</code></pre>
+                <p>This map is then iterated over to generate responsive classes like the following:</p><pre><code>.t-a(l) { text-align: left; }
+@media <span class="c(success)">screen and (min-width: 768px)</span> { .t-a(l)<span class="c(danger)">s</span> { text-align: left; }
+@media <span class="c(success)">screen and (min-width: 992px)</span> { .t-a(r)<span class="c(danger)">m</span> { text-align: right; }
+@media <span class="c(success)">screen and (min-width: 1200px)</span> { .t-a(c)<span class="c(danger)">l</span> { text-align: center; }</code></pre>
+                <p>If you would like to modify the default media queries, just overwrite the <code>$breakpoints</code> variable. And if you would like to have an existing module create responsive variations, you may provide this same variable as the value
+                    of the <code>breakpoints</code> property on the map you pass to the <code>build-module</code> mixin.</p>
+                <h3 id="understanding-modules-pseudo-classes">Pseudo classes</h3>
+                <p>Much like breakpoints, if you want to offer pseudo class variations on a module, provide a map of the variations you want to support. One of the default pseudo class maps looks like the following:</p><pre><code>$pseudo-focusable: (
+   <span class="c(danger)">f</span>: <span class="c(success)">focus</span>,
+   <span class="c(danger)">h</span>: <span class="c(success)">hover</span>,
+   <span class="c(danger)">a</span>: <span class="c(success)">active</span>
+) !default;</code></pre>
+                <p>When applied to a module it will compile classes like this:</p><pre><code>.c(success),
+.c(success):<span class="c(danger)">f</span>:<span class="c(success)">focus</span>,
+.c(success):<span class="c(danger)">h</span>:<span class="c(success)">hover</span>,
+.c(success):<span class="c(danger)">a</span>:<span class="c(success)">active</span> {
+     color: #4CAF50;
+}</code></pre>
+                <p>As with all things in Elassus, you may overwrite the <code>$pseudo-focusable</code> variable with your own options if you would like. Additionally you can provide this variable as the value of the <code>pseudo</code> property on the map you
+                    pass to <code>build-module</code> to generate pseudo class selectors for that module.</p>
+                <h3 id="understanding-modules-values">Values</h3>
+                <p>This is a map of all the possible declaration values you would like a module to have access to, along with the label you would like them to be identified by in the class name. For the most part every module's values are unique, with some
+                    modules like width and height having some crossover in their options. As a rather small example, we will look at the values map for the <em>text-align</em> module:</p><pre><code>$text-align-values: (
+   <span class="c(danger)">l</span>: <span class="c(success)">left</span>,
+   <span class="c(danger)">r</span>: <span class="c(success)">right</span>,
+   <span class="c(danger)">c</span>: <span class="c(success)">center</span>
+) !default;</code></pre>
+                <p>This, in turn, will be used to generate the following classes:</p><pre><code>.t-a(<span class="c(danger)")>l</span>) { text-align: <span class="c(success)">left</span>; }
+.t-a(<span class="c(danger)")>r</span>) { text-align: <span class="c(success)">right</span>; }
+.t-a(<span class="c(danger)")>c</span>) { text-align: <span class="c(success)">center</span>; }</code></pre>
+                <p>If you find that you would like to expand or limit the values of any module, it is easy to overwrite the variable that specifies the values for it, and make it your own.</p>
+                <h3 id="understanding-modules-classes">Classes</h3>
+                <p>This property provides a map of all the individual declarations you would like to apply your values to.</p>
+                <p>For many modules, you will only need to specify values for one single declaration (e.g., <code>text-align</code>). But there may be times you want to set values on multipe declarations without having to make a separate module for each one
+                    (e.g., <code>border</code>, <code>border-top</code>, <code>border-bottom</code>, <code>border-left</code>, <code>border-right</code>). As you'll soon see, the <code>classes</code> map permits a lot of flexibility here.</p>
+                <p>At it's simplest, the classes map can look like the following:</p><pre><code>$text-align-classes: (<span class="c(danger)">t-a</span>: <span class="c(success)">text-align</span>) !default;</code></pre>
+                <p>And will produce a set of classes that looks like this:</p><pre><code>.<span class="c(danger)">t-a</span>(l) { <span class="c(success)">text-align</span>: left; }
+.<span class="c(danger)">t-a</span>(r) { <span class="c(success)">text-align</span>: right; }
+.<span class="c(danger)">t-a</span>(c) { <span class="c(success)">text-align</span>: center; }</code></pre>
+                <p>But these maps can also become a lot more complex, like the following:</p><pre><code>$border-classes: (
+  <span class="c(danger)">bd</span>: (
+      <span class="c(success)">border-style</span>: solid,
+      <span class="c(success)">border-width</span>:j null
+  ),
+  <span class="c(danger)">bd-t</span>: (
+      <span class="c(success)">border-top-style</span>: solid,
+      <span class="c(success)">border-top-width</span>: null
+  ),
+  <span class="c(danger)">bd-b</span>: (
+      <span class="c(success)">border-bottom-style</span>: solid,
+      <span class="c(success)">border-bottom-width</span>: null
+  ),
+  <span class="c(danger)">bd-l</span>: (
+      <span class="c(success)">border-left-style</span>: solid,
+      <span class="c(success)">border-left-width</span>: null
+  ),
+  <span class="c(danger)">bd-r</span>: (
+      <span class="c(success)">border-right-style</span>: solid,
+      <span class="c(success)">border-right-width</span>: null
+  )
+) !default;</code></pre>
+                <p>Which will compile to this:</p><pre><code>.<span class="c(danger)">bd</span>(1) {
+      <span class="c(success)">border-style</span>: solid;
+      <span class="c(success)">border-width</span>: 1px;
+}
+.<span class="c(danger)">bd-t</span>(1) {
+      <span class="c(success)">border-top-style</span>: solid;
+      <span class="c(success)">border-top-width</span>: 1px;
+}
+.<span class="c(danger)">bd-b</span>(1) {
+      <span class="c(success)">border-bottom-style</span>: solid;
+      <span class="c(success)">border-bottom-width</span>: 1px;
+}
+.<span class="c(danger)">bd-l</span>(1) {
+      <span class="c(success)">border-left-style</span>: solid;
+      <span class="c(success)">border-left-width</span>: 1px;
+}
+.<span class="c(danger)">bd-r</span>(1) {
+      <span class="c(success)">border-right-style</span>: solid;
+      <span class="c(success)">border-right-width</span>: 1px;
+}</code></pre>
+                <p>If you were paying attention, you noticed that you could provide a map of style declarations with their own values, like <code>border-style: solid</code> and it would add those to the classes. Then whatever properties have their value set
+                    to <code>null</code>, will get their value from the <code>values</code> map.</p>
+                <hr>
+                <h2 id="customization">Customization</h2>
+                <h3 id="ccolors">Colors</h3>
+                <p>The entire color scheme is defined in the <code>_variables.scss</code> file. The colors are explicitly defined by themselves like the following:</p><pre><code><span class="c(danger)">gray-l3</span>: <span class="c(success)">#f7f7f7</span> !default;
+<span class="c(danger)">gray-l2</span>: <span class="c(success)">#f2f2f2</span> !default;
+<span class="c(danger)">gray-l1</span>: <span class="c(success)">#d9d9d9</span> !default;
+<span class="c(danger)">gray</span>: <span class="c(success)">#999999</span> !default;
+<span class="c(danger)">gray-d1</span>: <span class="c(success)">#595959</span> !default;
+<span class="c(danger)">gray-d2</span>: <span class="c(success)">#404040</span> !default;</code></pre>
+                <p>If you would like to update a color, you may redefine the variable in your local <code>.scss</code> files and everything will compile accordingly. But if you want to update the amount of colors that are compiled, you will need to update
+                    the maps.</p>
+                <p>Elassus uses maps extensively for iterating over sets of keys and values. The colors, for example, are placed in to a number of different maps that look like the following:</p><pre><code>$grays: (
+    <span class="c(primary)">gray-l3</span>: <span class="c(success)">$gray-l3</span>,
+    <span class="c(primary)">gray-l2</span>: <span class="c(success)">$gray-l2</span>,
+    <span class="c(primary)">gray-l1</span>: <span class="c(success)">$gray-l1</span>,
+    <span class="c(primary)">gray</span>: <span class="c(success)">$gray</span>,
+    <span class="c(primary)">gray-d1</span>: <span class="c(success)">$gray-d1</span>,
+    <span class="c(primary)">gray-d2</span>: <span class="c(success)">$gray-d2</span>
+) !default;</code></pre>
+                <p>Throughout all the color maps, the key (e.g., <code>gray-l3</code>) in each entry is the <em>value name</em> used in the class name, and the value (e.g., <code>$gray-l3</code>) is used as the <em>property value</em> of the declaration.</p>
+                <p>With that in mind, we can take the above map, and have compiled CSS that looks like the following:</p><pre><code>.bg-c(<span class="c(primary)">gray-l3</span>) { background-color: <span class="c(success)">#f7f7f7</span>; }
+.bg-c(<span class="c(primary)">gray-l2</span>) { background-color: <span class="c(success)">#f2f2f2</span>; }
+.bg-c(<span class="c(primary)">gray-l1</span>) { background-color: <span class="c(success)">#d9d9d9</span>; }
+.bg-c(<span class="c(primary)">gray</span>) { background-color: <span class="c(success)">#999999</span>; }
+.bg-c(<span class="c(primary)">gray-d1</span>) { background-color: <span class="c(success)">#595959</span>; }
+.bg-c(<span class="c(primary)">gray-d2</span>) { background-color: <span class="c(success)">#404040</span>; }</code></pre>
+                <p>All together there are a few different <em>Color</em> related maps which you are free to overwrite and modify to your liking. They are as follows:</p>
+                <ul>
+                    <li><code>$theme</code><span>- The chromatic colors you plan to use throughout your CSS.</span>
+                    </li>
+                    <li><code>$black-white</code><span>- The colors that will represent your preferred shade of black and white.</span>
+                    </li>
+                    <li><code>$grays</code><span>- The various shades of gray you want to make available in your CSS.</span>
+                    </li>
+                    <li><code>$monochrome</code><span>- A combined map that contains the values from both <code>$black-white</code> and <code>$grays</code></span>
+                    </li>
+                    <li><code>$colors</code><span>- All the colors defined in the above listed maps.</span>
+                    </li>
+                </ul>
+                <h3 id="aliases">Aliases</h3>
+                <p>If you are interested in updating the class names, a good place to look would be the <code>_aliases.scss</code> file. In this file you will find variables that map to values used in every module of Elassus.</p>
+                <p>There are two types of aliases you will find in this file. They are:</p>
+                <ul>
+                    <li><strong>Standard</strong>: Prefixed with "a-"</li>
+                    <li><strong>Context</strong>: Prefixed with a "c-"</li>
+                </ul>
+                <p>Let's talk about what each of these are for.</p>
+                <h4>Standard Aliases</h4>
+                <p>Standard aliases are typically used as the <em>value</em> in the class name syntax, and are used to maintain a consistent pattern across your stylesheet. Let's look at a couple of useful standard aliases and how we might use them:</p><pre><code><span class="c(danger)">$a-left</span>: <span class="c(success)">l</span> !default;
+<span class="c(danger)">$a-center</span>: <span class="c(success)">c</span> !default;
+<span class="c(danger)">$a-right</span>: <span class="c(success)">r</span> !default;</code></pre>
+                <p>These are some pretty simple aliases that we may use in places like the <code>modules/text-align.scss</code> file. For example:</p><pre><code>$text-align-values: (
+   #{<span class="c(danger)">$a-left</span>}: <span class="c(primary)">left</span>,
+   #{<span class="c(danger)">$a-center</span>}: <span class="c(primary)">center</span>,
+   #{<span class="c(danger)">$a-right</span>}: <span class="c(primary)">right</span>
+) !default;</code></pre>
+                <p>These values will then be compiled to look something like this:</p><pre><code>.t-a(<span class="c(success)">l</span>) { text-align: <span class="c(primary)">left</span>; }
+.t-a(<span class="c(success)">c</span>) { text-align: <span class="c(primary)">center</span>; }
+.t-a(<span class="c(success)">r</span>) { text-align: <span class="c(primary)">right</span>; }</code></pre>
+                <p>These aliases are used consistently throughout the library, so if you would like to update the value of one (e.g., change "c" to "center"), you only need to updated it in one place, and the library will handle the rest.</p>
+                <p>As a note, you may find that some aliases have the same value. This is because, in an attempt to keep class names as brief as possible, some values are used multiple times. For example, the values of <code>$a-block</code> and <code>$a-bottom</code> are
+                    both <code>b</code>. We assure you, this is only done in places where we are sure the values will never be used together.</p>
+                <h4>Context Aliases</h4>
+                <p>Context aliases refer to the values that are used as the <em>context</em> in the class name syntax. These are used to provide a centralized hub to view all the contexts at a glance but also be able to change them in one place. Let's look
+                    at the context alias for text-align:</p><pre><code>$c-text-align: <span class="c(danger)">t-a</span> !default;</code></pre>
+                <p>This alias will then be used to identify the context of all the <code>text-align</code> classes:</p><pre><code>.<span class="c(danger)">t-a</span>(l) { text-align: left; }
+.<span class="c(danger)">t-a</span>(c) { text-align: center; }
+.<span class="c(danger)">t-a</span>(r) { text-align: right; }</code></pre>
+                <p>By updating the value of <code>$c-text-align</code> or any other context alias variable, Elassus will automatically change the context of all the corresponding classes.</p>
+                <h3 id="class-name-syntax">Class Name Syntax</h3>
+                <p>You may be thinking to yourself, "I love Elassus, but I hate the class name syntax, because parenthesis and colons in class names are dumb. I want something different". That is encouraged and welcome! That's why we made the <code>build-class-name</code> function!</p>
+                <p>This function is pretty straightforward, in that it takes some arguments that it can then turn in to a class name. So if you want it to return something entirely different, you can either change the data being passed to it, rewrite the
+                    function, or both!</p>
+                <p>For the sake of example, let's rewrite it to return something that just uses dashes instead of parenthesis, colons, and all that.</p><pre><code>@function build-class-name($context, $value: null, $breakpoint: null, $pseudo-classes: null, $pseudo-only: false) {
+   $result: #{$context};
+
+   @if($value) {
+       $result: #{$result}-#{$value};
+   }
+
+   @if($breakpoint) {
+       $result: #{$result}-#{$breakpoint};
+   }
+
+   @if($pseudo-classes) {
+        $base: $result;
+
+        @for $index from 1 through length($pseudo-classes) {
+            $pseudo-class: nth($pseudo-classes, $index);
+            $alias: if((length($pseudo-class) > 0), nth($pseudo-class, 1), null);
+            $selector: if((length($pseudo-class) > 1), nth($pseudo-class, 2), null);
+            $new: $base;
+
+            @if ($alias) {
+                $new: "#{$new}-#{$alias}";
+            }
+
+            @if ($selector) {
+                $new: "#{$new}:#{$selector}";
+            }
+
+            @if ($pseudo-only == true and $index == 1) {
+                $result: "#{$new}";
+            } @else {
+                $result: "#{$result}, .#{$new}";
+            }
+        }
+    }
+
+    @return $result
+}</code></pre><pre><code>property(value)breakpoint:pseudo</code></pre>
+                <p>From this rewrite of the function, you will get classes that go from this:</p><pre><code>.bd-c(primary),
+.bd-c(primary):f:focus,
+.bd-c(primary):h:hover,
+.bd-c(primary):a:active {
+  border-color: #009688; 
+}</code></pre>
+                <p>To this:</p><pre><code>.bd-c-primary,
+.bd-c-primary-f:focus,
+.bd-c-primary-h:hover,
+.bd-c-primary-a:active {
+  border-color: #009688;
+}</code></pre>
+                <p>That was easy.</p>
+            </main>
+        </div>
     </div>
 </body>

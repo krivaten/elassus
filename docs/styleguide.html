@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Elassus | Styleguide</title>
+    <link rel="stylesheet" href="/css/elassus.min.css">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="/img/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/img/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="Elassus">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/img/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/img/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/img/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/img/mstile-310x310.png">
+</head>
+
+<body class="p(0) p-t(5) m(0) ff(sans) bg-c(off-white)">
+    <header class="pos(fixed) z(9999) t(0) w(100%) h(5) bg-c(white) bs(1)">
+        <div class="container h(5) d(f) ai(c) jc(sb)">
+            <a class="t-d(n) d(f) ai(c)" href="/" title="Elassus">
+                <img class="pos(relative) w(4) h(4)" src="/img/logo.svg" aria-hidden="true"><span class="h3 fw(200) c(black) m-y(0) m-l(2) d(n) d(i)s">Elassus</span>
+            </a>
+            <nav>
+                <ul class="ls(n) d(f) h(5)">
+                    <li class="h(5)"><a class="p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h " href="/docs.html">Docs</a>
+                    </li>
+                    <li class="h(5)"><a class="p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h bg-c(gray-l2)" href="/styleguide.html">Styleguide</a>
+                    </li>
+                    <li class="h(5)"><a class="p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h " href="/reference.html">Reference</a>
+                    </li>
+                    <li class="h(5)"><a class="p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h " href="https://github.com/krivaten/elassus">GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container content m-t(2)">
+        <h1 class="fw(200)">Styleguide</h1>
+        <div class="d(f) fw(wrap) jc(c) m-x(-3)">
+            <aside class="d(n) d(b)s p-x(3) w(3col)">
+                <nav class="pos(sticky) t(5) p-t(2)">
+                    <ul class="ls(n) bg-c(gray-l3) br(2) m-t(3) p(2)">
+                        <li> <a class="d(b) p-y(2) t-d(n) fw(600)" href="#color-palette">Color Palette</a>
+                        </li>
+                        <li> <a class="d(b) p-y(2) t-d(n) fw(600)" href="#spacing-scale">Spacing Scale</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="p-x(3) w(12col) w(9col)s">
+                <p>What follows is an overview of several of the key components and styles that Elassus provides. However, for a full glance of everything, head on over to the <a href="/reference.html">Reference page</a>.</p>
+                <h2 id="color-palette">Color Palette</h2>
+                <p>Elassus comes with an appropriate amount of colors to choose from to aide in the construction of your product. Out of the box you have access to the following:</p>
+                <div class="m-y(2)">
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(primary-l3)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Primary Light 3</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(primary-l3)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(primary-l3)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(primary-l3)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(primary-l2)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Primary Light 2</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(primary-l2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(primary-l2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(primary-l2)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(primary-l1)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Primary Light 1</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(primary-l1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(primary-l1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(primary-l1)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(primary)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Primary</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(primary)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(primary)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(primary)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(primary-d1)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Primary Dark 1</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(primary-d1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(primary-d1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(primary-d1)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(primary-d2)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Primary Dark 2</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(primary-d2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(primary-d2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(primary-d2)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(success-l3)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Success Light 3</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(success-l3)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(success-l3)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(success-l3)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(success-l2)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Success Light 2</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(success-l2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(success-l2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(success-l2)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(success-l1)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Success Light 1</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(success-l1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(success-l1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(success-l1)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(success)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Success</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(success)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(success)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(success)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(success-d1)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Success Dark 1</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(success-d1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(success-d1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(success-d1)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(success-d2)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Success Dark 2</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(success-d2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(success-d2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(success-d2)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(warning-l3)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Warning Light 3</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(warning-l3)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(warning-l3)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(warning-l3)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(warning-l2)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Warning Light 2</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(warning-l2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(warning-l2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(warning-l2)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(warning-l1)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Warning Light 1</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(warning-l1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(warning-l1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(warning-l1)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(warning)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Warning</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(warning)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(warning)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(warning)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(warning-d1)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Warning Dark 1</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(warning-d1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(warning-d1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(warning-d1)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(warning-d2)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Warning Dark 2</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(warning-d2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(warning-d2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(warning-d2)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(danger-l3)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Danger Light 3</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(danger-l3)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(danger-l3)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(danger-l3)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(danger-l2)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Danger Light 2</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(danger-l2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(danger-l2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(danger-l2)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(danger-l1)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Danger Light 1</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(danger-l1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(danger-l1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(danger-l1)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(danger)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Danger</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(danger)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(danger)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(danger)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(danger-d1)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Danger Dark 1</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(danger-d1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(danger-d1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(danger-d1)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(danger-d2)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Danger Dark 2</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(danger-d2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(danger-d2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(danger-d2)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(gray-l3)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Gray Light 3</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(gray-l3)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(gray-l3)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(gray-l3)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(gray-l2)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Gray Light 2</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(gray-l2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(gray-l2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(gray-l2)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(gray-l1)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Gray Light 1</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(gray-l1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(gray-l1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(gray-l1)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(gray)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Gray</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(gray)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(gray)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(gray)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(gray-d1)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Gray Dark 1</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(gray-d1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(gray-d1)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(gray-d1)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(gray-d2)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Gray Dark 2</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(gray-d2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(gray-d2)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(gray-d2)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(black)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">Black</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(black)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(black)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(black)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)">
+                        <div class="w(12col) w(3col)s h(6) h(a)s bg-c(white)"></div>
+                        <div class="w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)">
+                            <div class="p-x(3)">
+                                <h4 class="h3 fw(200)">White</h4>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Background Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bg-c(white)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Text Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.c(white)</code>
+                                </div>
+                            </div>
+                            <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)">Border Color</div>
+                                <div class="w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)"><code class="c(danger)">.bd-c(white)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="spacing-scale">Spacing Scale</h2>
+                <p>With things like padding, margin, width<sup>*</sup>, height<sup>*</sup>, and position we believe that consistency is important. That is why there is a <em>scale</em> used in Elassus, where each <em>step</em> in the scale corresponds to fixed
+                    values used system wide. Those values are as follows:</p>
+                <div class="bd-l(1) bd-r(1) bd-b(1) bd-c(gray-l2) m-y(2)">
+                    <div class="d(f) bd-r(1) p-y(3) bd-c(gray-l2) bg-c(gray-l2) fw(600)">
+                        <div class="w(6col) w(2col)s p-x(3) ta(c)">Step</div>
+                        <div class="w(6col) w(2col)s p-x(3) ta(c)">Value</div>
+                        <div class="d(n) d(b)s w(8col) p-x(3)">Examples</div>
+                    </div>
+                    <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">0</div>
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">0</div>
+                        <div class="w(12col) w(8col)s p-x(3) p-y(2) d(f) jc(c)"><pre class="d(ib)"><code><span class="d(n)s c(gray)">Example: <br/></span>.<span class="c(danger)">p-t(0)</span>
+{ padding-top: 0; } <br/>
+.<span class="c(danger)">m(0)</span>
+{ margin: 0; } <br/>
+.<span class="c(danger)">r(0)</span>
+{ right: 0; }</code></pre>
+                        </div>
+                    </div>
+                    <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">1</div>
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">0.25rem</div>
+                        <div class="w(12col) w(8col)s p-x(3) p-y(2) d(f) jc(c)"><pre class="d(ib)"><code><span class="d(n)s c(gray)">Example: <br/></span>.<span class="c(danger)">p-t(1)</span>
+{ padding-top: 0.25rem; } <br/>
+.<span class="c(danger)">m(1)</span>
+{ margin: 0.25rem; } <br/>
+.<span class="c(danger)">r(1)</span>
+{ right: 0.25rem; }</code></pre>
+                        </div>
+                    </div>
+                    <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">2</div>
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">0.5rem</div>
+                        <div class="w(12col) w(8col)s p-x(3) p-y(2) d(f) jc(c)"><pre class="d(ib)"><code><span class="d(n)s c(gray)">Example: <br/></span>.<span class="c(danger)">p-t(2)</span>
+{ padding-top: 0.5rem; } <br/>
+.<span class="c(danger)">m(2)</span>
+{ margin: 0.5rem; } <br/>
+.<span class="c(danger)">r(2)</span>
+{ right: 0.5rem; }</code></pre>
+                        </div>
+                    </div>
+                    <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">3</div>
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">1rem</div>
+                        <div class="w(12col) w(8col)s p-x(3) p-y(2) d(f) jc(c)"><pre class="d(ib)"><code><span class="d(n)s c(gray)">Example: <br/></span>.<span class="c(danger)">p-t(3)</span>
+{ padding-top: 1rem; } <br/>
+.<span class="c(danger)">m(3)</span>
+{ margin: 1rem; } <br/>
+.<span class="c(danger)">r(3)</span>
+{ right: 1rem; }</code></pre>
+                        </div>
+                    </div>
+                    <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">4</div>
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">2rem</div>
+                        <div class="w(12col) w(8col)s p-x(3) p-y(2) d(f) jc(c)"><pre class="d(ib)"><code><span class="d(n)s c(gray)">Example: <br/></span>.<span class="c(danger)">p-t(4)</span>
+{ padding-top: 2rem; } <br/>
+.<span class="c(danger)">m(4)</span>
+{ margin: 2rem; } <br/>
+.<span class="c(danger)">r(4)</span>
+{ right: 2rem; }</code></pre>
+                        </div>
+                    </div>
+                    <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">5</div>
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">4rem</div>
+                        <div class="w(12col) w(8col)s p-x(3) p-y(2) d(f) jc(c)"><pre class="d(ib)"><code><span class="d(n)s c(gray)">Example: <br/></span>.<span class="c(danger)">p-t(5)</span>
+{ padding-top: 4rem; } <br/>
+.<span class="c(danger)">m(5)</span>
+{ margin: 4rem; } <br/>
+.<span class="c(danger)">r(5)</span>
+{ right: 4rem; }</code></pre>
+                        </div>
+                    </div>
+                    <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">6</div>
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">8rem</div>
+                        <div class="w(12col) w(8col)s p-x(3) p-y(2) d(f) jc(c)"><pre class="d(ib)"><code><span class="d(n)s c(gray)">Example: <br/></span>.<span class="c(danger)">p-t(6)</span>
+{ padding-top: 8rem; } <br/>
+.<span class="c(danger)">m(6)</span>
+{ margin: 8rem; } <br/>
+.<span class="c(danger)">r(6)</span>
+{ right: 8rem; }</code></pre>
+                        </div>
+                    </div>
+                    <div class="d(f) fw(wrap) bd-t(1) bd-c(gray-l2)">
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">7</div>
+                        <div class="w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)">16rem</div>
+                        <div class="w(12col) w(8col)s p-x(3) p-y(2) d(f) jc(c)"><pre class="d(ib)"><code><span class="d(n)s c(gray)">Example: <br/></span>.<span class="c(danger)">p-t(7)</span>
+{ padding-top: 16rem; } <br/>
+.<span class="c(danger)">m(7)</span>
+{ margin: 16rem; } <br/>
+.<span class="c(danger)">r(7)</span>
+{ right: 16rem; }</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <p><sup>*</sup> The width and height modules include more options than just the scale such as a 12 column grid and more.</p>
+                <h3>Check out the Reference</h3>
+                <p>This is just a brief overview of everything you get out of the box with Elassus. <a href="/reference.html">Check out the Reference Page</a> for a searchable tool.</p>
+            </main>
+        </div>
+    </div>
+</body>
