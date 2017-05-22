@@ -20,6 +20,12 @@ a {
     }
 }
 
+hr {
+    border: 0;
+    border-top: 1px solid $gray-l1;
+    margin: 1rem 0;
+}
+
 code {
     display: inline-block;
     border-radius: 0.25rem;
