@@ -9,7 +9,7 @@ class Result extends React.Component {
         return (
             <li className="bd-l(1) bd-r(1) bd-c(gray-l1) d(f) fw(wrap) bd-b(1)">
                 <div className="w(12col) w(6col)s p(2)">
-                    <code className="c(danger-d1) bg-c(transparent)">
+                    <code className="c(danger) bg-c(transparent)">
                         {
                             Object
                                 .keys(rule.selectors)
