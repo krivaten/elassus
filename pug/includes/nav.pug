@@ -6,7 +6,7 @@ header(class='pos(fixed) z(9999) t(0) w(100%) h(5) bg-c(white) bs(1)')
 
         nav
             ul(class='ls(n) d(f) h(5)')
-                each url, name in { Docs: '/docs.html', Styleguide: '/styleguide.html', Reference: '/reference.html', GitHub: 'https://github.com/krivaten/elassus' }
+                each item in [ { name: 'Docs', url: '/docs.html' }, { name: 'Reference', url: '/reference.html' }, { name: 'Examples', url: '/examples/index.html' }, { name: 'GitHub', url: 'https://github.com/krivaten/elassus'}]
                     li(class='h(5)')
-                        -var current = currentUrl === url ? 'bg-c(gray-l2)' : '';
-                        a(href=url class='p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h ' + current) !{name}
+                        -var current = currentUrl === item.url ? 'bg-c(gray-l2)' : '';
+                        a(href=item.url class='p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h ' + current)= item.name
