@@ -48,15 +48,17 @@ let setCurrentSection = (item) => {
 
 let addChild = (item) => {
     let selectors = item.selectors.map((className) => {
-        className = className
+        let classNameArray = className
             .replace(/\\/g, '')
             .split(':');
 
-        let pseudo = null;
-        if (className.length > 1) {
-            pseudo = className.pop();
+        let pseudo;
+        if (classNameArray.length > 1) {
+            pseudo = classNameArray.slice(2);
+            pseudo = pseudo.join(':');
         }
 
+        className = classNameArray.slice(0, 2);
         className = className.join(':');
 
         return {
