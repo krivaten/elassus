@@ -38,9 +38,9 @@
                 <ul class="ls(n) d(f) h(5)">
                     <li class="h(5)"><a class="p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h bg-c(gray-l2)" href="/docs.html">Docs</a>
                     </li>
-                    <li class="h(5)"><a class="p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h " href="/styleguide.html">Styleguide</a>
-                    </li>
                     <li class="h(5)"><a class="p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h " href="/reference.html">Reference</a>
+                    </li>
+                    <li class="h(5)"><a class="p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h " href="/examples/index.html">Examples</a>
                     </li>
                     <li class="h(5)"><a class="p-x(2) p-x(3)s d(f) ai(c) h(5) t-d(n) bg-c(gray-l2):h " href="https://github.com/krivaten/elassus">GitHub</a>
                     </li>
@@ -98,21 +98,21 @@
                 <p>A lot of time went in to determining the class name syntax for Elassus. We wanted to do our best to make sure that each selector was not only concise (As seen in libraries such as <a href="http://tachyons.io/" target="_blank">Tachyons</a> and
                     <a
                     href="http://basscss.com/" target="_blank">Basscss</a>), but also easy to read and understand what it was responsible for (Like you see in tools like <a href="https://acss.io/" target="_blank">Atomic CSS</a>). With that being said, what follows is a map of the naming syntax
-                        developed:</p><code class="m-y(3)">&lt;context&gt;-&lt;modifier&gt;(&lt;value&gt;)&lt;breakpoint&gt;:&lt;pseudo&gt;</code>
+                        developed:</p><pre><code class="m-y(3)">&lt;<span class="c(danger)">context</span>&gt;-&lt;<span class="c(danger)">modifier</span>&gt;(&lt;<span class="c(danger)">value</span>&gt;)&lt;<span class="c(danger)">breakpoint</span>&gt;:&lt;<span class="c(danger)">pseudo</span>&gt;</code></pre>
                 <ul>
-                    <li><code>context</code>: Calls out the primary declaration of the style (i.e., padding, text-align, justify-content, etc).</li>
-                    <li><code>modifier</code>: Identifies an optional subset of the primary declaration (e.g., top, bottom, color, etc)</li>
-                    <li><code>value</code>: The primary value being added to the declaration (e.g., 12col, center, gray, etc)</li>
-                    <li><code>breakpoint</code>: An optional breakpoint to limit the style to (e.g., small, medium, large, etc)</li>
-                    <li><code>pseudo</code>: An optional pseudo class to apply the styles to (e.g., focus, hover, active, etc)</li>
+                    <li><code class="c(danger)">context</code>: Calls out the primary declaration of the style (i.e., padding, text-align, justify-content, etc).</li>
+                    <li><code class="c(danger)">modifier</code>: Identifies an optional subset of the context (e.g., top, bottom, color, etc)</li>
+                    <li><code class="c(danger)">value</code>: The primary value being added to the declaration (e.g., 12col, center, gray, etc)</li>
+                    <li><code class="c(danger)">breakpoint</code>: An optional breakpoint to limit the style to (e.g., small, medium, large, etc)</li>
+                    <li><code class="c(danger)">pseudo</code>: An optional pseudo class to apply the styles to (e.g., focus, hover, active, etc)</li>
                 </ul>
                 <p>With all this you are able to have classes like the following:</p>
                 <ul>
-                    <li><code class="c(danger-d1)">.p-t(2)l</code>: Adds padding-top with a value of 0.5rem (The second value in the size scale).</li>
-                    <li><code class="c(danger-d1)">.ta(c)</code>: Aligns text to the center.</li>
-                    <li><code class="c(danger-d1)">.bg-c(gray)</code>: Adds a background color of "gray"</li>
-                    <li><code class="c(danger-d1)">.w(50%)</code>: Sets the width to 50%</li>
-                    <li><code class="c(danger-d1)">.c(gray):h</code>: Sets the text color to "gray" on hover</li>
+                    <li><code>.p-t(2)l</code>: Adds padding-top with a value of 0.5rem (The second value in the size scale).</li>
+                    <li><code>.ta(c)</code>: Aligns text to the center.</li>
+                    <li><code>.bg-c(gray)</code>: Adds a background color of "gray"</li>
+                    <li><code>.w(50%)</code>: Sets the width to 50%</li>
+                    <li><code>.c(gray):h</code>: Sets the text color to "gray" on hover</li>
                 </ul>
                 <hr>
                 <h2 id="understanding-modules">Understanding Modules</h2>

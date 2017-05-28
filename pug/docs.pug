@@ -45,23 +45,24 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
                 h2#class-name-syntax Class Name Syntax
                 p A lot of time went in to determining the class name syntax for Elassus. We wanted to do our best to make sure that each selector was not only concise (As seen in libraries such as <a href="http://tachyons.io/" target="_blank">Tachyons</a> and <a href="http://basscss.com/" target="_blank">Basscss</a>), but also easy to read and understand what it was responsible for (Like you see in tools like <a href="https://acss.io/" target="_blank">Atomic CSS</a>). With that being said, what follows is a map of the naming syntax developed:
 
-                code(class='m-y(3)') &lt;context&gt;-&lt;modifier&gt;(&lt;value&gt;)&lt;breakpoint&gt;:&lt;pseudo&gt;
+                pre
+                    code(class='m-y(3)') &lt;<span class="c(danger)">context</span>&gt;-&lt;<span class="c(danger)">modifier</span>&gt;(&lt;<span class="c(danger)">value</span>&gt;)&lt;<span class="c(danger)">breakpoint</span>&gt;:&lt;<span class="c(danger)">pseudo</span>&gt;
 
                 ul
-                    li <code>context</code>: Calls out the primary declaration of the style (i.e., padding, text-align, justify-content, etc).
-                    li <code>modifier</code>: Identifies an optional subset of the primary declaration (e.g., top, bottom, color, etc)
-                    li <code>value</code>: The primary value being added to the declaration (e.g., 12col, center, gray, etc)
-                    li <code>breakpoint</code>: An optional breakpoint to limit the style to (e.g., small, medium, large, etc)
-                    li <code>pseudo</code>: An optional pseudo class to apply the styles to (e.g., focus, hover, active, etc)
+                    li <code class="c(danger)">context</code>: Calls out the primary declaration of the style (i.e., padding, text-align, justify-content, etc).
+                    li <code class="c(danger)">modifier</code>: Identifies an optional subset of the context (e.g., top, bottom, color, etc)
+                    li <code class="c(danger)">value</code>: The primary value being added to the declaration (e.g., 12col, center, gray, etc)
+                    li <code class="c(danger)">breakpoint</code>: An optional breakpoint to limit the style to (e.g., small, medium, large, etc)
+                    li <code class="c(danger)">pseudo</code>: An optional pseudo class to apply the styles to (e.g., focus, hover, active, etc)
 
                 p With all this you are able to have classes like the following:
 
                 ul
-                    li <code class="c(danger-d1)">.p-t(2)l</code>: Adds padding-top with a value of 0.5rem (The second value in the size scale).
-                    li <code class="c(danger-d1)">.ta(c)</code>: Aligns text to the center.
-                    li <code class="c(danger-d1)">.bg-c(gray)</code>: Adds a background color of "gray"
-                    li <code class="c(danger-d1)">.w(50%)</code>: Sets the width to 50%
-                    li <code class="c(danger-d1)">.c(gray):h</code>: Sets the text color to "gray" on hover
+                    li <code>.p-t(2)l</code>: Adds padding-top with a value of 0.5rem (The second value in the size scale).
+                    li <code>.ta(c)</code>: Aligns text to the center.
+                    li <code>.bg-c(gray)</code>: Adds a background color of "gray"
+                    li <code>.w(50%)</code>: Sets the width to 50%
+                    li <code>.c(gray):h</code>: Sets the text color to "gray" on hover
 
                 hr
 
