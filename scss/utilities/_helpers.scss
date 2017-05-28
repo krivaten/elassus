@@ -26,6 +26,12 @@ hr {
     margin: 1rem 0;
 }
 
+pre {
+    overflow-x: auto;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
 code {
     display: inline-block;
     border-radius: 0.25rem;
