@@ -4,7 +4,7 @@ doctype html
 -var currentUrl = '/'
 include includes/head.pug
 
-body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
+body(class='p(0) p-t(5) m(0) ff(sans) bgc(off-white)')
 
     include includes/nav.pug
 
@@ -18,8 +18,8 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
         div(class='m-y(3)')
             a(class="github-button" href="https://github.com/krivaten/elassus" data-count-href="/krivaten/elassus/stargazers" data-count-api="/repos/krivaten/elassus#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star krivaten/elassus on GitHub") Star
 
-        div(class='bg-c(primary) c(white) p-y(4) m-y(4) m-x(-3) p-x(3)')
-            h2(class='fw(200) t-a(c)') Highlights
+        div(class='bgc(primary) c(white) p-y(4) m-y(4) m-x(-3) p-x(3)')
+            h2(class='fw(200)') Highlights
 
             div(class='d(f) fw(wrap) m-x(-3)')
                 div(class='p-x(3) w(4col)m')
@@ -64,12 +64,12 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
         pre
             code &lt;link rel="stylesheet" href="https://unpkg.com/elassus/css/elassus.min.css" /&gt;
 
-        div(class='bg-c(gray-l2) p-y(4) m-y(4) m-x(-3) p-x(3)')
-            h2(class='fw(200) t-a(c)') Get Up To Speed
+        div(class='bgc(gray-l2) p-y(4) m-y(4) m-x(-3) p-x(3)')
+            h2(class='fw(200) ta(c)') Get Up To Speed
 
             div(class='d(f) fw(wrap) jc(c)')
                 each item in [{ title: 'Read the Docs', url: '/docs.html' }, { title: 'Check the Reference', url: '/reference.html' }, { title: 'View Some Examples', url: '/examples.html' }]
-                    a(href=item.url class="bg-c(primary) bd(1) bd-c(primary) bg-c(primary-d1):h t-d(n) br(2) c(white) c(white):h fw(600) t-a(c) t-t(uc) p(3) m-x(3) trs(all) w(3col)")= item.title
+                    a(href=item.url class="bgc(primary) bd(1) bdc(primary) bgc(primary-d1):h td(n) bdrad(2) c(white) c(white):h fw(600) ta(c) tt(uc) p(3) m-x(3) m-y(2) trs(all) w(12col) w(3col)s")= item.title
 
         h2 Current modules
         p Out of the box, Elassus comes with several modules to get you up and running. If there is one you don't see listed below, it is easy to make it yourself or submit a request!
@@ -90,41 +90,41 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
 
         div(class='m-y(2)')
             each colorClass, name in {"Primary Light 3":"primary-l3","Primary Light 2":"primary-l2","Primary Light 1":"primary-l1","Primary":"primary","Primary Dark 1":"primary-d1","Primary Dark 2":"primary-d2","Success Light 3":"success-l3","Success Light 2":"success-l2","Success Light 1":"success-l1","Success":"success","Success Dark 1":"success-d1","Success Dark 2":"success-d2","Warning Light 3":"warning-l3","Warning Light 2":"warning-l2","Warning Light 1":"warning-l1","Warning":"warning","Warning Dark 1":"warning-d1","Warning Dark 2":"warning-d2","Danger Light 3":"danger-l3","Danger Light 2":"danger-l2","Danger Light 1":"danger-l1","Danger":"danger","Danger Dark 1":"danger-d1","Danger Dark 2":"danger-d2","Gray Light 3":"gray-l3","Gray Light 2":"gray-l2","Gray Light 1":"gray-l1","Gray":"gray","Gray Dark 1":"gray-d1","Gray Dark 2":"gray-d2","Black":"black","White":"white"}
-                div(class='m-b(4) bd(1) bd-c(gray-l2) d(f) fw(wrap)')
-                    div(class='w(12col) w(3col)s h(6) h(a)s bg-c(' + colorClass + ')')
-                    div(class='w(12col) w(9col)s bd-l(1)s bd-c(gray-l2)')
+                div(class='m-b(4) bd(1) bdc(gray-l2) d(f) fw(wrap)')
+                    div(class='w(12col) w(3col)s h(6) h(a)s bgc(' + colorClass + ')')
+                    div(class='w(12col) w(9col)s bd-l(1)s bdc(gray-l2)')
                         div(class='p-x(3)')
                             h4(class='h3 fw(200)')= name
 
-                        div(class='d(f) fw(wrap) bd-t(1) bd-c(gray-l2)')
-                            div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)') Background Color
+                        div(class='d(f) fw(wrap) bd-t(1) bdc(gray-l2)')
+                            div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bdc(gray-l2)') Background Color
                             div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)')
                                 code(class='c(danger)') .bg-c(!{colorClass})
 
-                        div(class='d(f) fw(wrap) bd-t(1) bd-c(gray-l2)')
-                            div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)') Text Color
+                        div(class='d(f) fw(wrap) bd-t(1) bdc(gray-l2)')
+                            div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bdc(gray-l2)') Text Color
                             div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)')
                                 code(class='c(danger)') .c(!{colorClass})
 
-                        div(class='d(f) fw(wrap) bd-t(1) bd-c(gray-l2)')
-                            div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bd-c(gray-l2)') Border Color
+                        div(class='d(f) fw(wrap) bd-t(1) bdc(gray-l2)')
+                            div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c) bd-r(1)s bdc(gray-l2)') Border Color
                             div(class='w(12col) w(6col)s p-x(3) p-y(2) d(f) ai(c)')
                                 code(class='c(danger)') .bd-c(!{colorClass})
 
         h2 Spacing Scale
         p With things like padding, margin, width<sup>*</sup>, height<sup>*</sup>, and position we believe that consistency is important. That is why there is a <em>scale</em> used in Elassus, where each <em>step</em> in the scale corresponds to fixed values used system wide. Those values are as follows:
 
-        div(class='bd-l(1) bd-r(1) bd-b(1) bd-c(gray-l2) m-y(2)')
-            div(class='d(f) bd-r(1) p-y(3) bd-c(gray-l2) bg-c(gray-l2) fw(600)')
+        div(class='bd-l(1) bd-r(1) bd-b(1) bdc(gray-l2) m-y(2)')
+            div(class='d(f) bd-r(1) p-y(3) bdc(gray-l2) bgc(gray-l2) fw(600)')
                 div(class='w(6col) w(2col)s p-x(3) ta(c)') Step
                 div(class='w(6col) w(2col)s p-x(3) ta(c)') Value
                 div(class='d(n) d(b)s w(8col) p-x(3)') Examples
             each value, step in { 0: '0', 1: '0.25rem', 2: '0.5rem', 3: '1rem', 4: '2rem', 5: '4rem', 6: '8rem', 7: '16rem' }
-                div(class='d(f) fw(wrap) bd-t(1) bd-c(gray-l2)')
-                    div(class='w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)')= step
-                    div(class='w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bd-c(gray-l2)')= value
+                div(class='d(f) fw(wrap) bd-t(1) bdc(gray-l2)')
+                    div(class='w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bdc(gray-l2)')= step
+                    div(class='w(6col) w(2col)s p-x(3) p-y(2) d(f) ai(c) jc(c) bd-r(1)s bdc(gray-l2)')= value
                     div(class='w(12col) w(8col)s p-x(3) p-y(2) d(f) jc(c)')
-                        pre(class='d(ib)')
+                        pre
                             code
                                 span(class='d(n)s c(gray)') Example: <br/>
                                 | .<span class="c(danger)">p-t(!{step})</span> { padding-top: !{value}; } <br/>

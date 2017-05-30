@@ -4,7 +4,7 @@ doctype html
 -var currentUrl = '/examples/index.html'
 include ../includes/head.pug
 
-body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
+body(class='p(0) p-t(5) m(0) ff(sans) bgc(off-white)')
     include ../includes/nav.pug
 
     div(class='container content m-t(2)')
@@ -15,7 +15,7 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
 
         ul(class='ls(n) d(f) fw(wrap) jc(c) m-x(-3)')
             each item in [ { name: 'Twitter Clone', path: 'twitter' }, { name: 'Corporate Site', path: 'corporate' }]
-                li(class='p-x(3) w(12col) w(3col)s')
-                    a(href='/examples/'+item.path+'.html' class='d(b) t-a(c) t-d(n)')
+                li(class='p(3) w(12col) w(4col)s')
+                    a(href='/examples/'+item.path+'.html' class='d(b) ta(c) td(n)')
                         img(src='/img/'+item.path+'.png' class='bd(1)')
                         span(class='p-y(2)')= item.name

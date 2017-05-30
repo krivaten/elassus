@@ -4,7 +4,7 @@ doctype html
 -var currentUrl = '/docs.html'
 include includes/head.pug
 
-body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
+body(class='p(0) p-t(5) m(0) ff(sans) bgc(off-white)')
     include includes/nav.pug
 
     div(class='container content m-t(2)')
@@ -13,18 +13,18 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
         div(class='d(f) fw(wrap) jc(c) m-x(-3)')
             aside(class='d(n) d(b)s p-x(3) w(3col)')
                 nav(class='pos(sticky) t(5) p-t(2)')
-                    ul(class='ls(n) bg-c(gray-l3) br(2) m-t(3) p(2)')
+                    ul(class='ls(n) bgc(gray-l3) bdrad(2) m-t(3) p(2)')
                         each item in [ { name: 'Getting Started' }, { name: 'Class Name Syntax' }, { name: 'Understanding Modules', children: [{ name: 'Title' }, { name: 'Breakpoints' }, { name: 'Pseudo Classes' }, { name: 'Values' }, { name: 'Classes' }] }, { name: 'Customization', children: [{name: 'Colors' }, { name: 'Aliases' }, { name: 'Class Name Syntax' }]}]
                             li 
                                 - itemId = item.name.replace(/ /g, '-').toLowerCase()
-                                a(href='#'+itemId class='d(b) p-y(2) t-d(n) fw(600)')= item.name
+                                a(href='#'+itemId class='d(b) p-y(2) td(n) fw(600)')= item.name
 
                                 if item.children
-                                    ul(class='ls(n) m-l(3) bd-l(1) bd-c(gray-l1) p-l(2)')
+                                    ul(class='ls(n) m-l(3) bd-l(1) bdc(gray-l1) p-l(2)')
                                         each child in item.children
                                             li
                                                 - childId = itemId+'-'+child.name.replace(/ /g, '-').toLowerCase()
-                                                a(href='#'+childId class='t-d(n) d(b)')= child.name
+                                                a(href='#'+childId class='td(n) d(b)')= child.name
 
             main(class='p-x(3) w(12col) w(9col)s')
 
@@ -49,11 +49,11 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
                 p A lot of time went in to determining the class name syntax for Elassus. We wanted to do our best to make sure that each selector was not only concise (As seen in libraries such as <a href="http://tachyons.io/" target="_blank">Tachyons</a> and <a href="http://basscss.com/" target="_blank">Basscss</a>), but also easy to read and understand what it was responsible for (Like you see in tools like <a href="https://acss.io/" target="_blank">Atomic CSS</a>). With that being said, what follows is a map of the naming syntax developed:
 
                 pre
-                    code(class='m-y(3)') &lt;<span class="c(danger)">context</span>&gt;-&lt;<span class="c(danger)">modifier</span>&gt;(&lt;<span class="c(danger)">value</span>&gt;)&lt;<span class="c(danger)">breakpoint</span>&gt;:&lt;<span class="c(danger)">pseudo</span>&gt;
+                    code(class='m-y(3)') &lt;<span class="c(danger)">context</span>&gt;-&lt;<span class="c(danger)">direction</span>&gt;(&lt;<span class="c(danger)">value</span>&gt;)&lt;<span class="c(danger)">breakpoint</span>&gt;:&lt;<span class="c(danger)">pseudo</span>&gt;
 
                 ul
                     li <code class="c(danger)">context</code>: Calls out the primary declaration of the style (i.e., padding, text-align, justify-content, etc).
-                    li <code class="c(danger)">modifier</code>: Identifies an optional subset of the context (e.g., top, bottom, color, etc)
+                    li <code class="c(danger)">direction</code>: Identifies an optional direction for the context (e.g., top, bottom, width, etc)
                     li <code class="c(danger)">value</code>: The primary value being added to the declaration (e.g., 12col, center, gray, etc)
                     li <code class="c(danger)">breakpoint</code>: An optional breakpoint to limit the style to (e.g., small, medium, large, etc)
                     li <code class="c(danger)">pseudo</code>: An optional pseudo class to apply the styles to (e.g., focus, hover, active, etc)
@@ -185,15 +185,15 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
 
                 pre
                     code
-                        | $text-align-classes: (<span class="c(danger)">t-a</span>: <span class="c(success)">text-align</span>) !default;
+                        | $text-align-classes: (<span class="c(danger)">ta</span>: <span class="c(success)">text-align</span>) !default;
                 
                 p And will produce a set of classes that looks like this:
 
                 pre
                     code
-                        | .<span class="c(danger)">t-a</span>(l) { <span class="c(success)">text-align</span>: left; }
-                        | .<span class="c(danger)">t-a</span>(r) { <span class="c(success)">text-align</span>: right; }
-                        | .<span class="c(danger)">t-a</span>(c) { <span class="c(success)">text-align</span>: center; }
+                        | .<span class="c(danger)">ta</span>(l) { <span class="c(success)">text-align</span>: left; }
+                        | .<span class="c(danger)">ta</span>(r) { <span class="c(success)">text-align</span>: right; }
+                        | .<span class="c(danger)">ta</span>(c) { <span class="c(success)">text-align</span>: center; }
 
                 p But these maps can also become a lot more complex, like the following:
 
@@ -363,15 +363,15 @@ body(class='p(0) p-t(5) m(0) ff(sans) bg-c(off-white)')
                 p Context aliases refer to the values that are used as the <em>context</em> in the class name syntax. These are used to provide a centralized hub to view all the contexts at a glance but also be able to change them in one place. Let's look at the context alias for text-align:
 
                 pre
-                    code $c-text-align: <span class="c(danger)">t-a</span> !default;
+                    code $c-text-align: <span class="c(danger)">ta</span> !default;
                 
                 p This alias will then be used to identify the context of all the <code>text-align</code> classes:
 
                 pre
                     code
-                        | .<span class="c(danger)">t-a</span>(l) { text-align: left; }
-                        | .<span class="c(danger)">t-a</span>(c) { text-align: center; }
-                        | .<span class="c(danger)">t-a</span>(r) { text-align: right; }
+                        | .<span class="c(danger)">ta</span>(l) { text-align: left; }
+                        | .<span class="c(danger)">ta</span>(c) { text-align: center; }
+                        | .<span class="c(danger)">ta</span>(r) { text-align: right; }
                 
                 p By updating the value of <code>$c-text-align</code> or any other context alias variable, Elassus will automatically change the context of all the corresponding classes.
 
