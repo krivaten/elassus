@@ -10,7 +10,7 @@ $flex-values: (
 ) !default;
 $flex-classes: (#{$c-flex}: flex) !default;
 $flex-module: (
-    title: 'Module: Flex',
+    title: 'Module: Flex (Flexbox)',
     breakpoints: $flex-breakpoints,
     pseudo-classes: $flex-pseudo-classes,
     values: $flex-values,
@@ -28,7 +28,7 @@ $flex-wrap-values: (
 ) !default;
 $flex-wrap-classes: (#{$c-flex-wrap}: flex-wrap) !default;
 $flex-wrap-module: (
-    title: 'Module: Flex Wrap',
+    title: 'Module: Flex Wrap (Flexbox)',
     breakpoints: $flex-wrap-breakpoints,
     pseudo-classes: $flex-wrap-pseudo-classes,
     values: $flex-wrap-values,
@@ -47,7 +47,7 @@ $flex-direction-values: (
 ) !default;
 $flex-direction-classes: (#{$c-flex-direction}: flex-direction) !default;
 $flex-direction-module: (
-    title: 'Module: Flex Direction',
+    title: 'Module: Flex Direction (Flexbox)',
     breakpoints: $flex-direction-breakpoints,
     pseudo-classes: $flex-direction-pseudo-classes,
     values: $flex-direction-values,
@@ -67,7 +67,7 @@ $align-items-values: (
 ) !default;
 $align-items-classes: (#{$c-align-items}: align-items) !default;
 $align-items-module: (
-    title: 'Module: Align Items',
+    title: 'Module: Align Items (Flexbox)',
     breakpoints: $align-items-breakpoints,
     pseudo-classes: $align-items-pseudo-classes,
     values: $align-items-values,
@@ -107,7 +107,7 @@ $justify-content-values: (
 ) !default;
 $justify-content-classes: (#{$c-justify-content}: justify-content) !default;
 $justify-content-module: (
-    title: 'Module: Justify Content',
+    title: 'Module: Justify Content (Flexbox)',
     breakpoints: $justify-content-breakpoints,
     pseudo-classes: $justify-content-pseudo-classes,
     values: $justify-content-values,
@@ -128,7 +128,7 @@ $align-content-values: (
 ) !default;
 $align-content-classes: (#{$c-align-content}: align-content) !default;
 $align-content-module: (
-    title: 'Module: Align Content',
+    title: 'Module: Align Content (Flexbox)',
     breakpoints: $align-content-breakpoints,
     pseudo-classes: $align-content-pseudo-classes,
     values: $align-content-values,
