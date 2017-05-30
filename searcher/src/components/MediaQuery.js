@@ -12,7 +12,7 @@ class Result extends React.Component {
         }
         return (
             <li className="m-b(2)">
-                <div className="bg-c(white) pos(sticky) t(6) z(4) bd(1) bd-c(gray-l1) fw(600)">
+                <div className="bgc(white) pos(sticky) t(6) z(4) bd(1) bdc(gray-l1) fw(600)">
                     { breakpointElement }
                     <div className="d(n) d(f)s">
                         <div className="w(6col) p(2)">

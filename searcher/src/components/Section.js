@@ -7,7 +7,7 @@ class Result extends React.Component {
 
         return (
             <li>
-                <div className="d(f) ai(c) p(2) bg-c(white) pos(sticky) t(5) z(5) h(5)">
+                <div className="d(f) ai(c) p(2) bgc(white) pos(sticky) t(5) z(5) h(5)">
                     <h3 className="m(0) p(0) fw(200)">{ section.title }</h3>
                 </div>
                 <ul className="ls(n)">
