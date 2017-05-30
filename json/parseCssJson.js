@@ -53,12 +53,18 @@ let addChild = (item) => {
             .split(':');
 
         let pseudo;
-        if (classNameArray.length > 1) {
+        if (classNameArray.length > 2) {
             pseudo = classNameArray.slice(2);
-            pseudo = pseudo.join(':');
+            className = classNameArray.slice(0, 2);
+        } else if (classNameArray.length > 1) {
+            pseudo = classNameArray.slice(1);
+            className = classNameArray.slice(0, 1);
+        } else {
+            pseudo = [];
+            className = classNameArray;
         }
 
-        className = classNameArray.slice(0, 2);
+        pseudo = pseudo.join(':');
         className = className.join(':');
 
         return {
