@@ -30,6 +30,12 @@ pre {
     overflow-x: auto;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+
+    &,
+    code {
+        display: block;
+        width: 100%;
+    }
 }
 
 code {
