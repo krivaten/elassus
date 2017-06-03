@@ -408,35 +408,6 @@ template {
 img {
   max-width: 100%; }
 
-a {
-  color: #009688; }
-  a:hover {
-    color: #4DB6AC; }
-  a:active {
-    color: #00796B; }
-
-hr {
-  border: 0;
-  border-top: 1px solid #d9d9d9;
-  margin: 1rem 0; }
-
-pre {
-  overflow-x: auto;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem; }
-  pre,
-  pre code {
-    display: block;
-    width: 100%; }
-
-code {
-  display: inline-block;
-  border-radius: 0.25rem;
-  padding: 0.25rem;
-  margin-top: -0.25rem;
-  margin-bottom: -0.25rem;
-  background-color: #f2f2f2; }
-
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -459,112 +430,135 @@ button,
   left: 0;
   right: 0; }
 
-.content {
+body {
   font-size: 1em;
   line-height: 1.25; }
 
-p,
-.p {
-  line-height: 1.618em;
-  margin-bottom: 1.618em; }
-
 h1,
 .h1 {
-  font-size: 2em;
-  letter-spacing: -1px;
-  line-height: 1.25;
-  margin-top: 0.9375em;
-  margin-bottom: 0.3125em; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem; }
 
 h2,
 .h2 {
-  font-size: 1.625em;
-  line-height: 1.15384615;
-  margin-top: 1.15384616em;
-  margin-bottom: 0.38461539em; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  font-size: 1.625rem;
+  line-height: 1.875rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
 
 h3,
 .h3 {
-  font-size: 1.375em;
-  line-height: 1.13636364;
-  margin-top: 1.36363637em;
-  margin-bottom: 0.45454546em; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.625rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem; }
 
 h4,
 .h4 {
-  font-size: 1.125em;
-  line-height: 1.11111111;
-  margin-top: 1.66666667em;
-  margin-bottom: 0.55555556em; }
-
-blockquote,
-.blockquote {
-  width: 85%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 1.25em;
-  line-height: 1.25;
-  font-weight: 300;
-  font-style: normal;
-  position: relative; }
-
-small,
-.small {
-  font-size: 80%; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem; }
 
 @media screen and (min-width: 768px) {
-  .content {
-    font-size: 1em;
-    line-height: 1.375; }
+  body {
+    line-height: 1.375rem; }
   h1,
   .h1 {
-    font-size: 2.5em;
-    letter-spacing: normal;
-    line-height: 1.125;
-    margin-top: 0.73333334em;
-    margin-bottom: 0.24444445em; }
+    font-size: 2.5rem;
+    line-height: 2.75rem; }
   h2,
   .h2 {
-    font-size: 2em;
-    line-height: 1.25;
-    margin-top: 1.03125em;
-    margin-bottom: 0.34375em; }
+    font-size: 2rem;
+    line-height: 2.5rem; }
   h3,
   .h3 {
-    font-size: 1.5em;
-    line-height: 1.25;
-    margin-top: 1.37500001em;
-    margin-bottom: 0.45833334em; }
-  h4,
-  .h4 {
-    line-height: 1.22222222;
-    margin-top: 1.83333333em;
-    margin-bottom: 0.61111111em; }
-  blockquote,
-  .blockquote {
-    font-size: 1.5em;
-    line-height: 1.45833333; } }
+    font-size: 1.5rem; } }
 
 @media screen and (min-width: 992px) {
   h1,
   .h1 {
-    font-size: 3em;
-    letter-spacing: normal;
-    line-height: 1.05;
-    margin-top: 0.6875em;
-    margin-bottom: 0.22916667em; }
+    font-size: 3rem;
+    line-height: 3.25rem; }
   h2,
   .h2 {
-    font-size: 2.25em;
-    line-height: 1.25;
-    margin-top: 1.03125em;
-    margin-bottom: 0.34375em; }
+    font-size: 2.25rem;
+    line-height: 2.75rem; }
   h3,
   .h3 {
-    font-size: 1.75em;
-    line-height: 1.25;
-    margin-top: 1.37500001em;
-    margin-bottom: 0.45833334em; } }
+    font-size: 1.75rem;
+    line-height: 2.25rem; } }
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.5rem; }
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem; }
+
+hr,
+.hr {
+  border: 1px solid #d9d9d9;
+  margin: -1px 0; }
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+pre {
+  overflow-x: auto;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem; }
+  pre,
+  pre code {
+    display: block;
+    width: 100%; }
+
+code {
+  display: inline-block;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  margin-top: -0.25rem;
+  margin-bottom: -0.25rem;
+  background-color: #f2f2f2; }
+
+a {
+  color: #009688; }
+  a:hover {
+    color: #4DB6AC; }
+  a:active {
+    color: #00796B; }
+
+small,
+.small {
+  font-size: 80%; }
 
 .container {
   margin-left: auto;

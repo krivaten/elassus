@@ -10,43 +10,6 @@ img {
     max-width: 100%;
 }
 
-a {
-    color: $link-color;
-    &:hover {
-        color: $link-color-hover;
-    }
-    &:active {
-        color: $link-color-active;
-    }
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid $gray-l1;
-    margin: 1rem 0;
-}
-
-pre {
-    overflow-x: auto;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-
-    &,
-    code {
-        display: block;
-        width: 100%;
-    }
-}
-
-code {
-    display: inline-block;
-    border-radius: 0.25rem;
-    padding: 0.25rem;
-    margin-top: -0.25rem;
-    margin-bottom: -0.25rem;
-    background-color: $code-background;
-}
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
