@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Section from './components/Section';
-import cssJson from './css.json';
+import axios from 'axios';
 
 const getParams = query => {
     if (!query) {
@@ -31,8 +31,12 @@ class App extends Component {
         };
     }
 
-    componentWillMount() {
-        this.search(this.state.query);
+    componentDidMount() {
+        axios.get('/css.json').then(response => {
+            let css = response.data;
+            this.setState({ css });
+            this.search(this.state.query);
+        });
     }
 
     updateQuery(query) {
@@ -42,15 +46,16 @@ class App extends Component {
 
     search(query) {
         let results;
+        let css = this.state.css;
 
         if (query) {
-            results = cssJson.filter((item) => {
+            results = css.filter((item) => {
                 let title = item.title ? item.title.toLowerCase() : null;
 
                 return title ? title.indexOf(query.toLowerCase()) > -1 : false;
             });
         } else {
-            results = cssJson;
+            results = css;
         }
 
         this.setState({ results });
