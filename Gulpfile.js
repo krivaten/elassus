@@ -40,7 +40,7 @@ gulp.task('json', function() {
         .pipe(gulp.dest('./json'))
         .pipe(cleanCssJson({
             src: './json/modules.css',
-            dest: './searcher/src/css.json'
+            dest: './docs/css.json'
         }));
 });
 
