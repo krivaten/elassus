@@ -14,6 +14,7 @@ let cleanCssJson = (options) => {
         let result = parseCssJsonArray(json.value);
 
         fs.unlink(options.src);
+
         fs.writeFile(options.dest, JSON.stringify(result), (err) => {
             if(err) throw err;
         });
@@ -28,6 +29,9 @@ let parseCssJsonArray = (data) => {
         else if (type === 'rule') addChild(item);
         else if (type === '@media') addBucket(item);
     });
+
+    currentSection.children.push(currentBucket);
+    result.push(currentSection);
 
     return result;
 };
