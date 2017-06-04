@@ -37,9 +37,11 @@ gulp.task('styles', function() {
 gulp.task('json', function() {
     gulp.src('./json/modules.scss')
         .pipe(sass({ includePaths: './scss' }).on('error', sass.logError))
-        .pipe(gulp.dest('./searcher/public'))
-        .pipe(exec('cssparser ./searcher/public/modules.css -o ./searcher/src/css.json'))
-        .pipe(cleanCssJson('./searcher/src/css.json'));
+        .pipe(gulp.dest('./json'))
+        .pipe(cleanCssJson({
+            src: './json/modules.css',
+            dest: './searcher/src/css.json'
+        }));
 });
 
 gulp.task('pug', function buildHTML() {

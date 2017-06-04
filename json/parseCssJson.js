@@ -1,16 +1,20 @@
 let fs = require('fs');
 let through = require('through2');
+let cssparser = require('cssparser/lib/cssparser.js');
 let result = [];
 let currentSection = null;
 let currentBucket = null;
 
-let cleanCssJson = (filePath) => {
-    fs.readFile(filePath, 'utf8', (err, data) => {
+let cleanCssJson = (options) => {
+    fs.readFile(options.src, 'utf8', (err, data) => {
         if (err) throw err;
-        let json = JSON.parse(data);
+        let parser = new cssparser.Parser();
+        let ast = parser.parse(data);
+        let json = ast.toJSON('simple');
         let result = parseCssJsonArray(json.value);
 
-        fs.writeFile(filePath, JSON.stringify(result), (err) => {
+        fs.unlink(options.src);
+        fs.writeFile(options.dest, JSON.stringify(result), (err) => {
             if(err) throw err;
         });
     });
