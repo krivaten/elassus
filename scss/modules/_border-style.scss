@@ -3,7 +3,7 @@
 //
 
 $border-style-breakpoints: null !default;
-$border-style-pseudo-classes: $pseudo-focusable !default;
+$border-style-pseudo-classes: null !default;
 $border-style-values: (
     #{$a-none}: none,
     #{$a-solid}: solid,

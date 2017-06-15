@@ -3,7 +3,7 @@
 //
 
 $font-style-breakpoints: null !default;
-$font-style-pseudo-classes: $pseudo-focusable !default;
+$font-style-pseudo-classes: null !default;
 $font-style-values: (
     #{$a-normal}: normal,
     #{$a-italic}: italic

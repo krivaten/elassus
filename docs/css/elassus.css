@@ -829,23 +829,23 @@ small,
 .bgc\(gray-d2\), .bgc\(gray-d2\)\:f:focus, .bgc\(gray-d2\)\:h:hover, .bgc\(gray-d2\)\:a:active {
   background-color: #404040; }
 
-.bgp\(c\), .bgp\(c\)\:f:focus, .bgp\(c\)\:h:hover, .bgp\(c\)\:a:active {
+.bgp\(c\) {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.bgp\(t\), .bgp\(t\)\:f:focus, .bgp\(t\)\:h:hover, .bgp\(t\)\:a:active {
+.bgp\(t\) {
   background-repeat: no-repeat;
   background-position: top center; }
 
-.bgp\(r\), .bgp\(r\)\:f:focus, .bgp\(r\)\:h:hover, .bgp\(r\)\:a:active {
+.bgp\(r\) {
   background-repeat: no-repeat;
   background-position: center right; }
 
-.bgp\(b\), .bgp\(b\)\:f:focus, .bgp\(b\)\:h:hover, .bgp\(b\)\:a:active {
+.bgp\(b\) {
   background-repeat: no-repeat;
   background-position: bottom center; }
 
-.bgp\(l\), .bgp\(l\)\:f:focus, .bgp\(l\)\:h:hover, .bgp\(l\)\:a:active {
+.bgp\(l\) {
   background-repeat: no-repeat;
   background-position: center left; }
 
@@ -1343,19 +1343,19 @@ small,
 .bdrad-br\(pill\) {
   border-bottom-right-radius: 9999px; }
 
-.bds\(n\), .bds\(n\)\:f:focus, .bds\(n\)\:h:hover, .bds\(n\)\:a:active {
+.bds\(n\) {
   border-style: none; }
 
-.bds\(solid\), .bds\(solid\)\:f:focus, .bds\(solid\)\:h:hover, .bds\(solid\)\:a:active {
+.bds\(solid\) {
   border-style: solid; }
 
-.bds\(dashed\), .bds\(dashed\)\:f:focus, .bds\(dashed\)\:h:hover, .bds\(dashed\)\:a:active {
+.bds\(dashed\) {
   border-style: dashed; }
 
-.bds\(dotted\), .bds\(dotted\)\:f:focus, .bds\(dotted\)\:h:hover, .bds\(dotted\)\:a:active {
+.bds\(dotted\) {
   border-style: dotted; }
 
-.bds\(double\), .bds\(double\)\:f:focus, .bds\(double\)\:h:hover, .bds\(double\)\:a:active {
+.bds\(double\) {
   border-style: double; }
 
 .bs\(1\), .bs\(1\)\:f:focus, .bs\(1\)\:h:hover, .bs\(1\)\:a:active {
@@ -2697,19 +2697,19 @@ clr:after {
 .ff\(sans\) {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
 
-.fsy\(normal\), .fsy\(normal\)\:f:focus, .fsy\(normal\)\:h:hover, .fsy\(normal\)\:a:active {
+.fsy\(normal\) {
   font-style: normal; }
 
-.fsy\(italic\), .fsy\(italic\)\:f:focus, .fsy\(italic\)\:h:hover, .fsy\(italic\)\:a:active {
+.fsy\(italic\) {
   font-style: italic; }
 
-.fw\(200\), .fw\(200\)\:f:focus, .fw\(200\)\:h:hover, .fw\(200\)\:a:active {
+.fw\(200\) {
   font-weight: 200; }
 
-.fw\(400\), .fw\(400\)\:f:focus, .fw\(400\)\:h:hover, .fw\(400\)\:a:active {
+.fw\(400\) {
   font-weight: 400; }
 
-.fw\(600\), .fw\(600\)\:f:focus, .fw\(600\)\:h:hover, .fw\(600\)\:a:active {
+.fw\(600\) {
   font-weight: 600; }
 
 .h\(a\) {

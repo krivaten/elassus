@@ -3,7 +3,7 @@
 //
 
 $background-position-breakpoints: null !default;
-$background-position-pseudo-classes: $pseudo-focusable !default;
+$background-position-pseudo-classes: null !default;
 $background-position-values: (
     #{$a-center}: center center,
     #{$a-top}: top center,
