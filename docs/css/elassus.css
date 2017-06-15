@@ -597,6 +597,16 @@ small,
   width: auto;
   white-space: inherit; }
 
+.t\(child\),
+.t\(sibling\) {
+  display: none; }
+
+.d\(child\) > .t\(child\), .d\(child\)\:h:hover > .t\(child\) {
+  display: block; }
+
+.d\(sibling\) ~ .t\(sibling\), .d\(sibling\)\:h:hover ~ .t\(sibling\) {
+  display: block; }
+
 .ar\(16x9\) {
   padding-bottom: 56.25%; }
 

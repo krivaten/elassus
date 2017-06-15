@@ -129,6 +129,10 @@ $pseudo-focusable: (
     #{$a-active}: active
 ) !default;
 
+$pseudo-hover: (
+    #{$a-hover}: hover
+) !default;
+
 $pseudo-first-last: (
     #{$a-not-first}: unquote("not(:first-child)"),
     #{$a-not-last}: unquote("not(:last-child)")

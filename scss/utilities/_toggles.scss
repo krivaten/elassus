@@ -1,0 +1,43 @@
+//
+// TOGGLES
+//
+
+@include build-docs('Utility: Toggles', $include-docs);
+
+$toggle-child-class: #{unquote('.')}#{build-class-name($c-toggle, $a-child)};
+$toggle-sibling-class: #{unquote('.')}#{build-class-name($c-toggle, $a-sibling)};
+
+#{$toggle-child-class},
+#{$toggle-sibling-class} {
+    display: none;
+}
+
+$toggle-child-breakpoints: null !default;
+$toggle-child-pseudo-classes: $pseudo-hover !default;
+$toggle-child-values: (#{$a-child}: block) !default;
+$toggle-child-classes: (#{$c-display}: display) !default;
+$toggle-child-post-selector: #{unquote('> ')}#{$toggle-child-class} !default;
+$toggle-child-module: (
+    breakpoints: $toggle-child-breakpoints,
+    pseudo-classes: $toggle-child-pseudo-classes,
+    values: $toggle-child-values,
+    classes: $toggle-child-classes,
+    post-selector: $toggle-child-post-selector
+) !default;
+
+@include build-module($toggle-child-module);
+
+$toggle-sibling-breakpoints: null !default;
+$toggle-sibling-pseudo-classes: $pseudo-hover !default;
+$toggle-sibling-values: (#{$a-sibling}: block) !default;
+$toggle-sibling-classes: (#{$c-display}: display) !default;
+$toggle-sibling-post-selector: #{unquote('~ ')}#{$toggle-sibling-class} !default;
+$toggle-sibling-module: (
+    breakpoints: $toggle-sibling-breakpoints,
+    pseudo-classes: $toggle-sibling-pseudo-classes,
+    values: $toggle-sibling-values,
+    classes: $toggle-sibling-classes,
+    post-selector: $toggle-sibling-post-selector
+) !default;
+
+@include build-module($toggle-sibling-module);
