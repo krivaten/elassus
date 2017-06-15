@@ -77,14 +77,15 @@ body(class='p(0) p-t(5) m(0) ff(sans) bgc(off-white)')
         ul(class="ls(n) d(f) fw(wrap)")
             each item in ['Aspect Ratio', 'Background Color', 'Background Position', 'Background Size', 'Border Color', 'Border Radius', 'Border Style', 'Border', 'Box Shadow', 'Clear', 'Coordinates', 'Display', 'Flexbox', 'Float', 'Font Family', 'Font Style', 'Font Weight', 'Height', 'Letter Spacing', 'Line Height', 'List', 'Max Width', 'Opacity', 'Overflow', 'Position', 'Stripe', 'Text Align', 'Text Color', 'Text Decoration', 'Text Transform', 'Transform', 'Transition', 'Vertical Align', 'White Space', 'Word Break', 'Z Index']
                 li(class="p-y(2) w(6col) w(3col)s")
-                    a(href='/reference.html?s='+item)= item
+                    a(href='/reference.html?s=Module: '+item)= item
         
         h2 Utilities
         p In addition, Elassus also comes with a small collection of utilities to help you along the way. These include:
 
         ul(class="ls(n) d(f) fw(wrap)")
-            each item in ['Container', 'Helpers', 'Screen Reader', 'Responsive Typography']
-                li(class="p-y(2) w(6col) w(3col)s")= item
+            each item in ['Container', 'Screen Reader', 'Toggles', 'Typography']
+                li(class="p-y(2) w(6col) w(3col)s")
+                    a(href='/reference.html?s=Utility: '+item)= item
 
         h2 Color Palette
         p Elassus comes with an appropriate amount of colors to choose from to aide in the construction of your product. Out of the box you have access to the following:
