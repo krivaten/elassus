@@ -60,20 +60,37 @@ let addChild = (item) => {
             .replace(/\\/g, '')
             .split(':');
 
-        let pseudo;
-        if (classNameArray.length > 2) {
-            pseudo = classNameArray.slice(2);
+        let classNameKey;
+        if (classNameArray.length > 3) {
+            classNameKey = 2;
+            let newClassNameArrayEnd = classNameArray.slice(2).join(':');
+            classNameArray.splice(2, 2, newClassNameArrayEnd);
+            className = classNameArray.slice(0, 2);
+        } else if (classNameArray.length > 2) {
+            classNameKey = 2;
             className = classNameArray.slice(0, 2);
         } else if (classNameArray.length > 1) {
-            pseudo = classNameArray.slice(1);
+            classNameKey = 1;
             className = classNameArray.slice(0, 1);
         } else {
-            pseudo = [];
             className = classNameArray;
+        }
+
+        let pseudo = [];
+        let append;
+
+        if (classNameKey) {
+            let classNameTail = classNameArray.slice(classNameKey)[0].split(' ');
+            pseudo = [ classNameTail.shift() ];
+            append = classNameTail.join(' ');
         }
 
         pseudo = pseudo.join(':');
         className = className.join(':');
+
+        if (append) {
+            className += ` ${append}`;
+        }
 
         return {
             className,
