@@ -52,17 +52,19 @@ body(class='p(0) p-t(5) m(0) ff(sans) bgc(off-white)')
         h3 NPM
         p Elassus is published on NPM, so you can easily add it to your project by running the following command:
 
-        code npm install elassus --save-dev
+        pre
+            code npm install elassus --save-dev
+
         p From there, just import <code>scss/elassus.scss</code> in to your stylesheet and you'll be up and running!
 
-        h3 Download
-        p You can download a zip file of the most up to date Elassus <a href="https://github.com/krivaten/elassus/archive/master.zip" target="_blank">by clicking here</a>. Unzip it and put it in your project.
-
         h3 CDN
-        p Lastly, you can just drop this line in the <code>&lt;head&gt;</code> of your HTML file, and be ready to go with the latest version of Elassus!
+        p You can just drop this line in the <code>&lt;head&gt;</code> of your HTML file, and be ready to go with the latest version of Elassus!
 
         pre
             code &lt;link rel="stylesheet" href="https://unpkg.com/elassus/css/elassus.min.css" /&gt;
+        
+        h3 Download
+        p Lastly, you can download a zip file of the most up to date Elassus <a href="https://github.com/krivaten/elassus/archive/master.zip" target="_blank">by clicking here</a>. Unzip it and put it in your project.
 
         div(class='bgc(gray-l2) p-y(4) m-y(4) m-x(-3) p-x(3)')
             h2(class='fw(200) ta(c)') Get Up To Speed
@@ -86,7 +88,7 @@ body(class='p(0) p-t(5) m(0) ff(sans) bgc(off-white)')
             each item in ['Container', 'Screen Reader', 'Toggles', 'Typography']
                 li(class="p-y(2) w(6col) w(3col)s")
                     a(href='/reference.html?s=Utility: '+item)= item
-
+0
         h2 Color Palette
         p Elassus comes with an appropriate amount of colors to choose from to aide in the construction of your product. Out of the box you have access to the following:
 
