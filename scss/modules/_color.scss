@@ -1,0 +1,17 @@
+//
+// COLOR
+//
+
+$color-breakpoints: null !default;
+$color-pseudo-classes: $pseudo-focusable !default;
+$color-values: $colors !default;
+$color-classes: (#{$c-color}: color) !default;
+$color-module: (
+    title: 'Module: Color',
+    breakpoints: $color-breakpoints,
+    pseudo-classes: $color-pseudo-classes,
+    values: $color-values,
+    classes: $color-classes
+) !default;
+
+@include build-module($color-module);

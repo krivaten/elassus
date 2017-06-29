@@ -1,0 +1,17 @@
+//
+// FILL
+//
+
+$fill-breakpoints: null !default;
+$fill-pseudo-classes: $pseudo-focusable !default;
+$fill-values: $colors !default;
+$fill-classes: (#{$c-fill}: fill) !default;
+$fill-module: (
+    title: 'Module: Fill',
+    breakpoints: $fill-breakpoints,
+    pseudo-classes: $fill-pseudo-classes,
+    values: $fill-values,
+    classes: $fill-classes
+) !default;
+
+@include build-module($fill-module);

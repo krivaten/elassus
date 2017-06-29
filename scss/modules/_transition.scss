@@ -8,7 +8,7 @@ $transition-values: (
     #{$c-box-shadow}: box-shadow #{$transition-duration} #{$transition-timing-function},
     #{$c-background-color}: background-color #{$transition-duration} #{$transition-timing-function},
     #{$c-opacity}: opacity #{$transition-duration} #{$transition-timing-function},
-    #{$c-text-color}: color #{$transition-duration} #{$transition-timing-function},
+    #{$c-color}: color #{$transition-duration} #{$transition-timing-function},
     #{$c-transform}: transform #{$transition-duration} #{$transition-timing-function},
     #{$c-height}: height #{$transition-duration} #{$transition-timing-function},
     #{$c-width}: width #{$transition-duration} #{$transition-timing-function},
