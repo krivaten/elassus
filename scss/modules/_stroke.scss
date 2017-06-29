@@ -3,7 +3,7 @@
 //
 
 $stroke-breakpoints: null !default;
-$stroke-pseudo-classes: $pseudo-focusable !default;
+$stroke-pseudo-classes: $pseudo-hover !default;
 $stroke-values: $colors !default;
 $stroke-classes: (#{$c-stroke}: fill) !default;
 $stroke-module: (

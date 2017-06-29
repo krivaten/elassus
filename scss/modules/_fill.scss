@@ -3,7 +3,7 @@
 //
 
 $fill-breakpoints: null !default;
-$fill-pseudo-classes: $pseudo-focusable !default;
+$fill-pseudo-classes: $pseudo-hover !default;
 $fill-values: $colors !default;
 $fill-classes: (#{$c-fill}: fill) !default;
 $fill-module: (

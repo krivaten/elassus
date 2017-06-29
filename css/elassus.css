@@ -2178,103 +2178,103 @@ clr:after {
     display: -ms-inline-flexbox;
     display: inline-flex; } }
 
-.fill\(primary\), .fill\(primary\)\:f:focus, .fill\(primary\)\:h:hover, .fill\(primary\)\:a:active {
+.fill\(primary\), .fill\(primary\)\:h:hover {
   fill: #009688; }
 
-.fill\(primary-l3\), .fill\(primary-l3\)\:f:focus, .fill\(primary-l3\)\:h:hover, .fill\(primary-l3\)\:a:active {
+.fill\(primary-l3\), .fill\(primary-l3\)\:h:hover {
   fill: #E0F2F1; }
 
-.fill\(primary-l2\), .fill\(primary-l2\)\:f:focus, .fill\(primary-l2\)\:h:hover, .fill\(primary-l2\)\:a:active {
+.fill\(primary-l2\), .fill\(primary-l2\)\:h:hover {
   fill: #B2DFDB; }
 
-.fill\(primary-l1\), .fill\(primary-l1\)\:f:focus, .fill\(primary-l1\)\:h:hover, .fill\(primary-l1\)\:a:active {
+.fill\(primary-l1\), .fill\(primary-l1\)\:h:hover {
   fill: #4DB6AC; }
 
-.fill\(primary-d1\), .fill\(primary-d1\)\:f:focus, .fill\(primary-d1\)\:h:hover, .fill\(primary-d1\)\:a:active {
+.fill\(primary-d1\), .fill\(primary-d1\)\:h:hover {
   fill: #00796B; }
 
-.fill\(primary-d2\), .fill\(primary-d2\)\:f:focus, .fill\(primary-d2\)\:h:hover, .fill\(primary-d2\)\:a:active {
+.fill\(primary-d2\), .fill\(primary-d2\)\:h:hover {
   fill: #004D40; }
 
-.fill\(success\), .fill\(success\)\:f:focus, .fill\(success\)\:h:hover, .fill\(success\)\:a:active {
+.fill\(success\), .fill\(success\)\:h:hover {
   fill: #4CAF50; }
 
-.fill\(success-l3\), .fill\(success-l3\)\:f:focus, .fill\(success-l3\)\:h:hover, .fill\(success-l3\)\:a:active {
+.fill\(success-l3\), .fill\(success-l3\)\:h:hover {
   fill: #E8F5E9; }
 
-.fill\(success-l2\), .fill\(success-l2\)\:f:focus, .fill\(success-l2\)\:h:hover, .fill\(success-l2\)\:a:active {
+.fill\(success-l2\), .fill\(success-l2\)\:h:hover {
   fill: #C8E6C9; }
 
-.fill\(success-l1\), .fill\(success-l1\)\:f:focus, .fill\(success-l1\)\:h:hover, .fill\(success-l1\)\:a:active {
+.fill\(success-l1\), .fill\(success-l1\)\:h:hover {
   fill: #81C784; }
 
-.fill\(success-d1\), .fill\(success-d1\)\:f:focus, .fill\(success-d1\)\:h:hover, .fill\(success-d1\)\:a:active {
+.fill\(success-d1\), .fill\(success-d1\)\:h:hover {
   fill: #388E3C; }
 
-.fill\(success-d2\), .fill\(success-d2\)\:f:focus, .fill\(success-d2\)\:h:hover, .fill\(success-d2\)\:a:active {
+.fill\(success-d2\), .fill\(success-d2\)\:h:hover {
   fill: #1B5E20; }
 
-.fill\(warning\), .fill\(warning\)\:f:focus, .fill\(warning\)\:h:hover, .fill\(warning\)\:a:active {
+.fill\(warning\), .fill\(warning\)\:h:hover {
   fill: #FFC107; }
 
-.fill\(warning-l3\), .fill\(warning-l3\)\:f:focus, .fill\(warning-l3\)\:h:hover, .fill\(warning-l3\)\:a:active {
+.fill\(warning-l3\), .fill\(warning-l3\)\:h:hover {
   fill: #FFF8E1; }
 
-.fill\(warning-l2\), .fill\(warning-l2\)\:f:focus, .fill\(warning-l2\)\:h:hover, .fill\(warning-l2\)\:a:active {
+.fill\(warning-l2\), .fill\(warning-l2\)\:h:hover {
   fill: #FFECB3; }
 
-.fill\(warning-l1\), .fill\(warning-l1\)\:f:focus, .fill\(warning-l1\)\:h:hover, .fill\(warning-l1\)\:a:active {
+.fill\(warning-l1\), .fill\(warning-l1\)\:h:hover {
   fill: #FFD54F; }
 
-.fill\(warning-d1\), .fill\(warning-d1\)\:f:focus, .fill\(warning-d1\)\:h:hover, .fill\(warning-d1\)\:a:active {
+.fill\(warning-d1\), .fill\(warning-d1\)\:h:hover {
   fill: #FFA000; }
 
-.fill\(warning-d2\), .fill\(warning-d2\)\:f:focus, .fill\(warning-d2\)\:h:hover, .fill\(warning-d2\)\:a:active {
+.fill\(warning-d2\), .fill\(warning-d2\)\:h:hover {
   fill: #FF6F00; }
 
-.fill\(danger\), .fill\(danger\)\:f:focus, .fill\(danger\)\:h:hover, .fill\(danger\)\:a:active {
+.fill\(danger\), .fill\(danger\)\:h:hover {
   fill: #FF5722; }
 
-.fill\(danger-l3\), .fill\(danger-l3\)\:f:focus, .fill\(danger-l3\)\:h:hover, .fill\(danger-l3\)\:a:active {
+.fill\(danger-l3\), .fill\(danger-l3\)\:h:hover {
   fill: #FBE9E7; }
 
-.fill\(danger-l2\), .fill\(danger-l2\)\:f:focus, .fill\(danger-l2\)\:h:hover, .fill\(danger-l2\)\:a:active {
+.fill\(danger-l2\), .fill\(danger-l2\)\:h:hover {
   fill: #FFCCBC; }
 
-.fill\(danger-l1\), .fill\(danger-l1\)\:f:focus, .fill\(danger-l1\)\:h:hover, .fill\(danger-l1\)\:a:active {
+.fill\(danger-l1\), .fill\(danger-l1\)\:h:hover {
   fill: #FF8A65; }
 
-.fill\(danger-d1\), .fill\(danger-d1\)\:f:focus, .fill\(danger-d1\)\:h:hover, .fill\(danger-d1\)\:a:active {
+.fill\(danger-d1\), .fill\(danger-d1\)\:h:hover {
   fill: #E64A19; }
 
-.fill\(danger-d2\), .fill\(danger-d2\)\:f:focus, .fill\(danger-d2\)\:h:hover, .fill\(danger-d2\)\:a:active {
+.fill\(danger-d2\), .fill\(danger-d2\)\:h:hover {
   fill: #BF360C; }
 
-.fill\(black\), .fill\(black\)\:f:focus, .fill\(black\)\:h:hover, .fill\(black\)\:a:active {
+.fill\(black\), .fill\(black\)\:h:hover {
   fill: #000; }
 
-.fill\(white\), .fill\(white\)\:f:focus, .fill\(white\)\:h:hover, .fill\(white\)\:a:active {
+.fill\(white\), .fill\(white\)\:h:hover {
   fill: #FFF; }
 
-.fill\(transparent\), .fill\(transparent\)\:f:focus, .fill\(transparent\)\:h:hover, .fill\(transparent\)\:a:active {
+.fill\(transparent\), .fill\(transparent\)\:h:hover {
   fill: transparent; }
 
-.fill\(gray-l3\), .fill\(gray-l3\)\:f:focus, .fill\(gray-l3\)\:h:hover, .fill\(gray-l3\)\:a:active {
+.fill\(gray-l3\), .fill\(gray-l3\)\:h:hover {
   fill: #f7f7f7; }
 
-.fill\(gray-l2\), .fill\(gray-l2\)\:f:focus, .fill\(gray-l2\)\:h:hover, .fill\(gray-l2\)\:a:active {
+.fill\(gray-l2\), .fill\(gray-l2\)\:h:hover {
   fill: #f2f2f2; }
 
-.fill\(gray-l1\), .fill\(gray-l1\)\:f:focus, .fill\(gray-l1\)\:h:hover, .fill\(gray-l1\)\:a:active {
+.fill\(gray-l1\), .fill\(gray-l1\)\:h:hover {
   fill: #d9d9d9; }
 
-.fill\(gray\), .fill\(gray\)\:f:focus, .fill\(gray\)\:h:hover, .fill\(gray\)\:a:active {
+.fill\(gray\), .fill\(gray\)\:h:hover {
   fill: #999999; }
 
-.fill\(gray-d1\), .fill\(gray-d1\)\:f:focus, .fill\(gray-d1\)\:h:hover, .fill\(gray-d1\)\:a:active {
+.fill\(gray-d1\), .fill\(gray-d1\)\:h:hover {
   fill: #595959; }
 
-.fill\(gray-d2\), .fill\(gray-d2\)\:f:focus, .fill\(gray-d2\)\:h:hover, .fill\(gray-d2\)\:a:active {
+.fill\(gray-d2\), .fill\(gray-d2\)\:h:hover {
   fill: #404040; }
 
 .f\(n\) {
@@ -5193,103 +5193,103 @@ clr:after {
 .stripe\(gray-d2\):nth-child(odd) {
   background-color: #404040; }
 
-.stroke\(primary\), .stroke\(primary\)\:f:focus, .stroke\(primary\)\:h:hover, .stroke\(primary\)\:a:active {
+.stroke\(primary\), .stroke\(primary\)\:h:hover {
   fill: #009688; }
 
-.stroke\(primary-l3\), .stroke\(primary-l3\)\:f:focus, .stroke\(primary-l3\)\:h:hover, .stroke\(primary-l3\)\:a:active {
+.stroke\(primary-l3\), .stroke\(primary-l3\)\:h:hover {
   fill: #E0F2F1; }
 
-.stroke\(primary-l2\), .stroke\(primary-l2\)\:f:focus, .stroke\(primary-l2\)\:h:hover, .stroke\(primary-l2\)\:a:active {
+.stroke\(primary-l2\), .stroke\(primary-l2\)\:h:hover {
   fill: #B2DFDB; }
 
-.stroke\(primary-l1\), .stroke\(primary-l1\)\:f:focus, .stroke\(primary-l1\)\:h:hover, .stroke\(primary-l1\)\:a:active {
+.stroke\(primary-l1\), .stroke\(primary-l1\)\:h:hover {
   fill: #4DB6AC; }
 
-.stroke\(primary-d1\), .stroke\(primary-d1\)\:f:focus, .stroke\(primary-d1\)\:h:hover, .stroke\(primary-d1\)\:a:active {
+.stroke\(primary-d1\), .stroke\(primary-d1\)\:h:hover {
   fill: #00796B; }
 
-.stroke\(primary-d2\), .stroke\(primary-d2\)\:f:focus, .stroke\(primary-d2\)\:h:hover, .stroke\(primary-d2\)\:a:active {
+.stroke\(primary-d2\), .stroke\(primary-d2\)\:h:hover {
   fill: #004D40; }
 
-.stroke\(success\), .stroke\(success\)\:f:focus, .stroke\(success\)\:h:hover, .stroke\(success\)\:a:active {
+.stroke\(success\), .stroke\(success\)\:h:hover {
   fill: #4CAF50; }
 
-.stroke\(success-l3\), .stroke\(success-l3\)\:f:focus, .stroke\(success-l3\)\:h:hover, .stroke\(success-l3\)\:a:active {
+.stroke\(success-l3\), .stroke\(success-l3\)\:h:hover {
   fill: #E8F5E9; }
 
-.stroke\(success-l2\), .stroke\(success-l2\)\:f:focus, .stroke\(success-l2\)\:h:hover, .stroke\(success-l2\)\:a:active {
+.stroke\(success-l2\), .stroke\(success-l2\)\:h:hover {
   fill: #C8E6C9; }
 
-.stroke\(success-l1\), .stroke\(success-l1\)\:f:focus, .stroke\(success-l1\)\:h:hover, .stroke\(success-l1\)\:a:active {
+.stroke\(success-l1\), .stroke\(success-l1\)\:h:hover {
   fill: #81C784; }
 
-.stroke\(success-d1\), .stroke\(success-d1\)\:f:focus, .stroke\(success-d1\)\:h:hover, .stroke\(success-d1\)\:a:active {
+.stroke\(success-d1\), .stroke\(success-d1\)\:h:hover {
   fill: #388E3C; }
 
-.stroke\(success-d2\), .stroke\(success-d2\)\:f:focus, .stroke\(success-d2\)\:h:hover, .stroke\(success-d2\)\:a:active {
+.stroke\(success-d2\), .stroke\(success-d2\)\:h:hover {
   fill: #1B5E20; }
 
-.stroke\(warning\), .stroke\(warning\)\:f:focus, .stroke\(warning\)\:h:hover, .stroke\(warning\)\:a:active {
+.stroke\(warning\), .stroke\(warning\)\:h:hover {
   fill: #FFC107; }
 
-.stroke\(warning-l3\), .stroke\(warning-l3\)\:f:focus, .stroke\(warning-l3\)\:h:hover, .stroke\(warning-l3\)\:a:active {
+.stroke\(warning-l3\), .stroke\(warning-l3\)\:h:hover {
   fill: #FFF8E1; }
 
-.stroke\(warning-l2\), .stroke\(warning-l2\)\:f:focus, .stroke\(warning-l2\)\:h:hover, .stroke\(warning-l2\)\:a:active {
+.stroke\(warning-l2\), .stroke\(warning-l2\)\:h:hover {
   fill: #FFECB3; }
 
-.stroke\(warning-l1\), .stroke\(warning-l1\)\:f:focus, .stroke\(warning-l1\)\:h:hover, .stroke\(warning-l1\)\:a:active {
+.stroke\(warning-l1\), .stroke\(warning-l1\)\:h:hover {
   fill: #FFD54F; }
 
-.stroke\(warning-d1\), .stroke\(warning-d1\)\:f:focus, .stroke\(warning-d1\)\:h:hover, .stroke\(warning-d1\)\:a:active {
+.stroke\(warning-d1\), .stroke\(warning-d1\)\:h:hover {
   fill: #FFA000; }
 
-.stroke\(warning-d2\), .stroke\(warning-d2\)\:f:focus, .stroke\(warning-d2\)\:h:hover, .stroke\(warning-d2\)\:a:active {
+.stroke\(warning-d2\), .stroke\(warning-d2\)\:h:hover {
   fill: #FF6F00; }
 
-.stroke\(danger\), .stroke\(danger\)\:f:focus, .stroke\(danger\)\:h:hover, .stroke\(danger\)\:a:active {
+.stroke\(danger\), .stroke\(danger\)\:h:hover {
   fill: #FF5722; }
 
-.stroke\(danger-l3\), .stroke\(danger-l3\)\:f:focus, .stroke\(danger-l3\)\:h:hover, .stroke\(danger-l3\)\:a:active {
+.stroke\(danger-l3\), .stroke\(danger-l3\)\:h:hover {
   fill: #FBE9E7; }
 
-.stroke\(danger-l2\), .stroke\(danger-l2\)\:f:focus, .stroke\(danger-l2\)\:h:hover, .stroke\(danger-l2\)\:a:active {
+.stroke\(danger-l2\), .stroke\(danger-l2\)\:h:hover {
   fill: #FFCCBC; }
 
-.stroke\(danger-l1\), .stroke\(danger-l1\)\:f:focus, .stroke\(danger-l1\)\:h:hover, .stroke\(danger-l1\)\:a:active {
+.stroke\(danger-l1\), .stroke\(danger-l1\)\:h:hover {
   fill: #FF8A65; }
 
-.stroke\(danger-d1\), .stroke\(danger-d1\)\:f:focus, .stroke\(danger-d1\)\:h:hover, .stroke\(danger-d1\)\:a:active {
+.stroke\(danger-d1\), .stroke\(danger-d1\)\:h:hover {
   fill: #E64A19; }
 
-.stroke\(danger-d2\), .stroke\(danger-d2\)\:f:focus, .stroke\(danger-d2\)\:h:hover, .stroke\(danger-d2\)\:a:active {
+.stroke\(danger-d2\), .stroke\(danger-d2\)\:h:hover {
   fill: #BF360C; }
 
-.stroke\(black\), .stroke\(black\)\:f:focus, .stroke\(black\)\:h:hover, .stroke\(black\)\:a:active {
+.stroke\(black\), .stroke\(black\)\:h:hover {
   fill: #000; }
 
-.stroke\(white\), .stroke\(white\)\:f:focus, .stroke\(white\)\:h:hover, .stroke\(white\)\:a:active {
+.stroke\(white\), .stroke\(white\)\:h:hover {
   fill: #FFF; }
 
-.stroke\(transparent\), .stroke\(transparent\)\:f:focus, .stroke\(transparent\)\:h:hover, .stroke\(transparent\)\:a:active {
+.stroke\(transparent\), .stroke\(transparent\)\:h:hover {
   fill: transparent; }
 
-.stroke\(gray-l3\), .stroke\(gray-l3\)\:f:focus, .stroke\(gray-l3\)\:h:hover, .stroke\(gray-l3\)\:a:active {
+.stroke\(gray-l3\), .stroke\(gray-l3\)\:h:hover {
   fill: #f7f7f7; }
 
-.stroke\(gray-l2\), .stroke\(gray-l2\)\:f:focus, .stroke\(gray-l2\)\:h:hover, .stroke\(gray-l2\)\:a:active {
+.stroke\(gray-l2\), .stroke\(gray-l2\)\:h:hover {
   fill: #f2f2f2; }
 
-.stroke\(gray-l1\), .stroke\(gray-l1\)\:f:focus, .stroke\(gray-l1\)\:h:hover, .stroke\(gray-l1\)\:a:active {
+.stroke\(gray-l1\), .stroke\(gray-l1\)\:h:hover {
   fill: #d9d9d9; }
 
-.stroke\(gray\), .stroke\(gray\)\:f:focus, .stroke\(gray\)\:h:hover, .stroke\(gray\)\:a:active {
+.stroke\(gray\), .stroke\(gray\)\:h:hover {
   fill: #999999; }
 
-.stroke\(gray-d1\), .stroke\(gray-d1\)\:f:focus, .stroke\(gray-d1\)\:h:hover, .stroke\(gray-d1\)\:a:active {
+.stroke\(gray-d1\), .stroke\(gray-d1\)\:h:hover {
   fill: #595959; }
 
-.stroke\(gray-d2\), .stroke\(gray-d2\)\:f:focus, .stroke\(gray-d2\)\:h:hover, .stroke\(gray-d2\)\:a:active {
+.stroke\(gray-d2\), .stroke\(gray-d2\)\:h:hover {
   fill: #404040; }
 
 .ta\(l\) {
