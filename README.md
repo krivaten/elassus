@@ -1,8 +1,10 @@
 # Elassus
 
-A functional CSS library built for speed and granular customization. [Documentation](http://elassus.com)
+A functional CSS library built for speed and granular customization. 
 
 Use it to rapidly prototype and construct masterful layouts without writing bloated CSS.
+
+[Read the Documentation](http://elassus.com)
 
 ## Highlights
 
