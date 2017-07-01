@@ -2,8 +2,8 @@
 // BOX SIZING
 //
 
-$box-sizing-breakpoints: $breakpoints !default;
-$box-sizing-pseudo-classes: $pseudo-focusable !default;
+$box-sizing-breakpoints: null !default;
+$box-sizing-pseudo-classes: null !default;
 $box-sizing-values: (
     #{$a-content-box}: content-box,
     #{$a-border-box}: border-box,
