@@ -1,0 +1,20 @@
+//
+// BOX SIZING
+//
+
+$box-sizing-breakpoints: $breakpoints !default;
+$box-sizing-pseudo-classes: $pseudo-focusable !default;
+$box-sizing-values: (
+    #{$a-content-box}: content-box,
+    #{$a-border-box}: border-box,
+) !default;
+$box-sizing-classes: (#{$c-box-shadow}: box-shadow) !default;
+$box-sizing-module: (
+    title: 'Module: Box Sizing',
+    breakpoints: $box-sizing-breakpoints,
+    pseudo-classes: $box-sizing-pseudo-classes,
+    values: $box-sizing-values,
+    classes: $box-sizing-classes
+) !default;
+
+@include build-module($box-sizing-module);
