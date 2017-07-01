@@ -1,0 +1,22 @@
+//
+// FONT SIZE
+//
+
+$font-size-breakpoints: $breakpoints !default;
+$font-size-pseudo-classes: null !default;
+$font-size-values: (
+    #{$a-small}: 0.875rem,
+    #{$a-default}: 1rem,
+    #{$a-medium}: 1.25rem,
+    #{$a-large}: 1.5rem,
+) !default;
+$font-size-classes: (#{$c-font-size}: font-size) !default;
+$font-size-module: (
+    title: 'Module: Font Size',
+    breakpoints: $font-size-breakpoints,
+    pseudo-classes: $font-size-pseudo-classes,
+    values: $font-size-values,
+    classes: $font-size-classes
+) !default;
+
+@include build-module($font-size-module);
