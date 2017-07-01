@@ -1409,29 +1409,11 @@ small,
   .bs\(5\)l, .bs\(5\)l\:f:focus, .bs\(5\)l\:h:hover, .bs\(5\)l\:a:active {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); } }
 
-.bs\(cb\), .bs\(cb\)\:f:focus, .bs\(cb\)\:h:hover, .bs\(cb\)\:a:active {
+.bs\(cb\) {
   box-shadow: content-box; }
 
-.bs\(bb\), .bs\(bb\)\:f:focus, .bs\(bb\)\:h:hover, .bs\(bb\)\:a:active {
+.bs\(bb\) {
   box-shadow: border-box; }
-
-@media screen and (min-width: 768px) {
-  .bs\(cb\)s, .bs\(cb\)s\:f:focus, .bs\(cb\)s\:h:hover, .bs\(cb\)s\:a:active {
-    box-shadow: content-box; }
-  .bs\(bb\)s, .bs\(bb\)s\:f:focus, .bs\(bb\)s\:h:hover, .bs\(bb\)s\:a:active {
-    box-shadow: border-box; } }
-
-@media screen and (min-width: 992px) {
-  .bs\(cb\)m, .bs\(cb\)m\:f:focus, .bs\(cb\)m\:h:hover, .bs\(cb\)m\:a:active {
-    box-shadow: content-box; }
-  .bs\(bb\)m, .bs\(bb\)m\:f:focus, .bs\(bb\)m\:h:hover, .bs\(bb\)m\:a:active {
-    box-shadow: border-box; } }
-
-@media screen and (min-width: 1200px) {
-  .bs\(cb\)l, .bs\(cb\)l\:f:focus, .bs\(cb\)l\:h:hover, .bs\(cb\)l\:a:active {
-    box-shadow: content-box; }
-  .bs\(bb\)l, .bs\(bb\)l\:f:focus, .bs\(bb\)l\:h:hover, .bs\(bb\)l\:a:active {
-    box-shadow: border-box; } }
 
 .clr\(l\) {
   clear: left; }
