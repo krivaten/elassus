@@ -1409,6 +1409,30 @@ small,
   .bs\(5\)l, .bs\(5\)l\:f:focus, .bs\(5\)l\:h:hover, .bs\(5\)l\:a:active {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); } }
 
+.bs\(cb\), .bs\(cb\)\:f:focus, .bs\(cb\)\:h:hover, .bs\(cb\)\:a:active {
+  box-shadow: content-box; }
+
+.bs\(bb\), .bs\(bb\)\:f:focus, .bs\(bb\)\:h:hover, .bs\(bb\)\:a:active {
+  box-shadow: border-box; }
+
+@media screen and (min-width: 768px) {
+  .bs\(cb\)s, .bs\(cb\)s\:f:focus, .bs\(cb\)s\:h:hover, .bs\(cb\)s\:a:active {
+    box-shadow: content-box; }
+  .bs\(bb\)s, .bs\(bb\)s\:f:focus, .bs\(bb\)s\:h:hover, .bs\(bb\)s\:a:active {
+    box-shadow: border-box; } }
+
+@media screen and (min-width: 992px) {
+  .bs\(cb\)m, .bs\(cb\)m\:f:focus, .bs\(cb\)m\:h:hover, .bs\(cb\)m\:a:active {
+    box-shadow: content-box; }
+  .bs\(bb\)m, .bs\(bb\)m\:f:focus, .bs\(bb\)m\:h:hover, .bs\(bb\)m\:a:active {
+    box-shadow: border-box; } }
+
+@media screen and (min-width: 1200px) {
+  .bs\(cb\)l, .bs\(cb\)l\:f:focus, .bs\(cb\)l\:h:hover, .bs\(cb\)l\:a:active {
+    box-shadow: content-box; }
+  .bs\(bb\)l, .bs\(bb\)l\:f:focus, .bs\(bb\)l\:h:hover, .bs\(bb\)l\:a:active {
+    box-shadow: border-box; } }
+
 .clr\(l\) {
   clear: left; }
 
@@ -2895,6 +2919,48 @@ clr:after {
 .ff\(sans\) {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
 
+.fs\(s\) {
+  font-size: 0.875rem; }
+
+.fs\(d\) {
+  font-size: 1rem; }
+
+.fs\(m\) {
+  font-size: 1.25rem; }
+
+.fs\(l\) {
+  font-size: 1.5rem; }
+
+@media screen and (min-width: 768px) {
+  .fs\(s\)s {
+    font-size: 0.875rem; }
+  .fs\(d\)s {
+    font-size: 1rem; }
+  .fs\(m\)s {
+    font-size: 1.25rem; }
+  .fs\(l\)s {
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 992px) {
+  .fs\(s\)m {
+    font-size: 0.875rem; }
+  .fs\(d\)m {
+    font-size: 1rem; }
+  .fs\(m\)m {
+    font-size: 1.25rem; }
+  .fs\(l\)m {
+    font-size: 1.5rem; } }
+
+@media screen and (min-width: 1200px) {
+  .fs\(s\)l {
+    font-size: 0.875rem; }
+  .fs\(d\)l {
+    font-size: 1rem; }
+  .fs\(m\)l {
+    font-size: 1.25rem; }
+  .fs\(l\)l {
+    font-size: 1.5rem; } }
+
 .fsy\(normal\) {
   font-style: normal; }
 
@@ -3124,156 +3190,6 @@ clr:after {
   list-style-type: none;
   margin: 0;
   padding: 0; }
-
-.max-w\(n\) {
-  max-width: none; }
-
-.max-w\(0\) {
-  max-width: 0; }
-
-.max-w\(1\) {
-  max-width: 0.25rem; }
-
-.max-w\(2\) {
-  max-width: 0.5rem; }
-
-.max-w\(3\) {
-  max-width: 1rem; }
-
-.max-w\(4\) {
-  max-width: 2rem; }
-
-.max-w\(5\) {
-  max-width: 4rem; }
-
-.max-w\(6\) {
-  max-width: 8rem; }
-
-.max-w\(7\) {
-  max-width: 16rem; }
-
-.max-w\(s\) {
-  max-width: 24em; }
-
-.max-w\(m\) {
-  max-width: 30em; }
-
-.max-w\(l\) {
-  max-width: 34em; }
-
-.max-w\(25\%\) {
-  max-width: 25%; }
-
-.max-w\(50\%\) {
-  max-width: 50%; }
-
-.max-w\(75\%\) {
-  max-width: 75%; }
-
-.max-w\(100\%\) {
-  max-width: 100%; }
-
-@media screen and (min-width: 768px) {
-  .max-w\(n\)s {
-    max-width: none; }
-  .max-w\(0\)s {
-    max-width: 0; }
-  .max-w\(1\)s {
-    max-width: 0.25rem; }
-  .max-w\(2\)s {
-    max-width: 0.5rem; }
-  .max-w\(3\)s {
-    max-width: 1rem; }
-  .max-w\(4\)s {
-    max-width: 2rem; }
-  .max-w\(5\)s {
-    max-width: 4rem; }
-  .max-w\(6\)s {
-    max-width: 8rem; }
-  .max-w\(7\)s {
-    max-width: 16rem; }
-  .max-w\(s\)s {
-    max-width: 24em; }
-  .max-w\(m\)s {
-    max-width: 30em; }
-  .max-w\(l\)s {
-    max-width: 34em; }
-  .max-w\(25\%\)s {
-    max-width: 25%; }
-  .max-w\(50\%\)s {
-    max-width: 50%; }
-  .max-w\(75\%\)s {
-    max-width: 75%; }
-  .max-w\(100\%\)s {
-    max-width: 100%; } }
-
-@media screen and (min-width: 992px) {
-  .max-w\(n\)m {
-    max-width: none; }
-  .max-w\(0\)m {
-    max-width: 0; }
-  .max-w\(1\)m {
-    max-width: 0.25rem; }
-  .max-w\(2\)m {
-    max-width: 0.5rem; }
-  .max-w\(3\)m {
-    max-width: 1rem; }
-  .max-w\(4\)m {
-    max-width: 2rem; }
-  .max-w\(5\)m {
-    max-width: 4rem; }
-  .max-w\(6\)m {
-    max-width: 8rem; }
-  .max-w\(7\)m {
-    max-width: 16rem; }
-  .max-w\(s\)m {
-    max-width: 24em; }
-  .max-w\(m\)m {
-    max-width: 30em; }
-  .max-w\(l\)m {
-    max-width: 34em; }
-  .max-w\(25\%\)m {
-    max-width: 25%; }
-  .max-w\(50\%\)m {
-    max-width: 50%; }
-  .max-w\(75\%\)m {
-    max-width: 75%; }
-  .max-w\(100\%\)m {
-    max-width: 100%; } }
-
-@media screen and (min-width: 1200px) {
-  .max-w\(n\)l {
-    max-width: none; }
-  .max-w\(0\)l {
-    max-width: 0; }
-  .max-w\(1\)l {
-    max-width: 0.25rem; }
-  .max-w\(2\)l {
-    max-width: 0.5rem; }
-  .max-w\(3\)l {
-    max-width: 1rem; }
-  .max-w\(4\)l {
-    max-width: 2rem; }
-  .max-w\(5\)l {
-    max-width: 4rem; }
-  .max-w\(6\)l {
-    max-width: 8rem; }
-  .max-w\(7\)l {
-    max-width: 16rem; }
-  .max-w\(s\)l {
-    max-width: 24em; }
-  .max-w\(m\)l {
-    max-width: 30em; }
-  .max-w\(l\)l {
-    max-width: 34em; }
-  .max-w\(25\%\)l {
-    max-width: 25%; }
-  .max-w\(50\%\)l {
-    max-width: 50%; }
-  .max-w\(75\%\)l {
-    max-width: 75%; }
-  .max-w\(100\%\)l {
-    max-width: 100%; } }
 
 .o\(100\%\), .o\(100\%\)\:f:focus, .o\(100\%\)\:h:hover, .o\(100\%\)\:a:active {
   opacity: 1; }
@@ -5750,6 +5666,156 @@ clr:after {
     width: 91.66667%; }
   .w\(12col\)l {
     width: 100%; } }
+
+.max-w\(n\) {
+  max-width: none; }
+
+.max-w\(0\) {
+  max-width: 0; }
+
+.max-w\(1\) {
+  max-width: 0.25rem; }
+
+.max-w\(2\) {
+  max-width: 0.5rem; }
+
+.max-w\(3\) {
+  max-width: 1rem; }
+
+.max-w\(4\) {
+  max-width: 2rem; }
+
+.max-w\(5\) {
+  max-width: 4rem; }
+
+.max-w\(6\) {
+  max-width: 8rem; }
+
+.max-w\(7\) {
+  max-width: 16rem; }
+
+.max-w\(s\) {
+  max-width: 24em; }
+
+.max-w\(m\) {
+  max-width: 30em; }
+
+.max-w\(l\) {
+  max-width: 34em; }
+
+.max-w\(25\%\) {
+  max-width: 25%; }
+
+.max-w\(50\%\) {
+  max-width: 50%; }
+
+.max-w\(75\%\) {
+  max-width: 75%; }
+
+.max-w\(100\%\) {
+  max-width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .max-w\(n\)s {
+    max-width: none; }
+  .max-w\(0\)s {
+    max-width: 0; }
+  .max-w\(1\)s {
+    max-width: 0.25rem; }
+  .max-w\(2\)s {
+    max-width: 0.5rem; }
+  .max-w\(3\)s {
+    max-width: 1rem; }
+  .max-w\(4\)s {
+    max-width: 2rem; }
+  .max-w\(5\)s {
+    max-width: 4rem; }
+  .max-w\(6\)s {
+    max-width: 8rem; }
+  .max-w\(7\)s {
+    max-width: 16rem; }
+  .max-w\(s\)s {
+    max-width: 24em; }
+  .max-w\(m\)s {
+    max-width: 30em; }
+  .max-w\(l\)s {
+    max-width: 34em; }
+  .max-w\(25\%\)s {
+    max-width: 25%; }
+  .max-w\(50\%\)s {
+    max-width: 50%; }
+  .max-w\(75\%\)s {
+    max-width: 75%; }
+  .max-w\(100\%\)s {
+    max-width: 100%; } }
+
+@media screen and (min-width: 992px) {
+  .max-w\(n\)m {
+    max-width: none; }
+  .max-w\(0\)m {
+    max-width: 0; }
+  .max-w\(1\)m {
+    max-width: 0.25rem; }
+  .max-w\(2\)m {
+    max-width: 0.5rem; }
+  .max-w\(3\)m {
+    max-width: 1rem; }
+  .max-w\(4\)m {
+    max-width: 2rem; }
+  .max-w\(5\)m {
+    max-width: 4rem; }
+  .max-w\(6\)m {
+    max-width: 8rem; }
+  .max-w\(7\)m {
+    max-width: 16rem; }
+  .max-w\(s\)m {
+    max-width: 24em; }
+  .max-w\(m\)m {
+    max-width: 30em; }
+  .max-w\(l\)m {
+    max-width: 34em; }
+  .max-w\(25\%\)m {
+    max-width: 25%; }
+  .max-w\(50\%\)m {
+    max-width: 50%; }
+  .max-w\(75\%\)m {
+    max-width: 75%; }
+  .max-w\(100\%\)m {
+    max-width: 100%; } }
+
+@media screen and (min-width: 1200px) {
+  .max-w\(n\)l {
+    max-width: none; }
+  .max-w\(0\)l {
+    max-width: 0; }
+  .max-w\(1\)l {
+    max-width: 0.25rem; }
+  .max-w\(2\)l {
+    max-width: 0.5rem; }
+  .max-w\(3\)l {
+    max-width: 1rem; }
+  .max-w\(4\)l {
+    max-width: 2rem; }
+  .max-w\(5\)l {
+    max-width: 4rem; }
+  .max-w\(6\)l {
+    max-width: 8rem; }
+  .max-w\(7\)l {
+    max-width: 16rem; }
+  .max-w\(s\)l {
+    max-width: 24em; }
+  .max-w\(m\)l {
+    max-width: 30em; }
+  .max-w\(l\)l {
+    max-width: 34em; }
+  .max-w\(25\%\)l {
+    max-width: 25%; }
+  .max-w\(50\%\)l {
+    max-width: 50%; }
+  .max-w\(75\%\)l {
+    max-width: 75%; }
+  .max-w\(100\%\)l {
+    max-width: 100%; } }
 
 .wb\(normal\) {
   word-break: normal; }
