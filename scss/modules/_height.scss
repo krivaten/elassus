@@ -35,6 +35,9 @@ $height-module: (
 
 @include build-module($height-module);
 
+//
+// MIN HEIGHT
+//
 $min-height-breakpoints: $breakpoints !default;
 $min-height-pseudo-classes: null !default;
 $min-height-values: (
@@ -43,6 +46,7 @@ $min-height-values: (
 ) !default;
 $min-height-classes: (#{$c-min-height}: min-height) !default;
 $min-height-module: (
+    title: 'Module: Min Height',
     breakpoints: $min-height-breakpoints,
     pseudo-classes: $min-height-pseudo-classes,
     values: $min-height-values,
