@@ -8,7 +8,7 @@ $box-sizing-values: (
     #{$a-content-box}: content-box,
     #{$a-border-box}: border-box,
 ) !default;
-$box-sizing-classes: (#{$c-box-shadow}: box-shadow) !default;
+$box-sizing-classes: (#{$c-box-sizing}: box-sizing) !default;
 $box-sizing-module: (
     title: 'Module: Box Sizing',
     breakpoints: $box-sizing-breakpoints,

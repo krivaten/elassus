@@ -1409,11 +1409,11 @@ small,
   .bs\(5\)l, .bs\(5\)l\:f:focus, .bs\(5\)l\:h:hover, .bs\(5\)l\:a:active {
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); } }
 
-.bs\(cb\) {
-  box-shadow: content-box; }
+.bsz\(cb\) {
+  box-sizing: content-box; }
 
-.bs\(bb\) {
-  box-shadow: border-box; }
+.bsz\(bb\) {
+  box-sizing: border-box; }
 
 .clr\(l\) {
   clear: left; }
