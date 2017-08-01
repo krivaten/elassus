@@ -432,73 +432,70 @@ button,
 
 body {
   font-size: 1rem;
-  line-height: 1.25rem; }
+  line-height: 1.5em; }
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1.25em;
+  margin-bottom: 1.5rem; }
 
 h1,
 .h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 600;
   font-size: 2rem;
-  line-height: 2.5rem;
-  margin-top: 4rem;
-  margin-bottom: 1.5rem; }
+  margin-top: 4rem; }
 
 h2,
 .h2 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 200;
   font-size: 1.625rem;
-  line-height: 2.125rem;
-  margin-top: 3.25rem;
-  margin-bottom: 1.5rem; }
+  margin-top: 3.25rem; }
 
 h3,
 .h3 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 600;
   font-size: 1.375rem;
-  line-height: 1.875rem;
-  margin-top: 2.75rem;
-  margin-bottom: 1.5rem; }
+  margin-top: 2.75rem; }
 
 h4,
 .h4 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 600;
   font-size: 1.125rem;
-  line-height: 1.625rem;
-  margin-top: 2.25rem;
-  margin-bottom: 1.5rem; }
+  margin-top: 2.25rem; }
 
 @media screen and (min-width: 768px) {
   body {
-    line-height: 1.375rem; }
+    line-height: 1.75em; }
   h1,
   .h1 {
-    font-size: 2.5rem;
-    line-height: 3rem; }
+    font-size: 2.5rem; }
   h2,
   .h2 {
-    font-size: 2rem;
-    line-height: 2.5rem; }
+    font-size: 2rem; }
   h3,
   .h3 {
-    font-size: 1.5rem;
-    line-height: 2rem; } }
+    font-size: 1.5rem; } }
 
 @media screen and (min-width: 992px) {
   h1,
   .h1 {
-    font-size: 3rem;
-    line-height: 3.5rem; }
+    font-size: 3rem; }
   h2,
   .h2 {
-    font-size: 2.25rem;
-    line-height: 2.75rem; }
+    font-size: 2.25rem; }
   h3,
   .h3 {
-    font-size: 1.75rem;
-    line-height: 2.25rem; } }
+    font-size: 1.75rem; } }
 
 p,
 ul,
