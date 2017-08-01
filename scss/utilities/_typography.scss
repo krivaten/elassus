@@ -4,8 +4,8 @@
 
 @include build-docs('Utility: Typography', $include-docs);
 body {
-    font-size: 1em;
-    line-height: 1.25;
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
 
 h1,
@@ -14,8 +14,8 @@ h1,
     font-weight: $h1-font-weight;
     font-size: 2rem;
     line-height: 2.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
 }
 
 h2,
@@ -23,8 +23,8 @@ h2,
     font-family: $h2-font-family;
     font-weight: $h2-font-weight;
     font-size: 1.625rem;
-    line-height: 1.875rem;
-    margin-top: 1.5rem;
+    line-height: 2.125rem;
+    margin-top: 3.25rem;
     margin-bottom: 1.5rem;
 }
 
@@ -33,9 +33,9 @@ h3,
     font-family: $h3-font-family;
     font-weight: $h3-font-weight;
     font-size: 1.375rem;
-    line-height: 1.625rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    line-height: 1.875rem;
+    margin-top: 2.75rem;
+    margin-bottom: 1.5rem;
 }
 
 h4,
@@ -43,9 +43,9 @@ h4,
     font-family: $h4-font-family;
     font-weight: $h4-font-weight;
     font-size: 1.125rem;
-    line-height: 1.25rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    line-height: 1.625rem;
+    margin-top: 2.25rem;
+    margin-bottom: 1.5rem;
 }
 
 @media #{$query-s} {
@@ -56,7 +56,7 @@ h4,
     h1,
     .h1 {
         font-size: 2.5rem;
-        line-height: 2.75rem;
+        line-height: 3rem;
     }
 
     h2,
@@ -68,6 +68,7 @@ h4,
     h3,
     .h3 {
         font-size: 1.5rem;
+        line-height: 2rem;
     }
 }
 
@@ -75,7 +76,7 @@ h4,
     h1,
     .h1 {
         font-size: 3rem;
-        line-height: 3.25rem;
+        line-height: 3.5rem;
     }
 
     h2,
@@ -130,6 +131,19 @@ sub {
     bottom: -0.25em;
 }
 
+code {
+    display: inline-block;
+    margin-top: -0.25rem;
+    margin-bottom: -0.25rem;
+}
+
+pre,
+code {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    background-color: $code-background-color;
+}
+
 pre {
     overflow-x: auto;
     padding-top: 0.25rem;
@@ -140,15 +154,12 @@ pre {
         display: block;
         width: 100%;
     }
-}
 
-code {
-    display: inline-block;
-    border-radius: 0.25rem;
-    padding: 0.25rem;
-    margin-top: -0.25rem;
-    margin-bottom: -0.25rem;
-    background-color: $code-background-color;
+    code {
+        padding: 0;
+        border-radius: 0;
+        background-color: transparent;
+    }
 }
 
 a {
