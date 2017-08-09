@@ -5,7 +5,7 @@ doctype html
 include ../includes/head.pug
 
 body(class='p(0) m(0) ff(sans) bgc(white) c(gray-d1)')
-    div(class='ar(16x9) ar(2x1)s bgs(cover) pos(relative)' style='background-image: url(https://unsplash.it/1980/1200?image=329)')
+    div(class='ar ar(16x9) ar(2x1)s bgs(cover) pos(relative)' style='background-image: url(https://unsplash.it/1980/1200?image=329)')
         div(class='fill container d(f) ai(c)')
             div(class='w(100%) c(white) tt(uc) ta(c)')
                 p Welcome to Elassus
@@ -65,7 +65,7 @@ body(class='p(0) m(0) ff(sans) bgc(white) c(gray-d1)')
             div(class='d(f) fw(wrap) m-y(3) bd(1) bdc(gray-l2)')
                 each item in [ { img: 'traffic-light', bg: 'gray-l2' }, { img: 'house', bg: 'gray-l3' } , { img: 'lock', bg: 'gray-l2' }, { img: 'pencil', bg: 'gray-l3'  } ]
                     div(class='w(12col) w(3col)s bd-b(1):nl bd-b(0)s:nl bd-r(1)s:nl bdc(gray-l2)')
-                        div(class='ar(1x1) pos(relative) trs(bg-c) bgc(gray-l2):h')
+                        div(class='ar ar(1x1) pos(relative) trs(bg-c) bgc(gray-l2):h')
                             div(class='fill d(f) jc(c) fd(col) p-x(3)')
                                 div(class='c(primary) m-b(2)')
                                     img(src='/img/' + item.img + '.svg' class='w(5)')
@@ -187,7 +187,7 @@ body(class='p(0) m(0) ff(sans) bgc(white) c(gray-d1)')
                             div(class='m-y(3)')
                                 label(class='d(b) w(100%) small m-b(2)')= item
                                 input(class='d(b) w(100%) bgc(transparent) bgc(white):f c(white) c(black):f bd(1) bdrad(0) bdc(white) p(2) trs(all)')
-                        
+
                         div(class='m-y(3)')
                             label(class='d(b) w(100%) small m-b(2)') Message
                             textarea(class='d(b) w(100%) bgc(transparent) bgc(white):f c(white) c(black):f bd(1) bdrad(0) bdc(white) p(2) trs(all)' rows=5)
