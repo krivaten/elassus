@@ -34,6 +34,7 @@ $a-hidden:              h !default;
 $a-horizontal:          x !default;
 $a-hover:               h !default;
 $a-inline:              i !default;
+$a-initial:             initial !default;
 $a-inline-block:        #{$a-inline}#{$a-block} !default;
 $a-inline-flex:         #{$a-inline}#{$a-flex} !default;
 $a-inherit:             inherit !default;

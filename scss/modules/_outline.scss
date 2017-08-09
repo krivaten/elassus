@@ -1,0 +1,20 @@
+//
+// OUTLINE
+//
+
+$outline-breakpoints: $breakpoints !default;
+$outline-pseudo-classes: null !default;
+$outline-values: (
+    #{$a-none}: none,
+    #{$a-initial}: initial
+) !default;
+$outline-classes: (#{$c-outline}: outline) !default;
+$outline-module: (
+    title: 'Module: Outline',
+    breakpoints: $outline-breakpoints,
+    pseudo-classes: $outline-pseudo-classes,
+    values: $outline-values,
+    classes: $outline-classes
+) !default;
+
+@include build-module($outline-module);
