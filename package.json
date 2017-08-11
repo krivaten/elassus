@@ -2,7 +2,7 @@
   "name": "elassus",
   "description": "A functional CSS library built for speed and granular customization",
   "author": "Kris Van Houten",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "style": "elassus.scss",
   "repository": {
     "type": "git",
