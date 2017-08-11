@@ -5,7 +5,7 @@
 $stroke-breakpoints: null !default;
 $stroke-pseudo-classes: $pseudo-hover !default;
 $stroke-values: $colors !default;
-$stroke-classes: (#{$c-stroke}: fill) !default;
+$stroke-classes: (#{$c-stroke}: stroke) !default;
 $stroke-module: (
     title: 'Module: Stroke',
     breakpoints: $stroke-breakpoints,

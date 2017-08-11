@@ -5133,103 +5133,103 @@ clr:after {
   background-color: #404040; }
 
 .stroke\(primary\), .stroke\(primary\)\:h:hover {
-  fill: #009688; }
+  stroke: #009688; }
 
 .stroke\(primary-l3\), .stroke\(primary-l3\)\:h:hover {
-  fill: #E0F2F1; }
+  stroke: #E0F2F1; }
 
 .stroke\(primary-l2\), .stroke\(primary-l2\)\:h:hover {
-  fill: #B2DFDB; }
+  stroke: #B2DFDB; }
 
 .stroke\(primary-l1\), .stroke\(primary-l1\)\:h:hover {
-  fill: #4DB6AC; }
+  stroke: #4DB6AC; }
 
 .stroke\(primary-d1\), .stroke\(primary-d1\)\:h:hover {
-  fill: #00796B; }
+  stroke: #00796B; }
 
 .stroke\(primary-d2\), .stroke\(primary-d2\)\:h:hover {
-  fill: #004D40; }
+  stroke: #004D40; }
 
 .stroke\(success\), .stroke\(success\)\:h:hover {
-  fill: #4CAF50; }
+  stroke: #4CAF50; }
 
 .stroke\(success-l3\), .stroke\(success-l3\)\:h:hover {
-  fill: #E8F5E9; }
+  stroke: #E8F5E9; }
 
 .stroke\(success-l2\), .stroke\(success-l2\)\:h:hover {
-  fill: #C8E6C9; }
+  stroke: #C8E6C9; }
 
 .stroke\(success-l1\), .stroke\(success-l1\)\:h:hover {
-  fill: #81C784; }
+  stroke: #81C784; }
 
 .stroke\(success-d1\), .stroke\(success-d1\)\:h:hover {
-  fill: #388E3C; }
+  stroke: #388E3C; }
 
 .stroke\(success-d2\), .stroke\(success-d2\)\:h:hover {
-  fill: #1B5E20; }
+  stroke: #1B5E20; }
 
 .stroke\(warning\), .stroke\(warning\)\:h:hover {
-  fill: #FFC107; }
+  stroke: #FFC107; }
 
 .stroke\(warning-l3\), .stroke\(warning-l3\)\:h:hover {
-  fill: #FFF8E1; }
+  stroke: #FFF8E1; }
 
 .stroke\(warning-l2\), .stroke\(warning-l2\)\:h:hover {
-  fill: #FFECB3; }
+  stroke: #FFECB3; }
 
 .stroke\(warning-l1\), .stroke\(warning-l1\)\:h:hover {
-  fill: #FFD54F; }
+  stroke: #FFD54F; }
 
 .stroke\(warning-d1\), .stroke\(warning-d1\)\:h:hover {
-  fill: #FFA000; }
+  stroke: #FFA000; }
 
 .stroke\(warning-d2\), .stroke\(warning-d2\)\:h:hover {
-  fill: #FF6F00; }
+  stroke: #FF6F00; }
 
 .stroke\(danger\), .stroke\(danger\)\:h:hover {
-  fill: #FF5722; }
+  stroke: #FF5722; }
 
 .stroke\(danger-l3\), .stroke\(danger-l3\)\:h:hover {
-  fill: #FBE9E7; }
+  stroke: #FBE9E7; }
 
 .stroke\(danger-l2\), .stroke\(danger-l2\)\:h:hover {
-  fill: #FFCCBC; }
+  stroke: #FFCCBC; }
 
 .stroke\(danger-l1\), .stroke\(danger-l1\)\:h:hover {
-  fill: #FF8A65; }
+  stroke: #FF8A65; }
 
 .stroke\(danger-d1\), .stroke\(danger-d1\)\:h:hover {
-  fill: #E64A19; }
+  stroke: #E64A19; }
 
 .stroke\(danger-d2\), .stroke\(danger-d2\)\:h:hover {
-  fill: #BF360C; }
+  stroke: #BF360C; }
 
 .stroke\(black\), .stroke\(black\)\:h:hover {
-  fill: #000; }
+  stroke: #000; }
 
 .stroke\(white\), .stroke\(white\)\:h:hover {
-  fill: #FFF; }
+  stroke: #FFF; }
 
 .stroke\(transparent\), .stroke\(transparent\)\:h:hover {
-  fill: transparent; }
+  stroke: transparent; }
 
 .stroke\(gray-l3\), .stroke\(gray-l3\)\:h:hover {
-  fill: #f7f7f7; }
+  stroke: #f7f7f7; }
 
 .stroke\(gray-l2\), .stroke\(gray-l2\)\:h:hover {
-  fill: #f2f2f2; }
+  stroke: #f2f2f2; }
 
 .stroke\(gray-l1\), .stroke\(gray-l1\)\:h:hover {
-  fill: #d9d9d9; }
+  stroke: #d9d9d9; }
 
 .stroke\(gray\), .stroke\(gray\)\:h:hover {
-  fill: #999999; }
+  stroke: #999999; }
 
 .stroke\(gray-d1\), .stroke\(gray-d1\)\:h:hover {
-  fill: #595959; }
+  stroke: #595959; }
 
 .stroke\(gray-d2\), .stroke\(gray-d2\)\:h:hover {
-  fill: #404040; }
+  stroke: #404040; }
 
 .ta\(l\) {
   text-align: left; }
