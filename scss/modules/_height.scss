@@ -4,26 +4,9 @@
 
 $height-breakpoints: $breakpoints !default;
 $height-pseudo-classes: null !default;
-$height-values: (
-    #{$a-auto}: auto,
-    #{$a-inherit}: inherit,
-    0: 0,
-    1: .25rem,
-    2: .5rem,
-    3: 1rem,
-    4: 2rem,
-    5: 4rem,
-    6: 8rem,
-    7: 16rem,
-    25#{$a-percent}: 25%,
-    50#{$a-percent}: 50%,
-    75#{$a-percent}: 75%,
-    100#{$a-percent}: 100%,
-    25#{$a-viewport-height}: 25vh,
-    50#{$a-viewport-height}: 50vh,
-    75#{$a-viewport-height}: 75vh,
-    100#{$a-viewport-height}: 100vh
-) !default;
+$height-values: map-merge((), $rem-spaces) !default;
+$height-values: map-merge($height-values, $percent-spaces) !default;
+$height-values: map-merge($height-values, $viewport-height-spaces) !default;
 $height-classes: (#{$c-height}: height) !default;
 $height-module: (
     title: 'Module: Height',
@@ -40,10 +23,9 @@ $height-module: (
 //
 $min-height-breakpoints: $breakpoints !default;
 $min-height-pseudo-classes: null !default;
-$min-height-values: (
-    100#{$a-percent}: 100%,
-    100#{$a-viewport-height}: 100vh
-) !default;
+$min-height-values: map-merge((), $rem-spaces) !default;
+$min-height-values: map-merge($min-height-values, $percent-spaces) !default;
+$min-height-values: map-merge($min-height-values, $viewport-height-spaces) !default;
 $min-height-classes: (#{$c-min-height}: min-height) !default;
 $min-height-module: (
     title: 'Module: Min Height',

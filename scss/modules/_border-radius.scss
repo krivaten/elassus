@@ -4,15 +4,10 @@
 
 $border-radius-breakpoints: null !default;
 $border-radius-pseudo-classes: null !default;
-$border-radius-values: (
-    0: 0,
-    1: .125rem,
-    2: .25rem,
-    3: .5rem,
-    4: 1rem,
+$border-radius-values: map-merge((
     #{$a-fill}: 100%,
     #{$a-pill}: 9999px
-) !default;
+), $rem-spaces) !default;
 $border-radius-classes: (
     #{$c-border-radius}: border-radius,
     #{$c-border-radius-top-left}: border-top-left-radius,

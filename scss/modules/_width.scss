@@ -4,33 +4,9 @@
 
 $width-breakpoints: $breakpoints !default;
 $width-pseudo-classes: null !default;
-$width-values: (
-    #{$a-auto}: auto,
-    0: 0,
-    1: .25rem,
-    2: .5rem,
-    3: 1rem,
-    4: 2rem,
-    5: 4rem,
-    6: 8rem,
-    7: 16rem,
-    25#{$a-percent}: 25%,
-    50#{$a-percent}: 50%,
-    75#{$a-percent}: 75%,
-    100#{$a-percent}: 100%,
-    1#{$a-column}: percentage(1 / 12),
-    2#{$a-column}: percentage(2 / 12),
-    3#{$a-column}: percentage(3 / 12),
-    4#{$a-column}: percentage(4 / 12),
-    5#{$a-column}: percentage(5 / 12),
-    6#{$a-column}: percentage(6 / 12),
-    7#{$a-column}: percentage(7 / 12),
-    8#{$a-column}: percentage(8 / 12),
-    9#{$a-column}: percentage(9 / 12),
-    10#{$a-column}: percentage(10 / 12),
-    11#{$a-column}: percentage(11 / 12),
-    12#{$a-column}: percentage(12 / 12),
-) !default;
+$width-values: map-merge((), $rem-spaces) !default;
+$width-values: map-merge($margin-values, $percent-spaces) !default;
+$width-values: map-merge($margin-values, $grid-spaces) !default;
 $width-classes: (#{$c-width}: width) !default;
 $width-module: (
     title: 'Module: Width',
@@ -47,24 +23,8 @@ $width-module: (
 //
 $max-width-breakpoints: $breakpoints !default;
 $max-width-pseudo-classes: null !default;
-$max-width-values: (
-    #{$a-none}: none,
-    0: 0,
-    1: .25rem,
-    2: .5rem,
-    3: 1rem,
-    4: 2rem,
-    5: 4rem,
-    6: 8rem,
-    7: 16rem,
-    #{$a-small}: 24em,
-    #{$a-medium}: 30em,
-    #{$a-large}: 34em,
-    25#{$a-percent}: 25%,
-    50#{$a-percent}: 50%,
-    75#{$a-percent}: 75%,
-    100#{$a-percent}: 100%,
-) !default;
+$max-width-values: map-merge((), $rem-spaces) !default;
+$max-width-values: map-merge($max-width-values, $measure-spaces) !default;
 $max-width-classes: (#{$c-max-width}: max-width) !default;
 $max-width-module: (
     title: 'Module: Max Width',
