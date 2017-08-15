@@ -5,9 +5,9 @@
 $letter-spacing-breakpoints: null !default;
 $letter-spacing-pseudo-classes: null !default;
 $letter-spacing-values: (
-    s: -.05em,
-    m: .1em,
-    l: .25em
+    #{$a-small}: -.05em,
+    #{$a-medium}: .1em,
+    #{$a-large}: .25em
 ) !default;
 $letter-spacing-classes: (#{$c-letter-spacing}: letter-spacing) !default;
 $letter-spacing-module: (

@@ -6,9 +6,8 @@ $font-size-breakpoints: $breakpoints !default;
 $font-size-pseudo-classes: null !default;
 $font-size-values: (
     #{$a-small}: 0.875rem,
-    #{$a-default}: 1rem,
-    #{$a-medium}: 1.25rem,
-    #{$a-large}: 1.5rem,
+    #{$a-medium}: 1rem,
+    #{$a-large}: 1.25rem
 ) !default;
 $font-size-classes: (#{$c-font-size}: font-size) !default;
 $font-size-module: (
