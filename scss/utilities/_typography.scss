@@ -110,7 +110,8 @@ ol ul {
 
 hr,
 .hr {
-    border: 1px solid $gray-l1;
+    border: 0;
+    border-top: 1px solid $gray-l1;
     margin: -1px 0;
 }
 
