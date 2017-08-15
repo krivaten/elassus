@@ -1,4 +1,13 @@
 // FUNCTIONS
+@function map-collect($maps...) {
+    $collection: ();
+
+    @each $map in $maps {
+        $collection: map-merge($collection, $map);
+    }
+    @return $collection;
+}
+
 @function build-class-name($context, $value: null, $breakpoint: null, $pseudo-classes: null, $pseudo-only: false, $post-selector: null) {
     $result: #{$context};
 
@@ -93,7 +102,7 @@ $include-docs: false !default;
             $query: map-get($object, query);
 
             @media #{$query} {
-               @include build-class($item, $breakpoint, $pseudo-classes, $pseudo-only, $post-selector);
+                @include build-class($item, $breakpoint, $pseudo-classes, $pseudo-only, $post-selector);
             }
         }
     }
