@@ -4,9 +4,7 @@
 
 $height-breakpoints: $breakpoints !default;
 $height-pseudo-classes: null !default;
-$height-values: map-merge((), $rem-spaces) !default;
-$height-values: map-merge($height-values, $percent-spaces) !default;
-$height-values: map-merge($height-values, $viewport-height-spaces) !default;
+$height-values: map-collect($rem-spaces, $percent-spaces, $viewport-height-spaces) !default;
 $height-classes: (#{$c-height}: height) !default;
 $height-module: (
     title: 'Module: Height',
@@ -23,9 +21,7 @@ $height-module: (
 //
 $min-height-breakpoints: $breakpoints !default;
 $min-height-pseudo-classes: null !default;
-$min-height-values: map-merge((), $rem-spaces) !default;
-$min-height-values: map-merge($min-height-values, $percent-spaces) !default;
-$min-height-values: map-merge($min-height-values, $viewport-height-spaces) !default;
+$min-height-values: map-collect($rem-spaces, $percent-spaces, $viewport-height-spaces) !default;
 $min-height-classes: (#{$c-min-height}: min-height) !default;
 $min-height-module: (
     title: 'Module: Min Height',

@@ -4,9 +4,7 @@
 
 $coordinate-breakpoints: $breakpoints !default;
 $coordinate-pseudo-classes: null !default;
-$coordinate-values: map-merge((), $rem-spaces) !default;
-$coordinate-values: map-merge($coordinate-values, $percent-spaces) !default;
-$coordinate-values: map-merge($coordinate-values, $viewport-height-spaces) !default;
+$coordinate-values: map-collect($rem-spaces, $percent-spaces, $viewport-height-spaces) !default;
 $coordinate-classes: (
     #{$c-top}: top,
     #{$c-bottom}: bottom,

@@ -4,7 +4,7 @@
 
 $padding-breakpoints: $breakpoints !default;
 $padding-pseudo-classes: null !default;
-$padding-values: map-merge((), $rem-spaces) !default;
+$padding-values: $rem-spaces !default;
 $padding-classes: (
     #{$c-padding}: padding,
     #{$c-padding-top}: padding-top,
@@ -36,8 +36,7 @@ $padding-module: (
 
 $margin-breakpoints: $breakpoints !default;
 $margin-pseudo-classes: null !default;
-$margin-values: map-merge((), $rem-spaces) !default;
-$margin-values: map-merge($margin-values, $rem-negative-spaces) !default;
+$margin-values: map-collect($rem-spaces, $rem-negative-spaces) !default;
 $margin-classes: (
     #{$c-margin}: margin,
     #{$c-margin-top}: margin-top,

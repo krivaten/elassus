@@ -4,9 +4,7 @@
 
 $width-breakpoints: $breakpoints !default;
 $width-pseudo-classes: null !default;
-$width-values: map-merge((), $rem-spaces) !default;
-$width-values: map-merge($margin-values, $percent-spaces) !default;
-$width-values: map-merge($margin-values, $grid-spaces) !default;
+$width-values: map-collect($rem-spaces, $percent-spaces, $grid-spaces) !default;
 $width-classes: (#{$c-width}: width) !default;
 $width-module: (
     title: 'Module: Width',
@@ -23,8 +21,7 @@ $width-module: (
 //
 $max-width-breakpoints: $breakpoints !default;
 $max-width-pseudo-classes: null !default;
-$max-width-values: map-merge((), $rem-spaces) !default;
-$max-width-values: map-merge($max-width-values, $measure-spaces) !default;
+$max-width-values: map-collect($rem-spaces, $measure-spaces) !default;
 $max-width-classes: (#{$c-max-width}: max-width) !default;
 $max-width-module: (
     title: 'Module: Max Width',
