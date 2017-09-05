@@ -4,11 +4,7 @@
 
 $font-size-breakpoints: $breakpoints !default;
 $font-size-pseudo-classes: null !default;
-$font-size-values: (
-    #{$a-small}: 0.875rem,
-    #{$a-medium}: 1rem,
-    #{$a-large}: 1.25rem
-) !default;
+$font-size-values: $typography-spaces !default;
 $font-size-classes: (#{$c-font-size}: font-size) !default;
 $font-size-module: (
     title: 'Module: Font Size',

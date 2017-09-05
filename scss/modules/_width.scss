@@ -4,7 +4,7 @@
 
 $width-breakpoints: $breakpoints !default;
 $width-pseudo-classes: null !default;
-$width-values: map-collect($rem-spaces, $percent-spaces, $grid-spaces) !default;
+$width-values: map-collect($rem-spaces, $grid-spaces) !default;
 $width-classes: (#{$c-width}: width) !default;
 $width-module: (
     title: 'Module: Width',

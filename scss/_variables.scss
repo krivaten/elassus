@@ -80,7 +80,6 @@ $theme: (
     warning-d1: $warning-d1,
     warning-d2: $warning-d2,
     danger: $danger,
-    danger-l3: $danger-l3,
     danger-l2: $danger-l2,
     danger-l1: $danger-l1,
     danger-d1: $danger-d1,
@@ -154,6 +153,15 @@ $measure-spaces: (
     #{$a-medium}: 30em,
     #{$a-large}: 34em,
 ) !default;
+$typography-spaces: (
+    1: 0.75rem, // 12px
+    2: 0.875rem, // 14px
+    3: 1rem, // 16px
+    4: 1.125rem, // 18px
+    5: 1.25rem, // 20px
+    6: 1.5rem, // 24px
+    7: 1.75rem // 28px
+) !default;
 
 // Typography
 $font-monospace: unquote('"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace');
@@ -187,8 +195,10 @@ $pseudo-hover: (
 ) !default;
 
 $pseudo-first-last: (
-    #{$a-not-first}: unquote("not(:first-child)"),
-    #{$a-not-last}: unquote("not(:last-child)")
+    #{$a-first-child}: unquote(":first-child"),
+    #{$a-last-child}: unquote(":last-child"),
+    #{$a-not-first-child}: unquote("not(:first-child)"),
+    #{$a-not-last-child}: unquote("not(:last-child)")
 ) !default;
 
 // Transitions

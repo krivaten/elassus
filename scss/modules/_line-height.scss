@@ -4,11 +4,7 @@
 
 $line-height-breakpoints: null !default;
 $line-height-pseudo-classes: null !default;
-$line-height-values: (
-    #{$a-small}: 1,
-    #{$a-medium}: 1.25,
-    #{$a-large}: 1.5
-) !default;
+$line-height-values: $typography-spaces !default;
 $line-height-classes: (#{$c-line-height}: line-height) !default;
 $line-height-module: (
     title: 'Module: Line Height',
