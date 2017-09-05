@@ -3,7 +3,7 @@
   "description": "A functional CSS library built for speed and granular customization",
   "author": "Kris Van Houten",
   "version": "1.1.5",
-  "style": "elassus.scss",
+  "style": "css/elassus.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/krivaten/elassus"
@@ -29,7 +29,7 @@
     "gulp-html-prettify": "0.0.1",
     "gulp-pug": "^3.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.2.0",
+    "gulp-sass": "^3.1.0",
     "through2": "^2.0.3"
   }
 }
