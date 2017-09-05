@@ -7,14 +7,14 @@ include ../includes/head.pug
 body(class='p(0) m(0) ff(sans) bgc(white) c(gray-d1)')
     div(class='ar ar(16x9) ar(2x1)s bgs(cover) pos(relative)' style='background-image: url(https://unsplash.it/1980/1200?image=329)')
         div(class='fill container d(f) ai(c)')
-            div(class='w(100%) c(white) tt(uc) ta(c)')
+            div(class='w(12col) c(white) tt(uc) ta(c)')
                 p Welcome to Elassus
                 h1 We Make CSS Manageable
                 div(class='d(f) jc(c)')
                     button(class='bgc(transparent) bd(1) bdc(white) bgc(white):h bdrad(2) c(white) c(gray-d1):h fw(600) tt(uc) p(2) m-x(3) trs(all) w(2col)') Learn More
                     button(class='bgc(primary) bd(1) bdc(primary) bgc(primary-d1):h bdrad(2) c(white) fw(600) tt(uc) p(2) m-x(3) trs(all) w(2col)') Sign Up
 
-    header(class='pos(sticky) z(9999) t(0) w(100%) h(5) bgc(white) bs(1)')
+    header(class='pos(sticky) z(9999) t(0) w(12col) h(5) bgc(white) bs(1)')
         div(class='container h(5) d(f) ai(c) jc(sb)')
             a(href='/' title='Elassus' class='td(n) d(f) ai(c)')
                 img(src='/img/logo.svg' class='pos(relative) w(4) h(4)')
@@ -64,7 +64,7 @@ body(class='p(0) m(0) ff(sans) bgc(white) c(gray-d1)')
 
             div(class='d(f) fw(wrap) m-y(3) bd(1) bdc(gray-l2)')
                 each item in [ { img: 'traffic-light', bg: 'gray-l2' }, { img: 'house', bg: 'gray-l3' } , { img: 'lock', bg: 'gray-l2' }, { img: 'pencil', bg: 'gray-l3'  } ]
-                    div(class='w(12col) w(3col)s bd-b(1):nl bd-b(0)s:nl bd-r(1)s:nl bdc(gray-l2)')
+                    div(class='w(12col) w(3col)s bd-b(1):nlc bd-b(0)s:nlc bd-r(1)s:nlc bdc(gray-l2)')
                         div(class='ar ar(1x1) pos(relative) trs(bg-c) bgc(gray-l2):h')
                             div(class='fill d(f) jc(c) fd(col) p-x(3)')
                                 div(class='c(primary) m-b(2)')
@@ -112,13 +112,13 @@ body(class='p(0) m(0) ff(sans) bgc(white) c(gray-d1)')
                             div(class='fill d(f) fd(col) ai(c) jc(c)')
                                 span(class='h4 m-y(0) td(lt) c(gray-l1)')
                                     em $600
-                                span(class='h3 w(100%) m(0)') $500
+                                span(class='h3 w(12col) m(0)') $500
                                 span(class='small')
                                     em Yearly
 
                         ul(class='ls(n) ta(l) m-y(3) ta(c)')
                             each item in [ 'Talk to Corporate', 'Approve Memos', 'Lead a Workship', 'Direct Workflow' ]
-                                li(class='p-y(2) bd-b(1):nl bdc(gray-l1)')
+                                li(class='p-y(2) bd-b(1):nlc bdc(gray-l1)')
                                     span(class='fa fa-check fa-lg w(4) m-l(-4) c(success)')
                                     span= item
 
@@ -131,13 +131,13 @@ body(class='p(0) m(0) ff(sans) bgc(white) c(gray-d1)')
                             div(class='fill d(f) fd(col) ai(c) jc(c)')
                                 span(class='h4 m-y(0) td(lt) c(gray-l1)')
                                     em $605
-                                span(class='h3 w(100%) m(0)') $501
+                                span(class='h3 w(12col) m(0)') $501
                                 span(class='small')
                                     em Yearly
 
                         ul(class='ls(n) ta(l) m-y(3) ta(c)')
                             each item in [ 'All the starter features', 'Micro Manage', 'Promote Synergy', 'Be the boss!' ]
-                                li(class='p-y(2) bd-b(1):nl bdc(gray-l1)')
+                                li(class='p-y(2) bd-b(1):nlc bdc(gray-l1)')
                                     span(class='fa fa-check fa-lg w(4) m-l(-4) c(success)')
                                     span= item
 
@@ -185,12 +185,12 @@ body(class='p(0) m(0) ff(sans) bgc(white) c(gray-d1)')
                     form
                         each item in [ 'Name', 'Email', 'Phone Number' ]
                             div(class='m-y(3)')
-                                label(class='d(b) w(100%) small m-b(2)')= item
-                                input(class='d(b) w(100%) bgc(transparent) bgc(white):f c(white) c(black):f bd(1) bdrad(0) bdc(white) p(2) trs(all)')
+                                label(class='d(b) w(12col) small m-b(2)')= item
+                                input(class='d(b) w(12col) bgc(transparent) bgc(white):f c(white) c(black):f bd(1) bdrad(0) bdc(white) p(2) trs(all)')
 
                         div(class='m-y(3)')
-                            label(class='d(b) w(100%) small m-b(2)') Message
-                            textarea(class='d(b) w(100%) bgc(transparent) bgc(white):f c(white) c(black):f bd(1) bdrad(0) bdc(white) p(2) trs(all)' rows=5)
+                            label(class='d(b) w(12col) small m-b(2)') Message
+                            textarea(class='d(b) w(12col) bgc(transparent) bgc(white):f c(white) c(black):f bd(1) bdrad(0) bdc(white) p(2) trs(all)' rows=5)
 
                         div(class='ta(r)')
                             button(class='bd(1) bdc(primary-d1) bgc(primary) bgc(primary-d1):h bdrad(2) c(white) fw(600) tt(uc) p(2) trs(all)') Submit

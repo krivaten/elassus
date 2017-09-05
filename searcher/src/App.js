@@ -68,7 +68,7 @@ class App extends Component {
             <div>
                 <div className="p(2) bdrad(2) bgc(primary)">
                     <label htmlFor="search" className="sr">Search</label>
-                    <input type="text" id="search" className="d(b) w(100%) bdrad(2) m(0) p(2) bd(0) h3" placeholder="Padding, Color, Flex, etc." value={query} onChange={(e) => this.updateQuery(e.target.value)} />
+                    <input type="text" id="search" className="d(b) w(12col) bdrad(2) m(0) p(2) bd(0) h3" placeholder="Padding, Color, Flex, etc." value={query} onChange={(e) => this.updateQuery(e.target.value)} />
                 </div>
 
                 <ul className="ls(n) bgc(white)" aria-live="polite" aria-atomic="true">
